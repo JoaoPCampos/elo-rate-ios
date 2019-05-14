@@ -1,16 +1,20 @@
 PODS:
   - LayoutKit (0.0.2)
+  - SwiftService (1.0.3)
 
 DEPENDENCIES:
   - LayoutKit (~> 0.0.2)
+  - SwiftService (= 1.0.3)
 
 SPEC REPOS:
   "git@github.com:JoaoPCampos/frameworks-ios.git":
     - LayoutKit
+    - SwiftService
 
 SPEC CHECKSUMS:
   LayoutKit: 8df25c98bd32a32ea51f95067bc7dd0a65ecaaa2
+  SwiftService: 804e75dd3b9f6afa916b16c24b4a809f5c8fc950
 
-PODFILE CHECKSUM: 381ebea6885162eda515f98d0a655abddab5e9eb
+PODFILE CHECKSUM: 09b456c1a6442bc08c74d5b25998320bea638360
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.0.beta.3

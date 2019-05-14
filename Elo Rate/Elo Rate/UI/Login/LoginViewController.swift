@@ -25,7 +25,12 @@ private extension LoginViewController {
 
     func defineSubViews() {
 
-        // TODO
+        let loginView = LoginView()
+        
+        self.view.addSubview(loginView)
+        
+        loginView.center(in: self.view)
+        loginView.edge(onlyTo: [.leading, .trailing], to: self.view)
     }
 
     func defineConstraints() {

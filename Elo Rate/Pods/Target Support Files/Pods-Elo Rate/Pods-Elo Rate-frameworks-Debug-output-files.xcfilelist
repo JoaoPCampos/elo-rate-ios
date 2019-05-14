@@ -1,0 +1,2 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LayoutKit.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftService.framework

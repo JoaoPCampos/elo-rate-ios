@@ -1,0 +1,6 @@
+framework module SwiftService {
+  umbrella header "SwiftService-umbrella.h"
+
+  export *
+  module * { export * }
+}

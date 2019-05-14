@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		C9F115892123325400F29650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F115882123325400F29650 /* Assets.xcassets */; };
 		C9F1158C2123325400F29650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F1158A2123325400F29650 /* LaunchScreen.storyboard */; };
 		C9F115972123325400F29650 /* Elo_RateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F115962123325400F29650 /* Elo_RateTests.swift */; };
+		D80CE61D228B69520018D1AA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE61C228B69520018D1AA /* LoginView.swift */; };
+		D80CE61F228B6C990018D1AA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE61E228B6C990018D1AA /* UIView+Extension.swift */; };
 		DC0241C1228B05830029B365 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241C0228B05830029B365 /* BaseViewController.swift */; };
 		DC0241C4228B05AF0029B365 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241C3228B05AF0029B365 /* Identifiable.swift */; };
 		DC0241C6228B05D60029B365 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241C5228B05D60029B365 /* Coordinator.swift */; };
@@ -47,6 +49,8 @@
 		C9F115922123325400F29650 /* Elo RateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Elo RateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F115962123325400F29650 /* Elo_RateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elo_RateTests.swift; sourceTree = "<group>"; };
 		C9F115982123325400F29650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D80CE61C228B69520018D1AA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D80CE61E228B6C990018D1AA /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		DC0241C0228B05830029B365 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DC0241C3228B05AF0029B365 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		DC0241C5228B05D60029B365 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				DC0241C9228B060F0029B365 /* UINavigationController+Extension.swift */,
+				D80CE61E228B6C990018D1AA /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				DC0241CE228B068F0029B365 /* LoginCoordinator.swift */,
 				DC0241D0228B06F30029B365 /* LoginViewController.swift */,
 				DC0241D2228B074B0029B365 /* LoginViewModel.swift */,
+				D80CE61C228B69520018D1AA /* LoginView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -335,16 +341,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Elo Rate/Pods-Elo Rate-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LayoutKit/LayoutKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Elo Rate/Pods-Elo Rate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LayoutKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Elo Rate/Pods-Elo Rate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -358,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D80CE61F228B6C990018D1AA /* UIView+Extension.swift in Sources */,
 				DC0241CC228B06480029B365 /* AppCoordinator.swift in Sources */,
 				DC0241C6228B05D60029B365 /* Coordinator.swift in Sources */,
 				DC0241CF228B068F0029B365 /* LoginCoordinator.swift in Sources */,
@@ -366,6 +368,7 @@
 				DC0241CA228B060F0029B365 /* UINavigationController+Extension.swift in Sources */,
 				DC0241C4228B05AF0029B365 /* Identifiable.swift in Sources */,
 				DC0241C1228B05830029B365 /* BaseViewController.swift in Sources */,
+				D80CE61D228B69520018D1AA /* LoginView.swift in Sources */,
 				DC0241D3228B074B0029B365 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
