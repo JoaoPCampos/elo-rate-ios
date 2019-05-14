@@ -1,0 +1,16 @@
+PODS:
+  - LayoutKit (0.0.2)
+
+DEPENDENCIES:
+  - LayoutKit (~> 0.0.2)
+
+SPEC REPOS:
+  "git@github.com:JoaoPCampos/frameworks-ios.git":
+    - LayoutKit
+
+SPEC CHECKSUMS:
+  LayoutKit: 8df25c98bd32a32ea51f95067bc7dd0a65ecaaa2
+
+PODFILE CHECKSUM: 381ebea6885162eda515f98d0a655abddab5e9eb
+
+COCOAPODS: 1.6.1
