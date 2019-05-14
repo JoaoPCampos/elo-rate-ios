@@ -13,6 +13,14 @@
 		C9F115892123325400F29650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F115882123325400F29650 /* Assets.xcassets */; };
 		C9F1158C2123325400F29650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F1158A2123325400F29650 /* LaunchScreen.storyboard */; };
 		C9F115972123325400F29650 /* Elo_RateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F115962123325400F29650 /* Elo_RateTests.swift */; };
+		DC0241C1228B05830029B365 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241C0228B05830029B365 /* BaseViewController.swift */; };
+		DC0241C4228B05AF0029B365 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241C3228B05AF0029B365 /* Identifiable.swift */; };
+		DC0241C6228B05D60029B365 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241C5228B05D60029B365 /* Coordinator.swift */; };
+		DC0241CA228B060F0029B365 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241C9228B060F0029B365 /* UINavigationController+Extension.swift */; };
+		DC0241CC228B06480029B365 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241CB228B06480029B365 /* AppCoordinator.swift */; };
+		DC0241CF228B068F0029B365 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241CE228B068F0029B365 /* LoginCoordinator.swift */; };
+		DC0241D1228B06F30029B365 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D0228B06F30029B365 /* LoginViewController.swift */; };
+		DC0241D3228B074B0029B365 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D2228B074B0029B365 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +47,14 @@
 		C9F115922123325400F29650 /* Elo RateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Elo RateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F115962123325400F29650 /* Elo_RateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elo_RateTests.swift; sourceTree = "<group>"; };
 		C9F115982123325400F29650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC0241C0228B05830029B365 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DC0241C3228B05AF0029B365 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		DC0241C5228B05D60029B365 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		DC0241C9228B060F0029B365 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		DC0241CB228B06480029B365 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DC0241CE228B068F0029B365 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		DC0241D0228B06F30029B365 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DC0241D2228B074B0029B365 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E2064E104B1F63D698230934 /* Pods-Elo RateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo RateTests.release.xcconfig"; path = "Target Support Files/Pods-Elo RateTests/Pods-Elo RateTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,7 +95,6 @@
 				5AF2D266AF705BDA97A39B13 /* Pods-Elo RateTests.debug.xcconfig */,
 				E2064E104B1F63D698230934 /* Pods-Elo RateTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -106,10 +121,14 @@
 		C9F115802123325300F29650 /* Elo Rate */ = {
 			isa = PBXGroup;
 			children = (
+				DC0241C8228B05F60029B365 /* Extensions */,
+				DC0241C7228B05E90029B365 /* UI */,
+				DC0241C2228B05930029B365 /* Protocols */,
 				C9F115812123325300F29650 /* AppDelegate.swift */,
 				C9F115882123325400F29650 /* Assets.xcassets */,
 				C9F1158A2123325400F29650 /* LaunchScreen.storyboard */,
 				C9F1158D2123325400F29650 /* Info.plist */,
+				DC0241CB228B06480029B365 /* AppCoordinator.swift */,
 			);
 			path = "Elo Rate";
 			sourceTree = "<group>";
@@ -121,6 +140,50 @@
 				C9F115982123325400F29650 /* Info.plist */,
 			);
 			path = "Elo RateTests";
+			sourceTree = "<group>";
+		};
+		DC0241BF228B05640029B365 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DC0241C0228B05830029B365 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DC0241C2228B05930029B365 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DC0241C3228B05AF0029B365 /* Identifiable.swift */,
+				DC0241C5228B05D60029B365 /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DC0241C7228B05E90029B365 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DC0241CD228B06800029B365 /* Login */,
+				DC0241BF228B05640029B365 /* Base */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DC0241C8228B05F60029B365 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DC0241C9228B060F0029B365 /* UINavigationController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DC0241CD228B06800029B365 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DC0241CE228B068F0029B365 /* LoginCoordinator.swift */,
+				DC0241D0228B06F30029B365 /* LoginViewController.swift */,
+				DC0241D2228B074B0029B365 /* LoginViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +358,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0241CC228B06480029B365 /* AppCoordinator.swift in Sources */,
+				DC0241C6228B05D60029B365 /* Coordinator.swift in Sources */,
+				DC0241CF228B068F0029B365 /* LoginCoordinator.swift in Sources */,
 				C9F115822123325300F29650 /* AppDelegate.swift in Sources */,
+				DC0241D1228B06F30029B365 /* LoginViewController.swift in Sources */,
+				DC0241CA228B060F0029B365 /* UINavigationController+Extension.swift in Sources */,
+				DC0241C4228B05AF0029B365 /* Identifiable.swift in Sources */,
+				DC0241C1228B05830029B365 /* BaseViewController.swift in Sources */,
+				DC0241D3228B074B0029B365 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
