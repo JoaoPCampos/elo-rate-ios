@@ -8,8 +8,8 @@ target 'Elo Rate' do
   use_frameworks!
 
   # Pods for Elo Rate
-  pod 'LayoutKit', '~> 0.0.2'
-  pod 'SwiftService', '1.0.3'
+  pod 'LayoutKit', :path => '../../layoutkit-ios/'#'~> 0.0.2'
+  pod 'SwiftService', '~> 1.0.3'
 
   target 'Elo RateTests' do
     inherit! :search_paths

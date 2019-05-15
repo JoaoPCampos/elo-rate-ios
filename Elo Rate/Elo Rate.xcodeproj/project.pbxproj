@@ -24,6 +24,10 @@
 		DC0241D1228B06F30029B365 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D0228B06F30029B365 /* LoginViewController.swift */; };
 		DC0241D3228B074B0029B365 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D2228B074B0029B365 /* LoginViewModel.swift */; };
 		DC0241D7228C273F0029B365 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D6228C273F0029B365 /* BaseTextField.swift */; };
+		DC886C4A228C5D5C0070701B /* bpmono.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC886C46228C5D5B0070701B /* bpmono.regular.ttf */; };
+		DC886C4B228C5D5C0070701B /* bpmono.stencil-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC886C47228C5D5B0070701B /* bpmono.stencil-bold.ttf */; };
+		DC886C4C228C5D5C0070701B /* bpmono.bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC886C48228C5D5B0070701B /* bpmono.bold.ttf */; };
+		DC886C4D228C5D5C0070701B /* bpmono.italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC886C49228C5D5B0070701B /* bpmono.italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		DC0241D0228B06F30029B365 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DC0241D2228B074B0029B365 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		DC0241D6228C273F0029B365 /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
+		DC886C46228C5D5B0070701B /* bpmono.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bpmono.regular.ttf; sourceTree = "<group>"; };
+		DC886C47228C5D5B0070701B /* bpmono.stencil-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bpmono.stencil-bold.ttf"; sourceTree = "<group>"; };
+		DC886C48228C5D5B0070701B /* bpmono.bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bpmono.bold.ttf; sourceTree = "<group>"; };
+		DC886C49228C5D5B0070701B /* bpmono.italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bpmono.italic.ttf; sourceTree = "<group>"; };
 		E2064E104B1F63D698230934 /* Pods-Elo RateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo RateTests.release.xcconfig"; path = "Target Support Files/Pods-Elo RateTests/Pods-Elo RateTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +135,7 @@
 		C9F115802123325300F29650 /* Elo Rate */ = {
 			isa = PBXGroup;
 			children = (
+				DC886C45228C5D430070701B /* Resources */,
 				DC0241D8228C33150029B365 /* Enums */,
 				DC0241C8228B05F60029B365 /* Extensions */,
 				DC0241C7228B05E90029B365 /* UI */,
@@ -219,6 +228,17 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		DC886C45228C5D430070701B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC886C48228C5D5B0070701B /* bpmono.bold.ttf */,
+				DC886C49228C5D5B0070701B /* bpmono.italic.ttf */,
+				DC886C46228C5D5B0070701B /* bpmono.regular.ttf */,
+				DC886C47228C5D5B0070701B /* bpmono.stencil-bold.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,8 +323,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC886C4B228C5D5C0070701B /* bpmono.stencil-bold.ttf in Resources */,
+				DC886C4A228C5D5C0070701B /* bpmono.regular.ttf in Resources */,
 				C9F1158C2123325400F29650 /* LaunchScreen.storyboard in Resources */,
 				C9F115892123325400F29650 /* Assets.xcassets in Resources */,
+				DC886C4D228C5D5C0070701B /* bpmono.italic.ttf in Resources */,
+				DC886C4C228C5D5C0070701B /* bpmono.bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

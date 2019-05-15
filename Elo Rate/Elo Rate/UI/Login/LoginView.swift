@@ -17,10 +17,11 @@ final class LoginView: UIView {
         static let passwordPlaceholder: String = "Password"
         static let loginButtonText: String = "Login"
         static let textColor: UIColor = .black
-        static let horizontalMargin: LayoutKitMargin = .offset(10)
-        static let margin: CGFloat = 24
-        static let cornerRadius: CGFloat = 4
-        static let insets = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
+        static let horizontalMargin: LayoutKitMargin = .offset(Branding.Spacing.S.float)
+        static let margin: CGFloat = Branding.Spacing.M.float
+        static let cornerRadius: CGFloat = Branding.Spacing.XXS.float
+        static let insets = Branding.EdgeInsets.all(.S).edgeInsets
+        static let fontM = Branding.Font.stencil(.bpmono, .M).font
     }
     
     let usernameTextField = BaseTextField(padding: Constants.insets)
@@ -58,9 +59,17 @@ private extension LoginView {
         
         self.usernameTextField.textColor = Constants.textColor
         self.passwordTextField.textColor = Constants.textColor
+
+        self.usernameTextField.tintColor = Constants.textColor
+        self.passwordTextField.tintColor = Constants.textColor
+
+        self.usernameTextField.font = Constants.fontM
+        self.passwordTextField.font = Constants.fontM
+
+        self.loginButton.titleLabel?.font = Constants.fontM
         
         [self.usernameTextField, self.passwordTextField, self.loginButton].forEach {
-            
+
             $0.unmask()
             $0.backgroundColor = .white
             $0.layer.cornerRadius = Constants.cornerRadius

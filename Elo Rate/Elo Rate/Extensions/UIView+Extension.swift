@@ -11,11 +11,6 @@ import LayoutKit
 
 extension UIView {
     
-    func unmask()  {
-        
-        self.translatesAutoresizingMaskIntoConstraints = false
-    }
-    
     func add(_ views: UIView...) {
         
         views.forEach {

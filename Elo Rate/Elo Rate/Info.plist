@@ -39,5 +39,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>bpmono.regular.ttf</string>
+		<string>bpmono.bold.ttf</string>
+		<string>bpmono.italic.ttf</string>
+		<string>bpmono.stencil-bold.ttf</string>
+	</array>
 </dict>
 </plist>
