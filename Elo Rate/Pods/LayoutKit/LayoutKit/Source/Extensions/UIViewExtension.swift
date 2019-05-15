@@ -9,3 +9,24 @@
 import UIKit
 
 extension UIView: LayoutKitProtocol {}
+
+public extension UIView {
+
+    @discardableResult
+    static func unmask() -> Self {
+
+        let object = self.init()
+
+        object.translatesAutoresizingMaskIntoConstraints = false
+
+        return object
+    }
+
+    @discardableResult
+    func unmask() -> Self {
+
+        self.translatesAutoresizingMaskIntoConstraints = false
+
+        return self
+    }
+}

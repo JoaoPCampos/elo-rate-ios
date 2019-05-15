@@ -20,13 +20,13 @@ final class LoginView: UIView {
         static let horizontalMargin: LayoutKitMargin = .offset(Branding.Spacing.S.float)
         static let margin: CGFloat = Branding.Spacing.M.float
         static let cornerRadius: CGFloat = Branding.Spacing.XXS.float
-        static let insets = Branding.EdgeInsets.all(.S).edgeInsets
+        static let insets = LayoutKitEdge.all(Branding.Spacing.S.float)
         static let fontM = Branding.Font.stencil(.bpmono, .M).font
     }
     
-    let usernameTextField = BaseTextField(padding: Constants.insets)
-    let passwordTextField = BaseTextField(padding: Constants.insets)
-    let loginButton = UIButton()
+    let usernameTextField = BaseTextField(padding: Constants.insets).unmask()
+    let passwordTextField = BaseTextField(padding: Constants.insets).unmask()
+    let loginButton = UIButton(type: .roundedRect).unmask()
     
     convenience init() {
         
@@ -37,8 +37,8 @@ final class LoginView: UIView {
         
         super.init(frame: frame)
         
-        self.unmask()
-        self.defineSubViews()
+        self.configureView()
+        self.configureSubViews()
         self.defineConstraints()
     }
     
@@ -48,11 +48,22 @@ final class LoginView: UIView {
     }
 }
 
+// MARK: - Private
 private extension LoginView {
     
-    func defineSubViews() {
+    func configureView() {
+        
+        self.unmask()
+        
+        self.usernameTextField.delegate = self
+        self.passwordTextField.delegate = self
+        
+        self.loginButton.addTarget(self, action: #selector(didPressLoginButton), for: .touchUpInside)
         
         self.add(self.usernameTextField, self.passwordTextField, self.loginButton)
+    }
+    
+    func configureSubViews() {
         
         self.usernameTextField.placeholder = Constants.usernamePlaceholder
         self.passwordTextField.placeholder = Constants.passwordPlaceholder
@@ -70,7 +81,6 @@ private extension LoginView {
         
         [self.usernameTextField, self.passwordTextField, self.loginButton].forEach {
 
-            $0.unmask()
             $0.backgroundColor = .white
             $0.layer.cornerRadius = Constants.cornerRadius
             $0.layer.shouldRasterize = true
@@ -79,7 +89,6 @@ private extension LoginView {
         
         self.loginButton.setTitle(Constants.loginButtonText, for: .normal)
         self.loginButton.setTitleColor(Constants.textColor, for: .normal)
-        self.loginButton.setTitleColor(.gray, for: .selected)
     }
     
     func defineConstraints() {
@@ -91,5 +100,20 @@ private extension LoginView {
         
         self.loginButton.topAnchor.bind(to: self.passwordTextField.bottomAnchor).addSpace(Constants.horizontalMargin)
         self.loginButton.edge(onlyTo: [.leading, .trailing, .bottom], to: self, insets: [.all(Constants.margin)])
+    }
+    
+    @objc
+    func didPressLoginButton() {
+        
+        // TODO
+        print("call login service")
+    }
+}
+
+extension LoginView: UITextFieldDelegate {
+    
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+        
+        // TODO - update if valid field
     }
 }

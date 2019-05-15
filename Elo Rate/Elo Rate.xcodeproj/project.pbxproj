@@ -136,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				DC886C45228C5D430070701B /* Resources */,
-				DC0241D8228C33150029B365 /* Enums */,
 				DC0241C8228B05F60029B365 /* Extensions */,
 				DC0241C7228B05E90029B365 /* UI */,
 				DC0241C2228B05930029B365 /* Protocols */,
@@ -219,13 +218,6 @@
 				DC0241D6228C273F0029B365 /* BaseTextField.swift */,
 			);
 			path = TextFields;
-			sourceTree = "<group>";
-		};
-		DC0241D8228C33150029B365 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Enums;
 			sourceTree = "<group>";
 		};
 		DC886C45228C5D430070701B /* Resources */ = {

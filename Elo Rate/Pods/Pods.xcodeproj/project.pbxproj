@@ -7,41 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0163EC950B12AC0BF95AD2F2EA328DD0 /* Branding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E782FB54ED1EAB2111A6C0DA61ED59 /* Branding.swift */; };
-		048F7524E11208790DE1F1D8B0174FF2 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C0192C567DD95D437C692823AC24 /* ServiceManager.swift */; };
+		00FA48265FFA5D69022A9F9435124FB9 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D5A59EE9666224F03CF3C733CAC42C /* ServiceError.swift */; };
 		0780928FA47C3ADB9C9139B8AC62850F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
-		2D6D3C0D5E3DFA97F0E61E985744BCB3 /* LayoutKitProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C41A6C13B5C9BE53273D24999FA887 /* LayoutKitProtocol+Extension.swift */; };
-		2E60D8FC3EFCE42B1DBABDC3C4254FCE /* LayoutKitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2AD3F1940068041C9BB9694B448F07 /* LayoutKitProtocol.swift */; };
-		3941C5A4BAC5EA4EDA9D69C51BF90BFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		3F8F888CBC3157C674F100B036E83262 /* Pods-Elo RateTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C555C835885AF8630E5327B4A2749C6 /* Pods-Elo RateTests-dummy.m */; };
-		4533A033FE5E0384517822440D3C2081 /* NSLayoutConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFF9C508C22D610D803E6271E8E34C1 /* NSLayoutConstraintExtension.swift */; };
-		48C7D15F9B4561D364F10FF2890750BA /* ServicePagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1CD171D62A478DD4CEE2D7F07A5EB /* ServicePagination.swift */; };
-		4E2BAD984560C53341E2F9BB261AC24D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108B7444766E0AC6C5C2D18B9EE14AB /* UIViewExtension.swift */; };
-		4F8D2E70E4C2F457967F65FAF3BEA1A8 /* SwiftService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BEAE944FFCE7C79AB2E714BDD6EAD2A8 /* SwiftService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6687B22E5BBF13A4A5706CEC2F3F1EFA /* LayoutKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C565306B300190AA9E4769EBFAA03A5 /* LayoutKit-dummy.m */; };
-		6E266BD8A32B6C561A025273A4A80EE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
-		7CC382EAAF18B6DC7CC04DA3456C48CC /* NSLayoutDimensionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0615F10740373B567E9CC1FB404594D /* NSLayoutDimensionExtension.swift */; };
-		839CCE2623DCF070AFB5BD508EB9913C /* ServicePaginationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0ABF2CF9A12A5C2A750985382D1927 /* ServicePaginationProtocol.swift */; };
-		86B05D04F6D4B69855EA3E28D7C67326 /* Pods-Elo Rate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB2510CC9EDD6E51E885758EC6E4E6F /* Pods-Elo Rate-dummy.m */; };
-		A5AE45BCA0D4A9CA530775A50CA758ED /* LayoutKitMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3EBAC1C36EC74FE43E059387378993 /* LayoutKitMargin.swift */; };
+		1259ED955869BEBA7DE4CAE022793DE9 /* LayoutKitAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB477DD2A99F4806E2814EFFFE7D47B8 /* LayoutKitAttribute.swift */; };
+		1803E0C295B8AE7909227E7DF88DF48B /* ServicePaginationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59571462E5E2C1644AFBA7CA916B33AF /* ServicePaginationProtocol.swift */; };
+		31D6FA80BF3B57CAD654A6F9351CA9E4 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93760CD07889FD43D54D708F236EABF /* UIViewExtension.swift */; };
+		3221EB25DA41AC9F94D57D1B63BCDB00 /* UILayoutGuideExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67566D9677D6DA00796E5F9DC51F287B /* UILayoutGuideExtension.swift */; };
+		3F8F888CBC3157C674F100B036E83262 /* Pods-Elo RateTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 579E80236AF197DC28475814948CA968 /* Pods-Elo RateTests-dummy.m */; };
+		5F6DD72EAC65FE410090A88597CABBD5 /* NSLayoutDimensionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55341A2A239A359C3DC088E7DEC5504 /* NSLayoutDimensionExtension.swift */; };
+		726C5C7576385693FAD21E1152547C3E /* LayoutKitProtocol+Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35172F0D60438FACA7F61723F363008 /* LayoutKitProtocol+Extension+UIView.swift */; };
+		74C7CBF58869DBF410788CB43534909D /* ServiceEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F828A541642AE373E21D7875F44462E /* ServiceEndPoint.swift */; };
+		86B05D04F6D4B69855EA3E28D7C67326 /* Pods-Elo Rate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C211BCE5B2D097D2248FDAC14609C16 /* Pods-Elo Rate-dummy.m */; };
+		88C3B07C237C69E895B8AB027C6D247E /* LayoutKitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9712670C4E3CB5C2A77BA06FFCD8F6E6 /* LayoutKitProtocol.swift */; };
+		8AA977E29E2ECC25BFB350FDAAF9B6E8 /* SwiftService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D2BA5C6A6EC2A6760698707DC713B32 /* SwiftService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9713C5D6B60A60F7EEC428676322A3DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
+		9CFA85582BC758376888BC6816ABA3BE /* LayoutKitProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DC2DE378B03C1A200A455639839EE /* LayoutKitProtocol+Extension.swift */; };
 		A6ADDD1B4AD33600222AA2C86FA2875A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
 		A90DF6C41E878BD541F26BCB3B51BB56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		AEFD1D4484C498B78347D6664BFDFB20 /* UILayoutGuideExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304C1C04E87A94A304BA00D6A97A2AF2 /* UILayoutGuideExtension.swift */; };
-		B324F85C7B685579F77D86DAE3E71088 /* LayoutKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93FA3ECC856ED9FE0FAF14B81B86EECE /* LayoutKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEC8874DB7957A7F44A49222CD921E12 /* NSLayoutAnchorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12F145080091C949DEA7519C3E8A3A8 /* NSLayoutAnchorExtension.swift */; };
-		C087EBD565B95461B39611B508FAB087 /* LayoutKitSizeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8983A7B2D824655B6135DDA875E92A4 /* LayoutKitSizeAttribute.swift */; };
-		C3A942943894EF824D2C60AE1EED5DEF /* Pods-Elo Rate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6839DF52A088E2C513DE22E293D64894 /* Pods-Elo Rate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C6829A67982746A80EEC7305FAC62D8E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C5B2F62F6D473E0DBA51895F53657F /* Request.swift */; };
-		CA72ECFA592BE864EC84DD49F5C51B2C /* SwiftService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B00359CB2DCF5A6EC001B3C9B31859 /* SwiftService-dummy.m */; };
-		CD94A82C7299FFB7E0C690BC22D164DC /* ServiceEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08B56C0B202878FF0BBB8588D10A5F7 /* ServiceEndPoint.swift */; };
-		CEE9A8B1298058C9F2BF3CB0F7770A4A /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E68A7A156FEBF1354665C21720BBF /* ServiceProtocol.swift */; };
-		CF5BE796815993199F1178A94C9D303E /* LayoutKitProtocol+Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B24764FABC19B963A50AA8F27817D75 /* LayoutKitProtocol+Extension+UIView.swift */; };
-		DAE5D9B3F45ED2750A7B20D73ED2FF63 /* UIEdgeInsetsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5431D87C07B37FBC7AC831FCCA544345 /* UIEdgeInsetsExtension.swift */; };
-		E0B40F120FD036F1962687EBC444C9A1 /* LayoutKitProtocol+Internal+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CF457912438225AF3FD1998017D438 /* LayoutKitProtocol+Internal+Extension.swift */; };
-		E5436B4AB57E7E8AA3649452C227372F /* Pods-Elo RateTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 947D438F1CE1AE17ACEA1BAEEC3689EC /* Pods-Elo RateTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8B1D648B3B622142402B02111B40E56 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4846370581446A6F9014FA9A4468A9 /* ServiceError.swift */; };
+		B2195A49033484577E2FE748B1F7DBBD /* NSLayoutConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFBBDB74C58A529B44BE5C49138F4C8 /* NSLayoutConstraintExtension.swift */; };
+		B324F85C7B685579F77D86DAE3E71088 /* LayoutKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF6A2CEB3F7F773F92327028A7F1231 /* LayoutKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3A942943894EF824D2C60AE1EED5DEF /* Pods-Elo Rate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F19AF7958F114826CD9DF75AB815367 /* Pods-Elo Rate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C501EA453F47E78DBE83ED72132E90BD /* NSLayoutAnchorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E6F504305A6829D344920A6E1C7DC7 /* NSLayoutAnchorExtension.swift */; };
+		CBC26FD22A71186911A86EF3B878DA99 /* Branding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975329A85171F76C7ADC2A4B78B39EDE /* Branding.swift */; };
+		D20CE8ADD4490630AE15DE50EE16CE73 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1BA00EB7F9041EC8A2F6F1AEF4F689 /* ServiceProtocol.swift */; };
+		D4BB860B61E2FB6CB01C707C87F7B3DC /* LayoutKitProtocol+Internal+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D1F140540DD7E273ED1A8CEF561D4 /* LayoutKitProtocol+Internal+Extension.swift */; };
+		D8A39CAEA1A4E3A3303231AD22E27F7B /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711DAFB34BBB2FDFC6F904427EFE782B /* ServiceManager.swift */; };
+		E2CC44FEB629C427E290DB18AE003337 /* ServicePagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5B6C950711A6C3B28A6054299C6ADB /* ServicePagination.swift */; };
+		E5436B4AB57E7E8AA3649452C227372F /* Pods-Elo RateTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F08C1AC9F0363FC4EFDE979DE9978275 /* Pods-Elo RateTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECD30928C60C29A7A72C828288BF0A7D /* UIEdgeInsetsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B48355146510287A60559F50F571D58 /* UIEdgeInsetsExtension.swift */; };
+		EE17508A8859637CD4245F0E59991398 /* LayoutKitSizeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1555FB2F14B0D6DC1AAA518FB1A6F30D /* LayoutKitSizeAttribute.swift */; };
+		F0BBB8906456232C2421B611CE8AA79A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		F65E452816122CF9AD06CF98ACBDD971 /* SwiftService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BBF2177A0FF3BA273C30C8B271F7282 /* SwiftService-dummy.m */; };
 		F8BE663DF65E1C02462BF0C60D59F39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		FC6B75632939CB17E923192F0AE55BD7 /* LayoutKitAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B232012E0510B6486DD571C4718F50 /* LayoutKitAttribute.swift */; };
+		FACBF240528B02851F92475E944E737B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174032E727797E1265358A71AF987F52 /* Request.swift */; };
+		FC3C664CEF35C03AFBA3128E988B7E90 /* LayoutKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A52AEDE73FA419E52236330F2B7098 /* LayoutKit-dummy.m */; };
+		FFAA0B065DD86907030BF96C824AAF60 /* LayoutKitMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6DDDB1EBB15F449492649184650062 /* LayoutKitMargin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,95 +49,92 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6A50D495C0F9C04DEA2743E06B1BF26C;
+			remoteGlobalIDString = 8E60382F5F645C531DA24A1E85350F74;
 			remoteInfo = LayoutKit;
 		};
 		7441772D95ACA870829A1E61DA038AB5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DDE5488E624ECF57BB7A8C2DE0E622ED;
+			remoteGlobalIDString = B205713046EBE06B42884F0078F45952;
 			remoteInfo = SwiftService;
 		};
 		C8D49038AC139763D170656EB3760CD8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E8499FE385D80A7C1726FA583CE407B0;
+			remoteGlobalIDString = 14A2A1F7493B67EEA8DCDAD381FB263F;
 			remoteInfo = "Pods-Elo Rate";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02064141567B148A047CB77A2FABFCDE /* LayoutKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LayoutKit-prefix.pch"; sourceTree = "<group>"; };
-		06984909B5D520E64EFA7EF77C0B0740 /* Pods-Elo Rate-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Elo Rate-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0B24764FABC19B963A50AA8F27817D75 /* LayoutKitProtocol+Extension+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "LayoutKitProtocol+Extension+UIView.swift"; sourceTree = "<group>"; };
-		0C555C835885AF8630E5327B4A2749C6 /* Pods-Elo RateTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Elo RateTests-dummy.m"; sourceTree = "<group>"; };
-		16FB3CB59A778EDA87D895B633BEDAC5 /* Pods-Elo Rate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Elo Rate.modulemap"; sourceTree = "<group>"; };
-		18D1CD171D62A478DD4CEE2D7F07A5EB /* ServicePagination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServicePagination.swift; path = SwiftService/Source/Models/ServicePagination.swift; sourceTree = "<group>"; };
-		1BD1003976EC9E27E3714D711E161436 /* SwiftService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftService.xcconfig; sourceTree = "<group>"; };
-		2275B6D2D8A95CFC83F1337179A2F4B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		24A005235C4A3CC8ECD8981228B4D840 /* SwiftService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftService.modulemap; sourceTree = "<group>"; };
-		2C8CC2314F760AC3660515446B6F50CC /* Pods-Elo RateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Elo RateTests.release.xcconfig"; sourceTree = "<group>"; };
-		2D5C63C77456E0142610F208903D4A23 /* Pods-Elo Rate-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Elo Rate-Info.plist"; sourceTree = "<group>"; };
-		300634DBB4F44460C76D2096624076FA /* SwiftService-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftService-Info.plist"; sourceTree = "<group>"; };
-		304C1C04E87A94A304BA00D6A97A2AF2 /* UILayoutGuideExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UILayoutGuideExtension.swift; sourceTree = "<group>"; };
-		327403C1A85D84313E7F62FFE9D2A6CC /* Pods-Elo RateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Elo RateTests.debug.xcconfig"; sourceTree = "<group>"; };
-		334CE23B1196A454896F04C6B4A62065 /* LayoutKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LayoutKit.modulemap; sourceTree = "<group>"; };
-		34DE8DE671A8A24DDA85905836B59B11 /* Pods-Elo RateTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Elo RateTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		39C41A6C13B5C9BE53273D24999FA887 /* LayoutKitProtocol+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "LayoutKitProtocol+Extension.swift"; sourceTree = "<group>"; };
-		3E0ABF2CF9A12A5C2A750985382D1927 /* ServicePaginationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServicePaginationProtocol.swift; path = SwiftService/Source/Protocols/ServicePaginationProtocol.swift; sourceTree = "<group>"; };
-		3F6D0B70216C08E3373EC7AC1BD9487D /* LayoutKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LayoutKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		404946B97240D6ED8F6112A774505041 /* Pods_Elo_Rate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Elo_Rate.framework; path = "Pods-Elo Rate.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D46B24C46E7EE425295F32407FA61E4 /* SwiftService-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftService-Info.plist"; sourceTree = "<group>"; };
+		101E56DB4445C47A3B85240E8B7CCF5B /* Pods-Elo RateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Elo RateTests.release.xcconfig"; sourceTree = "<group>"; };
+		1555FB2F14B0D6DC1AAA518FB1A6F30D /* LayoutKitSizeAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutKitSizeAttribute.swift; path = LayoutKit/Source/Enums/LayoutKitSizeAttribute.swift; sourceTree = "<group>"; };
+		174032E727797E1265358A71AF987F52 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = SwiftService/Source/Enums/Request.swift; sourceTree = "<group>"; };
+		1872741006B9B84316665BB5C3AB1E8F /* Pods-Elo Rate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Elo Rate.debug.xcconfig"; sourceTree = "<group>"; };
+		1958B2AEBEFE7B7DBAFCDB7C7EDBCD00 /* Pods-Elo RateTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Elo RateTests.modulemap"; sourceTree = "<group>"; };
+		1BBF2177A0FF3BA273C30C8B271F7282 /* SwiftService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftService-dummy.m"; sourceTree = "<group>"; };
+		1C69662C4FE63DD4997E48BDF2F9C464 /* Pods-Elo Rate-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Elo Rate-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2909ACAA6C320A20B2F51CA5D734A6A8 /* LayoutKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LayoutKit-prefix.pch"; sourceTree = "<group>"; };
+		2915BB0ABAEFBEA3F9E6FABE1E39FEAF /* LayoutKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LayoutKit.framework; path = LayoutKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B5BF5DCE5D2719696211299FE322764 /* Pods-Elo RateTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Elo RateTests-Info.plist"; sourceTree = "<group>"; };
+		2C52441F4F06AA06CCB63D84708EE751 /* Pods-Elo Rate-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Elo Rate-acknowledgements.plist"; sourceTree = "<group>"; };
+		32D5A59EE9666224F03CF3C733CAC42C /* ServiceError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceError.swift; path = SwiftService/Source/Classes/ServiceError.swift; sourceTree = "<group>"; };
+		34E6F504305A6829D344920A6E1C7DC7 /* NSLayoutAnchorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSLayoutAnchorExtension.swift; path = LayoutKit/Source/Extensions/NSLayoutAnchorExtension.swift; sourceTree = "<group>"; };
+		39BE08254FB97FA69B13E1BFF6633503 /* Pods-Elo RateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Elo RateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A7FCF3CE0CC595C2CF9A06484E49204 /* Pods_Elo_Rate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Elo_Rate.framework; path = "Pods-Elo Rate.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B48355146510287A60559F50F571D58 /* UIEdgeInsetsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIEdgeInsetsExtension.swift; path = LayoutKit/Source/Extensions/UIEdgeInsetsExtension.swift; sourceTree = "<group>"; };
+		3F828A541642AE373E21D7875F44462E /* ServiceEndPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceEndPoint.swift; path = SwiftService/Source/Classes/ServiceEndPoint.swift; sourceTree = "<group>"; };
 		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		41B232012E0510B6486DD571C4718F50 /* LayoutKitAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayoutKitAttribute.swift; sourceTree = "<group>"; };
-		43F0C696C57584F1EBB7B40C62F5F101 /* Pods-Elo Rate-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Elo Rate-frameworks.sh"; sourceTree = "<group>"; };
-		46186111C44D545A8BA3ACD683406E51 /* LayoutKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LayoutKit.xcconfig; sourceTree = "<group>"; };
-		4C565306B300190AA9E4769EBFAA03A5 /* LayoutKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LayoutKit-dummy.m"; sourceTree = "<group>"; };
-		5431D87C07B37FBC7AC831FCCA544345 /* UIEdgeInsetsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsExtension.swift; sourceTree = "<group>"; };
-		5ED63B2EE78D3EC70183FACF0459F04C /* LayoutKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LayoutKit.framework; path = LayoutKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		61AEAFF6A415CC02429FD911D6C13199 /* Pods-Elo Rate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Elo Rate.release.xcconfig"; sourceTree = "<group>"; };
-		6837C3E5C93E4D5A42306C113E86191B /* LayoutKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LayoutKit-Info.plist"; sourceTree = "<group>"; };
-		6839DF52A088E2C513DE22E293D64894 /* Pods-Elo Rate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Elo Rate-umbrella.h"; sourceTree = "<group>"; };
-		6B4846370581446A6F9014FA9A4468A9 /* ServiceError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceError.swift; path = SwiftService/Source/Classes/ServiceError.swift; sourceTree = "<group>"; };
-		6C2AD3F1940068041C9BB9694B448F07 /* LayoutKitProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayoutKitProtocol.swift; sourceTree = "<group>"; };
-		74CF457912438225AF3FD1998017D438 /* LayoutKitProtocol+Internal+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "LayoutKitProtocol+Internal+Extension.swift"; sourceTree = "<group>"; };
-		7E35C0192C567DD95D437C692823AC24 /* ServiceManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceManager.swift; path = SwiftService/Source/ServiceManager.swift; sourceTree = "<group>"; };
-		7E64D818F521990F002A0B529B8B3455 /* SwiftService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftService.framework; path = SwiftService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		82E782FB54ED1EAB2111A6C0DA61ED59 /* Branding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Branding.swift; sourceTree = "<group>"; };
-		8517724CE16CED5F17B2093DDCD8FAC6 /* Pods-Elo Rate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Elo Rate.debug.xcconfig"; sourceTree = "<group>"; };
-		89908534823221498A05D12E4F445254 /* Pods_Elo_RateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Elo_RateTests.framework; path = "Pods-Elo RateTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93FA3ECC856ED9FE0FAF14B81B86EECE /* LayoutKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LayoutKit-umbrella.h"; sourceTree = "<group>"; };
-		947D438F1CE1AE17ACEA1BAEEC3689EC /* Pods-Elo RateTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Elo RateTests-umbrella.h"; sourceTree = "<group>"; };
-		98712277989081A77AC28C417B02B799 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		417778FE33A304AA920465DBF6929BA2 /* LayoutKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LayoutKit-Info.plist"; sourceTree = "<group>"; };
+		4AC53FA225F2019F1D702CD2D09D5F77 /* SwiftService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftService.xcconfig; sourceTree = "<group>"; };
+		4C211BCE5B2D097D2248FDAC14609C16 /* Pods-Elo Rate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Elo Rate-dummy.m"; sourceTree = "<group>"; };
+		4F19AF7958F114826CD9DF75AB815367 /* Pods-Elo Rate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Elo Rate-umbrella.h"; sourceTree = "<group>"; };
+		4F6DDDB1EBB15F449492649184650062 /* LayoutKitMargin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutKitMargin.swift; path = LayoutKit/Source/Enums/LayoutKitMargin.swift; sourceTree = "<group>"; };
+		579E80236AF197DC28475814948CA968 /* Pods-Elo RateTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Elo RateTests-dummy.m"; sourceTree = "<group>"; };
+		59571462E5E2C1644AFBA7CA916B33AF /* ServicePaginationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServicePaginationProtocol.swift; path = SwiftService/Source/Protocols/ServicePaginationProtocol.swift; sourceTree = "<group>"; };
+		5B5D1F140540DD7E273ED1A8CEF561D4 /* LayoutKitProtocol+Internal+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LayoutKitProtocol+Internal+Extension.swift"; path = "LayoutKit/Source/LayoutKitProtocol+Extensions/LayoutKitProtocol+Internal+Extension.swift"; sourceTree = "<group>"; };
+		6015C30FE13BF4B803AB9CD5A28F2C0F /* Pods-Elo RateTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Elo RateTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		67566D9677D6DA00796E5F9DC51F287B /* UILayoutGuideExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UILayoutGuideExtension.swift; path = LayoutKit/Source/Extensions/UILayoutGuideExtension.swift; sourceTree = "<group>"; };
+		6E1BA00EB7F9041EC8A2F6F1AEF4F689 /* ServiceProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceProtocol.swift; path = SwiftService/Source/Protocols/ServiceProtocol.swift; sourceTree = "<group>"; };
+		711DAFB34BBB2FDFC6F904427EFE782B /* ServiceManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceManager.swift; path = SwiftService/Source/ServiceManager.swift; sourceTree = "<group>"; };
+		74FA8A22A8BE6683431B8D7C1CE4E8E1 /* SwiftService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftService-prefix.pch"; sourceTree = "<group>"; };
+		867DC2DE378B03C1A200A455639839EE /* LayoutKitProtocol+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LayoutKitProtocol+Extension.swift"; path = "LayoutKit/Source/LayoutKitProtocol+Extensions/LayoutKitProtocol+Extension.swift"; sourceTree = "<group>"; };
+		8D2BA5C6A6EC2A6760698707DC713B32 /* SwiftService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftService-umbrella.h"; sourceTree = "<group>"; };
+		91539CA5A62BD4676224021C366532BF /* Pods_Elo_RateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Elo_RateTests.framework; path = "Pods-Elo RateTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94CC439A9FE59BC4FE49F6B01B2C9391 /* Pods-Elo Rate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Elo Rate.modulemap"; sourceTree = "<group>"; };
+		9507BF5C9EB123BA68F9EF97EC92D8E6 /* Pods-Elo Rate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Elo Rate.release.xcconfig"; sourceTree = "<group>"; };
+		9712670C4E3CB5C2A77BA06FFCD8F6E6 /* LayoutKitProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutKitProtocol.swift; path = LayoutKit/Source/Protocols/LayoutKitProtocol.swift; sourceTree = "<group>"; };
+		975329A85171F76C7ADC2A4B78B39EDE /* Branding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Branding.swift; path = LayoutKit/Source/Branding/Branding.swift; sourceTree = "<group>"; };
+		9BF6A2CEB3F7F773F92327028A7F1231 /* LayoutKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LayoutKit-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0615F10740373B567E9CC1FB404594D /* NSLayoutDimensionExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSLayoutDimensionExtension.swift; sourceTree = "<group>"; };
-		A8D19FCABEFC5B68FE7C463D6224BA07 /* Pods-Elo RateTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Elo RateTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B12F145080091C949DEA7519C3E8A3A8 /* NSLayoutAnchorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSLayoutAnchorExtension.swift; sourceTree = "<group>"; };
-		B9C5B2F62F6D473E0DBA51895F53657F /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = SwiftService/Source/Enums/Request.swift; sourceTree = "<group>"; };
-		BEAE944FFCE7C79AB2E714BDD6EAD2A8 /* SwiftService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftService-umbrella.h"; sourceTree = "<group>"; };
-		CB3EBAC1C36EC74FE43E059387378993 /* LayoutKitMargin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayoutKitMargin.swift; sourceTree = "<group>"; };
-		D06E68A7A156FEBF1354665C21720BBF /* ServiceProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceProtocol.swift; path = SwiftService/Source/Protocols/ServiceProtocol.swift; sourceTree = "<group>"; };
-		D0DDDCDE97E4A17157C8D90AB9F527EF /* Pods-Elo RateTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Elo RateTests.modulemap"; sourceTree = "<group>"; };
-		DDB2510CC9EDD6E51E885758EC6E4E6F /* Pods-Elo Rate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Elo Rate-dummy.m"; sourceTree = "<group>"; };
-		E08B56C0B202878FF0BBB8588D10A5F7 /* ServiceEndPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceEndPoint.swift; path = SwiftService/Source/Classes/ServiceEndPoint.swift; sourceTree = "<group>"; };
-		E108B7444766E0AC6C5C2D18B9EE14AB /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
-		EA1EA34A5A719E706E728A8B2A99725F /* Pods-Elo RateTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Elo RateTests-Info.plist"; sourceTree = "<group>"; };
+		9F5B6C950711A6C3B28A6054299C6ADB /* ServicePagination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServicePagination.swift; path = SwiftService/Source/Models/ServicePagination.swift; sourceTree = "<group>"; };
+		A69F44CF27BF8885B0FD0741F3C7A2EC /* SwiftService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftService.framework; path = SwiftService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F26D18F51DD7A490C66A212EBDF633 /* LayoutKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LayoutKit.xcconfig; sourceTree = "<group>"; };
+		CB3F84945053C8E5FD68FB1BC3205AB0 /* Pods-Elo Rate-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Elo Rate-Info.plist"; sourceTree = "<group>"; };
+		CCDD90C3B73539E83196C9F52A18E5D5 /* LayoutKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LayoutKit.modulemap; sourceTree = "<group>"; };
+		D3A52AEDE73FA419E52236330F2B7098 /* LayoutKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LayoutKit-dummy.m"; sourceTree = "<group>"; };
+		D59F9A7367EE5148D09A15B3235EBCF7 /* Pods-Elo Rate-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Elo Rate-frameworks.sh"; sourceTree = "<group>"; };
+		D7F0FEFAFDDFCE743B505934ECC7B1F1 /* Pods-Elo RateTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Elo RateTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D93760CD07889FD43D54D708F236EABF /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = LayoutKit/Source/Extensions/UIViewExtension.swift; sourceTree = "<group>"; };
+		DBFBBDB74C58A529B44BE5C49138F4C8 /* NSLayoutConstraintExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSLayoutConstraintExtension.swift; path = LayoutKit/Source/Extensions/NSLayoutConstraintExtension.swift; sourceTree = "<group>"; };
+		E35172F0D60438FACA7F61723F363008 /* LayoutKitProtocol+Extension+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LayoutKitProtocol+Extension+UIView.swift"; path = "LayoutKit/Source/LayoutKitProtocol+Extensions/LayoutKitProtocol+Extension+UIView.swift"; sourceTree = "<group>"; };
+		E55341A2A239A359C3DC088E7DEC5504 /* NSLayoutDimensionExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSLayoutDimensionExtension.swift; path = LayoutKit/Source/Extensions/NSLayoutDimensionExtension.swift; sourceTree = "<group>"; };
+		EB477DD2A99F4806E2814EFFFE7D47B8 /* LayoutKitAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutKitAttribute.swift; path = LayoutKit/Source/Enums/LayoutKitAttribute.swift; sourceTree = "<group>"; };
 		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		EEFF9C508C22D610D803E6271E8E34C1 /* NSLayoutConstraintExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintExtension.swift; sourceTree = "<group>"; };
-		F28949264D8AF0738A9D879E81AA052B /* SwiftService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftService-prefix.pch"; sourceTree = "<group>"; };
-		F6B148ACFD9A193F362F4FD941E45A76 /* Pods-Elo Rate-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Elo Rate-acknowledgements.plist"; sourceTree = "<group>"; };
-		F7B00359CB2DCF5A6EC001B3C9B31859 /* SwiftService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftService-dummy.m"; sourceTree = "<group>"; };
-		F8983A7B2D824655B6135DDA875E92A4 /* LayoutKitSizeAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayoutKitSizeAttribute.swift; sourceTree = "<group>"; };
+		F08C1AC9F0363FC4EFDE979DE9978275 /* Pods-Elo RateTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Elo RateTests-umbrella.h"; sourceTree = "<group>"; };
+		F3D373E12A4A001DFE955587D4FCEB31 /* SwiftService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftService.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		36C77FA65A0FB89FB5BCA1AEF59BB7B4 /* Frameworks */ = {
+		3BA00397243EF6748E7A4CF1007456E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3941C5A4BAC5EA4EDA9D69C51BF90BFA /* Foundation.framework in Frameworks */,
-				6E266BD8A32B6C561A025273A4A80EE4 /* UIKit.framework in Frameworks */,
+				F0BBB8906456232C2421B611CE8AA79A /* Foundation.framework in Frameworks */,
+				9713C5D6B60A60F7EEC428676322A3DC /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,51 +166,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AD30CD1F9C8DA14ADF1A830D40C481C /* LayoutKitProtocol+Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				39C41A6C13B5C9BE53273D24999FA887 /* LayoutKitProtocol+Extension.swift */,
-				0B24764FABC19B963A50AA8F27817D75 /* LayoutKitProtocol+Extension+UIView.swift */,
-				74CF457912438225AF3FD1998017D438 /* LayoutKitProtocol+Internal+Extension.swift */,
-			);
-			name = "LayoutKitProtocol+Extensions";
-			path = "LayoutKit/Source/LayoutKitProtocol+Extensions";
-			sourceTree = "<group>";
-		};
-		0C55B1080DC7D03F61338A6A0569C5D0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5ED63B2EE78D3EC70183FACF0459F04C /* LayoutKit.framework */,
-				404946B97240D6ED8F6112A774505041 /* Pods_Elo_Rate.framework */,
-				89908534823221498A05D12E4F445254 /* Pods_Elo_RateTests.framework */,
-				7E64D818F521990F002A0B529B8B3455 /* SwiftService.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		0F2B7EB945AFD2A9789CA16137EFF022 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				334CE23B1196A454896F04C6B4A62065 /* LayoutKit.modulemap */,
-				46186111C44D545A8BA3ACD683406E51 /* LayoutKit.xcconfig */,
-				4C565306B300190AA9E4769EBFAA03A5 /* LayoutKit-dummy.m */,
-				6837C3E5C93E4D5A42306C113E86191B /* LayoutKit-Info.plist */,
-				02064141567B148A047CB77A2FABFCDE /* LayoutKit-prefix.pch */,
-				93FA3ECC856ED9FE0FAF14B81B86EECE /* LayoutKit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../elo-rate-ios/Elo Rate/Pods/Target Support Files/LayoutKit";
-			sourceTree = "<group>";
-		};
-		1498255682FD2FCF2233AFE42501FBC3 /* Branding */ = {
-			isa = PBXGroup;
-			children = (
-				82E782FB54ED1EAB2111A6C0DA61ED59 /* Branding.swift */,
-			);
-			name = Branding;
-			path = LayoutKit/Source/Branding;
-			sourceTree = "<group>";
-		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,161 +174,125 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1E077EA551044ED09060795A2FDB8449 /* Protocols */ = {
+		2C73392084CCAB1498B6554BC760A317 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6C2AD3F1940068041C9BB9694B448F07 /* LayoutKitProtocol.swift */,
+				2915BB0ABAEFBEA3F9E6FABE1E39FEAF /* LayoutKit.framework */,
+				3A7FCF3CE0CC595C2CF9A06484E49204 /* Pods_Elo_Rate.framework */,
+				91539CA5A62BD4676224021C366532BF /* Pods_Elo_RateTests.framework */,
+				A69F44CF27BF8885B0FD0741F3C7A2EC /* SwiftService.framework */,
 			);
-			name = Protocols;
-			path = LayoutKit/Source/Protocols;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		384B626A6F285B5A0D5DBCC063748745 /* Development Pods */ = {
+		2EFC26EDA506EDAA05DC92E02DA68999 /* Pods-Elo RateTests */ = {
 			isa = PBXGroup;
 			children = (
-				AB3CDD1EB14C3FA168EB8708192C3CE1 /* LayoutKit */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		466DCB36B5658009A1D7C01E2C39BF59 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				41B232012E0510B6486DD571C4718F50 /* LayoutKitAttribute.swift */,
-				CB3EBAC1C36EC74FE43E059387378993 /* LayoutKitMargin.swift */,
-				F8983A7B2D824655B6135DDA875E92A4 /* LayoutKitSizeAttribute.swift */,
-			);
-			name = Enums;
-			path = LayoutKit/Source/Enums;
-			sourceTree = "<group>";
-		};
-		6577D85EF9B583B910A911D5CE612903 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A5ECA3C2B8D787D929CEB855F3C8C439 /* SwiftService */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		6C4846384E1CD45AB1C3B5258D13446D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				24A005235C4A3CC8ECD8981228B4D840 /* SwiftService.modulemap */,
-				1BD1003976EC9E27E3714D711E161436 /* SwiftService.xcconfig */,
-				F7B00359CB2DCF5A6EC001B3C9B31859 /* SwiftService-dummy.m */,
-				300634DBB4F44460C76D2096624076FA /* SwiftService-Info.plist */,
-				F28949264D8AF0738A9D879E81AA052B /* SwiftService-prefix.pch */,
-				BEAE944FFCE7C79AB2E714BDD6EAD2A8 /* SwiftService-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftService";
-			sourceTree = "<group>";
-		};
-		71C86C6F82FE7819FB85C8DFE29BE077 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				942555D1357287D79B4BAC6F58ED74F9 /* Pods-Elo Rate */,
-				9FA565CE0FC919C43428373A3373382B /* Pods-Elo RateTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		82B4BADE6AA20A909D288C767DB41CDC /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				B12F145080091C949DEA7519C3E8A3A8 /* NSLayoutAnchorExtension.swift */,
-				EEFF9C508C22D610D803E6271E8E34C1 /* NSLayoutConstraintExtension.swift */,
-				A0615F10740373B567E9CC1FB404594D /* NSLayoutDimensionExtension.swift */,
-				5431D87C07B37FBC7AC831FCCA544345 /* UIEdgeInsetsExtension.swift */,
-				304C1C04E87A94A304BA00D6A97A2AF2 /* UILayoutGuideExtension.swift */,
-				E108B7444766E0AC6C5C2D18B9EE14AB /* UIViewExtension.swift */,
-			);
-			name = Extensions;
-			path = LayoutKit/Source/Extensions;
-			sourceTree = "<group>";
-		};
-		942555D1357287D79B4BAC6F58ED74F9 /* Pods-Elo Rate */ = {
-			isa = PBXGroup;
-			children = (
-				16FB3CB59A778EDA87D895B633BEDAC5 /* Pods-Elo Rate.modulemap */,
-				06984909B5D520E64EFA7EF77C0B0740 /* Pods-Elo Rate-acknowledgements.markdown */,
-				F6B148ACFD9A193F362F4FD941E45A76 /* Pods-Elo Rate-acknowledgements.plist */,
-				DDB2510CC9EDD6E51E885758EC6E4E6F /* Pods-Elo Rate-dummy.m */,
-				43F0C696C57584F1EBB7B40C62F5F101 /* Pods-Elo Rate-frameworks.sh */,
-				2D5C63C77456E0142610F208903D4A23 /* Pods-Elo Rate-Info.plist */,
-				6839DF52A088E2C513DE22E293D64894 /* Pods-Elo Rate-umbrella.h */,
-				8517724CE16CED5F17B2093DDCD8FAC6 /* Pods-Elo Rate.debug.xcconfig */,
-				61AEAFF6A415CC02429FD911D6C13199 /* Pods-Elo Rate.release.xcconfig */,
-			);
-			name = "Pods-Elo Rate";
-			path = "Target Support Files/Pods-Elo Rate";
-			sourceTree = "<group>";
-		};
-		9FA565CE0FC919C43428373A3373382B /* Pods-Elo RateTests */ = {
-			isa = PBXGroup;
-			children = (
-				D0DDDCDE97E4A17157C8D90AB9F527EF /* Pods-Elo RateTests.modulemap */,
-				34DE8DE671A8A24DDA85905836B59B11 /* Pods-Elo RateTests-acknowledgements.markdown */,
-				A8D19FCABEFC5B68FE7C463D6224BA07 /* Pods-Elo RateTests-acknowledgements.plist */,
-				0C555C835885AF8630E5327B4A2749C6 /* Pods-Elo RateTests-dummy.m */,
-				EA1EA34A5A719E706E728A8B2A99725F /* Pods-Elo RateTests-Info.plist */,
-				947D438F1CE1AE17ACEA1BAEEC3689EC /* Pods-Elo RateTests-umbrella.h */,
-				327403C1A85D84313E7F62FFE9D2A6CC /* Pods-Elo RateTests.debug.xcconfig */,
-				2C8CC2314F760AC3660515446B6F50CC /* Pods-Elo RateTests.release.xcconfig */,
+				1958B2AEBEFE7B7DBAFCDB7C7EDBCD00 /* Pods-Elo RateTests.modulemap */,
+				6015C30FE13BF4B803AB9CD5A28F2C0F /* Pods-Elo RateTests-acknowledgements.markdown */,
+				D7F0FEFAFDDFCE743B505934ECC7B1F1 /* Pods-Elo RateTests-acknowledgements.plist */,
+				579E80236AF197DC28475814948CA968 /* Pods-Elo RateTests-dummy.m */,
+				2B5BF5DCE5D2719696211299FE322764 /* Pods-Elo RateTests-Info.plist */,
+				F08C1AC9F0363FC4EFDE979DE9978275 /* Pods-Elo RateTests-umbrella.h */,
+				39BE08254FB97FA69B13E1BFF6633503 /* Pods-Elo RateTests.debug.xcconfig */,
+				101E56DB4445C47A3B85240E8B7CCF5B /* Pods-Elo RateTests.release.xcconfig */,
 			);
 			name = "Pods-Elo RateTests";
 			path = "Target Support Files/Pods-Elo RateTests";
 			sourceTree = "<group>";
 		};
-		A24602CA87B77493DC89AC53FBCA1246 /* Pod */ = {
+		333FFA4377775E34C1C664090304FE03 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3F6D0B70216C08E3373EC7AC1BD9487D /* LayoutKit.podspec */,
-				2275B6D2D8A95CFC83F1337179A2F4B4 /* LICENSE */,
-				98712277989081A77AC28C417B02B799 /* README.md */,
+				3BD88F964BCA802047EF686741368C51 /* LayoutKit */,
+				65749247D17BCC5579F4ADFAAE9C7BEE /* SwiftService */,
 			);
-			name = Pod;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		A5ECA3C2B8D787D929CEB855F3C8C439 /* SwiftService */ = {
+		3BD88F964BCA802047EF686741368C51 /* LayoutKit */ = {
 			isa = PBXGroup;
 			children = (
-				B9C5B2F62F6D473E0DBA51895F53657F /* Request.swift */,
-				E08B56C0B202878FF0BBB8588D10A5F7 /* ServiceEndPoint.swift */,
-				6B4846370581446A6F9014FA9A4468A9 /* ServiceError.swift */,
-				7E35C0192C567DD95D437C692823AC24 /* ServiceManager.swift */,
-				18D1CD171D62A478DD4CEE2D7F07A5EB /* ServicePagination.swift */,
-				3E0ABF2CF9A12A5C2A750985382D1927 /* ServicePaginationProtocol.swift */,
-				D06E68A7A156FEBF1354665C21720BBF /* ServiceProtocol.swift */,
-				6C4846384E1CD45AB1C3B5258D13446D /* Support Files */,
+				975329A85171F76C7ADC2A4B78B39EDE /* Branding.swift */,
+				EB477DD2A99F4806E2814EFFFE7D47B8 /* LayoutKitAttribute.swift */,
+				4F6DDDB1EBB15F449492649184650062 /* LayoutKitMargin.swift */,
+				9712670C4E3CB5C2A77BA06FFCD8F6E6 /* LayoutKitProtocol.swift */,
+				867DC2DE378B03C1A200A455639839EE /* LayoutKitProtocol+Extension.swift */,
+				E35172F0D60438FACA7F61723F363008 /* LayoutKitProtocol+Extension+UIView.swift */,
+				5B5D1F140540DD7E273ED1A8CEF561D4 /* LayoutKitProtocol+Internal+Extension.swift */,
+				1555FB2F14B0D6DC1AAA518FB1A6F30D /* LayoutKitSizeAttribute.swift */,
+				34E6F504305A6829D344920A6E1C7DC7 /* NSLayoutAnchorExtension.swift */,
+				DBFBBDB74C58A529B44BE5C49138F4C8 /* NSLayoutConstraintExtension.swift */,
+				E55341A2A239A359C3DC088E7DEC5504 /* NSLayoutDimensionExtension.swift */,
+				3B48355146510287A60559F50F571D58 /* UIEdgeInsetsExtension.swift */,
+				67566D9677D6DA00796E5F9DC51F287B /* UILayoutGuideExtension.swift */,
+				D93760CD07889FD43D54D708F236EABF /* UIViewExtension.swift */,
+				842134EE4BD6717243661967F805E676 /* Support Files */,
+			);
+			name = LayoutKit;
+			path = LayoutKit;
+			sourceTree = "<group>";
+		};
+		492EFBC550CA72F14635C5128DD5D89F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3D373E12A4A001DFE955587D4FCEB31 /* SwiftService.modulemap */,
+				4AC53FA225F2019F1D702CD2D09D5F77 /* SwiftService.xcconfig */,
+				1BBF2177A0FF3BA273C30C8B271F7282 /* SwiftService-dummy.m */,
+				0D46B24C46E7EE425295F32407FA61E4 /* SwiftService-Info.plist */,
+				74FA8A22A8BE6683431B8D7C1CE4E8E1 /* SwiftService-prefix.pch */,
+				8D2BA5C6A6EC2A6760698707DC713B32 /* SwiftService-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftService";
+			sourceTree = "<group>";
+		};
+		65749247D17BCC5579F4ADFAAE9C7BEE /* SwiftService */ = {
+			isa = PBXGroup;
+			children = (
+				174032E727797E1265358A71AF987F52 /* Request.swift */,
+				3F828A541642AE373E21D7875F44462E /* ServiceEndPoint.swift */,
+				32D5A59EE9666224F03CF3C733CAC42C /* ServiceError.swift */,
+				711DAFB34BBB2FDFC6F904427EFE782B /* ServiceManager.swift */,
+				9F5B6C950711A6C3B28A6054299C6ADB /* ServicePagination.swift */,
+				59571462E5E2C1644AFBA7CA916B33AF /* ServicePaginationProtocol.swift */,
+				6E1BA00EB7F9041EC8A2F6F1AEF4F689 /* ServiceProtocol.swift */,
+				492EFBC550CA72F14635C5128DD5D89F /* Support Files */,
 			);
 			name = SwiftService;
 			path = SwiftService;
 			sourceTree = "<group>";
 		};
-		AB3CDD1EB14C3FA168EB8708192C3CE1 /* LayoutKit */ = {
+		71C86C6F82FE7819FB85C8DFE29BE077 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1498255682FD2FCF2233AFE42501FBC3 /* Branding */,
-				466DCB36B5658009A1D7C01E2C39BF59 /* Enums */,
-				82B4BADE6AA20A909D288C767DB41CDC /* Extensions */,
-				0AD30CD1F9C8DA14ADF1A830D40C481C /* LayoutKitProtocol+Extensions */,
-				A24602CA87B77493DC89AC53FBCA1246 /* Pod */,
-				1E077EA551044ED09060795A2FDB8449 /* Protocols */,
-				0F2B7EB945AFD2A9789CA16137EFF022 /* Support Files */,
+				EE4344FA0AFBEC1A0BEC4ECD49020221 /* Pods-Elo Rate */,
+				2EFC26EDA506EDAA05DC92E02DA68999 /* Pods-Elo RateTests */,
 			);
-			name = LayoutKit;
-			path = "../../../layoutkit-ios";
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		842134EE4BD6717243661967F805E676 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCDD90C3B73539E83196C9F52A18E5D5 /* LayoutKit.modulemap */,
+				C7F26D18F51DD7A490C66A212EBDF633 /* LayoutKit.xcconfig */,
+				D3A52AEDE73FA419E52236330F2B7098 /* LayoutKit-dummy.m */,
+				417778FE33A304AA920465DBF6929BA2 /* LayoutKit-Info.plist */,
+				2909ACAA6C320A20B2F51CA5D734A6A8 /* LayoutKit-prefix.pch */,
+				9BF6A2CEB3F7F773F92327028A7F1231 /* LayoutKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LayoutKit";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				384B626A6F285B5A0D5DBCC063748745 /* Development Pods */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				6577D85EF9B583B910A911D5CE612903 /* Pods */,
-				0C55B1080DC7D03F61338A6A0569C5D0 /* Products */,
+				333FFA4377775E34C1C664090304FE03 /* Pods */,
+				2C73392084CCAB1498B6554BC760A317 /* Products */,
 				71C86C6F82FE7819FB85C8DFE29BE077 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -388,6 +304,23 @@
 				ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		EE4344FA0AFBEC1A0BEC4ECD49020221 /* Pods-Elo Rate */ = {
+			isa = PBXGroup;
+			children = (
+				94CC439A9FE59BC4FE49F6B01B2C9391 /* Pods-Elo Rate.modulemap */,
+				1C69662C4FE63DD4997E48BDF2F9C464 /* Pods-Elo Rate-acknowledgements.markdown */,
+				2C52441F4F06AA06CCB63D84708EE751 /* Pods-Elo Rate-acknowledgements.plist */,
+				4C211BCE5B2D097D2248FDAC14609C16 /* Pods-Elo Rate-dummy.m */,
+				D59F9A7367EE5148D09A15B3235EBCF7 /* Pods-Elo Rate-frameworks.sh */,
+				CB3F84945053C8E5FD68FB1BC3205AB0 /* Pods-Elo Rate-Info.plist */,
+				4F19AF7958F114826CD9DF75AB815367 /* Pods-Elo Rate-umbrella.h */,
+				1872741006B9B84316665BB5C3AB1E8F /* Pods-Elo Rate.debug.xcconfig */,
+				9507BF5C9EB123BA68F9EF97EC92D8E6 /* Pods-Elo Rate.release.xcconfig */,
+			);
+			name = "Pods-Elo Rate";
+			path = "Target Support Files/Pods-Elo Rate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,11 +342,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B77E9B3665CA6AE413EF7DED7CD91EA0 /* Headers */ = {
+		7E24A97F3AB6033027148F6DE867D9EB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F8D2E70E4C2F457967F65FAF3BEA1A8 /* SwiftService-umbrella.h in Headers */,
+				8AA977E29E2ECC25BFB350FDAAF9B6E8 /* SwiftService-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,62 +361,7 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		55401A266C449E17D2CCEC2286AB1670 /* Pods-Elo RateTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 73A9CE125FAEEE9CA65E61C4F6E119F9 /* Build configuration list for PBXNativeTarget "Pods-Elo RateTests" */;
-			buildPhases = (
-				D698F61829C2DDDD73F2C59C245C987F /* Headers */,
-				3E45BA33A4A53492EFE706AA0671C9AD /* Sources */,
-				EB7B7C55B2265D4B1E774BEB1793FA9F /* Frameworks */,
-				B409F1B79D312DCFDE4F1FDEFB351646 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0A7CB954035DFB2D7E7B63C49658C6DA /* PBXTargetDependency */,
-			);
-			name = "Pods-Elo RateTests";
-			productName = "Pods-Elo RateTests";
-			productReference = 89908534823221498A05D12E4F445254 /* Pods_Elo_RateTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6A50D495C0F9C04DEA2743E06B1BF26C /* LayoutKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6A82D20CAAEDA923EF5E3ED30EE64767 /* Build configuration list for PBXNativeTarget "LayoutKit" */;
-			buildPhases = (
-				6622B88EB3605DFAF7DE1F65A5031638 /* Headers */,
-				46403574D15B7D03ABE0F8437B2EDD76 /* Sources */,
-				6EBB6B8F881649E1542E2A0F2E3EB586 /* Frameworks */,
-				B034636CA6D8D0B323B98371A628E931 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LayoutKit;
-			productName = LayoutKit;
-			productReference = 5ED63B2EE78D3EC70183FACF0459F04C /* LayoutKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DDE5488E624ECF57BB7A8C2DE0E622ED /* SwiftService */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F14750F2CD538824CC6EAAE70989A197 /* Build configuration list for PBXNativeTarget "SwiftService" */;
-			buildPhases = (
-				B77E9B3665CA6AE413EF7DED7CD91EA0 /* Headers */,
-				DF20EFEF1E5A1C59AB469AA449998C94 /* Sources */,
-				36C77FA65A0FB89FB5BCA1AEF59BB7B4 /* Frameworks */,
-				D90590775267DC7A0AD013DDB74BC660 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftService;
-			productName = SwiftService;
-			productReference = 7E64D818F521990F002A0B529B8B3455 /* SwiftService.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E8499FE385D80A7C1726FA583CE407B0 /* Pods-Elo Rate */ = {
+		14A2A1F7493B67EEA8DCDAD381FB263F /* Pods-Elo Rate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29E55642D2AE63BE95456D27AC27E5A2 /* Build configuration list for PBXNativeTarget "Pods-Elo Rate" */;
 			buildPhases = (
@@ -500,7 +378,62 @@
 			);
 			name = "Pods-Elo Rate";
 			productName = "Pods-Elo Rate";
-			productReference = 404946B97240D6ED8F6112A774505041 /* Pods_Elo_Rate.framework */;
+			productReference = 3A7FCF3CE0CC595C2CF9A06484E49204 /* Pods_Elo_Rate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2AAB0A35225EC2430637BEE9F5DF6FE5 /* Pods-Elo RateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73A9CE125FAEEE9CA65E61C4F6E119F9 /* Build configuration list for PBXNativeTarget "Pods-Elo RateTests" */;
+			buildPhases = (
+				D698F61829C2DDDD73F2C59C245C987F /* Headers */,
+				3E45BA33A4A53492EFE706AA0671C9AD /* Sources */,
+				EB7B7C55B2265D4B1E774BEB1793FA9F /* Frameworks */,
+				B409F1B79D312DCFDE4F1FDEFB351646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A7CB954035DFB2D7E7B63C49658C6DA /* PBXTargetDependency */,
+			);
+			name = "Pods-Elo RateTests";
+			productName = "Pods-Elo RateTests";
+			productReference = 91539CA5A62BD4676224021C366532BF /* Pods_Elo_RateTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8E60382F5F645C531DA24A1E85350F74 /* LayoutKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A82D20CAAEDA923EF5E3ED30EE64767 /* Build configuration list for PBXNativeTarget "LayoutKit" */;
+			buildPhases = (
+				6622B88EB3605DFAF7DE1F65A5031638 /* Headers */,
+				58C56BD5ECC74C3DC398F0290C9596C2 /* Sources */,
+				6EBB6B8F881649E1542E2A0F2E3EB586 /* Frameworks */,
+				B034636CA6D8D0B323B98371A628E931 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LayoutKit;
+			productName = LayoutKit;
+			productReference = 2915BB0ABAEFBEA3F9E6FABE1E39FEAF /* LayoutKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B205713046EBE06B42884F0078F45952 /* SwiftService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F90A37AB076B04D5BEEFDF222063E55 /* Build configuration list for PBXNativeTarget "SwiftService" */;
+			buildPhases = (
+				7E24A97F3AB6033027148F6DE867D9EB /* Headers */,
+				DFBEBD396BEB088F471145C645EDE3FE /* Sources */,
+				3BA00397243EF6748E7A4CF1007456E0 /* Frameworks */,
+				BA4B621D1F8125CC95E7E2950EDA59F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftService;
+			productName = SwiftService;
+			productReference = A69F44CF27BF8885B0FD0741F3C7A2EC /* SwiftService.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -520,14 +453,14 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 0C55B1080DC7D03F61338A6A0569C5D0 /* Products */;
+			productRefGroup = 2C73392084CCAB1498B6554BC760A317 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A50D495C0F9C04DEA2743E06B1BF26C /* LayoutKit */,
-				E8499FE385D80A7C1726FA583CE407B0 /* Pods-Elo Rate */,
-				55401A266C449E17D2CCEC2286AB1670 /* Pods-Elo RateTests */,
-				DDE5488E624ECF57BB7A8C2DE0E622ED /* SwiftService */,
+				8E60382F5F645C531DA24A1E85350F74 /* LayoutKit */,
+				14A2A1F7493B67EEA8DCDAD381FB263F /* Pods-Elo Rate */,
+				2AAB0A35225EC2430637BEE9F5DF6FE5 /* Pods-Elo RateTests */,
+				B205713046EBE06B42884F0078F45952 /* SwiftService */,
 			);
 		};
 /* End PBXProject section */
@@ -554,7 +487,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D90590775267DC7A0AD013DDB74BC660 /* Resources */ = {
+		BA4B621D1F8125CC95E7E2950EDA59F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -580,40 +513,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46403574D15B7D03ABE0F8437B2EDD76 /* Sources */ = {
+		58C56BD5ECC74C3DC398F0290C9596C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0163EC950B12AC0BF95AD2F2EA328DD0 /* Branding.swift in Sources */,
-				6687B22E5BBF13A4A5706CEC2F3F1EFA /* LayoutKit-dummy.m in Sources */,
-				FC6B75632939CB17E923192F0AE55BD7 /* LayoutKitAttribute.swift in Sources */,
-				A5AE45BCA0D4A9CA530775A50CA758ED /* LayoutKitMargin.swift in Sources */,
-				CF5BE796815993199F1178A94C9D303E /* LayoutKitProtocol+Extension+UIView.swift in Sources */,
-				2D6D3C0D5E3DFA97F0E61E985744BCB3 /* LayoutKitProtocol+Extension.swift in Sources */,
-				E0B40F120FD036F1962687EBC444C9A1 /* LayoutKitProtocol+Internal+Extension.swift in Sources */,
-				2E60D8FC3EFCE42B1DBABDC3C4254FCE /* LayoutKitProtocol.swift in Sources */,
-				C087EBD565B95461B39611B508FAB087 /* LayoutKitSizeAttribute.swift in Sources */,
-				BEC8874DB7957A7F44A49222CD921E12 /* NSLayoutAnchorExtension.swift in Sources */,
-				4533A033FE5E0384517822440D3C2081 /* NSLayoutConstraintExtension.swift in Sources */,
-				7CC382EAAF18B6DC7CC04DA3456C48CC /* NSLayoutDimensionExtension.swift in Sources */,
-				DAE5D9B3F45ED2750A7B20D73ED2FF63 /* UIEdgeInsetsExtension.swift in Sources */,
-				AEFD1D4484C498B78347D6664BFDFB20 /* UILayoutGuideExtension.swift in Sources */,
-				4E2BAD984560C53341E2F9BB261AC24D /* UIViewExtension.swift in Sources */,
+				CBC26FD22A71186911A86EF3B878DA99 /* Branding.swift in Sources */,
+				FC3C664CEF35C03AFBA3128E988B7E90 /* LayoutKit-dummy.m in Sources */,
+				1259ED955869BEBA7DE4CAE022793DE9 /* LayoutKitAttribute.swift in Sources */,
+				FFAA0B065DD86907030BF96C824AAF60 /* LayoutKitMargin.swift in Sources */,
+				726C5C7576385693FAD21E1152547C3E /* LayoutKitProtocol+Extension+UIView.swift in Sources */,
+				9CFA85582BC758376888BC6816ABA3BE /* LayoutKitProtocol+Extension.swift in Sources */,
+				D4BB860B61E2FB6CB01C707C87F7B3DC /* LayoutKitProtocol+Internal+Extension.swift in Sources */,
+				88C3B07C237C69E895B8AB027C6D247E /* LayoutKitProtocol.swift in Sources */,
+				EE17508A8859637CD4245F0E59991398 /* LayoutKitSizeAttribute.swift in Sources */,
+				C501EA453F47E78DBE83ED72132E90BD /* NSLayoutAnchorExtension.swift in Sources */,
+				B2195A49033484577E2FE748B1F7DBBD /* NSLayoutConstraintExtension.swift in Sources */,
+				5F6DD72EAC65FE410090A88597CABBD5 /* NSLayoutDimensionExtension.swift in Sources */,
+				ECD30928C60C29A7A72C828288BF0A7D /* UIEdgeInsetsExtension.swift in Sources */,
+				3221EB25DA41AC9F94D57D1B63BCDB00 /* UILayoutGuideExtension.swift in Sources */,
+				31D6FA80BF3B57CAD654A6F9351CA9E4 /* UIViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF20EFEF1E5A1C59AB469AA449998C94 /* Sources */ = {
+		DFBEBD396BEB088F471145C645EDE3FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6829A67982746A80EEC7305FAC62D8E /* Request.swift in Sources */,
-				CD94A82C7299FFB7E0C690BC22D164DC /* ServiceEndPoint.swift in Sources */,
-				E8B1D648B3B622142402B02111B40E56 /* ServiceError.swift in Sources */,
-				048F7524E11208790DE1F1D8B0174FF2 /* ServiceManager.swift in Sources */,
-				48C7D15F9B4561D364F10FF2890750BA /* ServicePagination.swift in Sources */,
-				839CCE2623DCF070AFB5BD508EB9913C /* ServicePaginationProtocol.swift in Sources */,
-				CEE9A8B1298058C9F2BF3CB0F7770A4A /* ServiceProtocol.swift in Sources */,
-				CA72ECFA592BE864EC84DD49F5C51B2C /* SwiftService-dummy.m in Sources */,
+				FACBF240528B02851F92475E944E737B /* Request.swift in Sources */,
+				74C7CBF58869DBF410788CB43534909D /* ServiceEndPoint.swift in Sources */,
+				00FA48265FFA5D69022A9F9435124FB9 /* ServiceError.swift in Sources */,
+				D8A39CAEA1A4E3A3303231AD22E27F7B /* ServiceManager.swift in Sources */,
+				E2CC44FEB629C427E290DB18AE003337 /* ServicePagination.swift in Sources */,
+				1803E0C295B8AE7909227E7DF88DF48B /* ServicePaginationProtocol.swift in Sources */,
+				D20CE8ADD4490630AE15DE50EE16CE73 /* ServiceProtocol.swift in Sources */,
+				F65E452816122CF9AD06CF98ACBDD971 /* SwiftService-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,19 +556,19 @@
 		0A7CB954035DFB2D7E7B63C49658C6DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Elo Rate";
-			target = E8499FE385D80A7C1726FA583CE407B0 /* Pods-Elo Rate */;
+			target = 14A2A1F7493B67EEA8DCDAD381FB263F /* Pods-Elo Rate */;
 			targetProxy = C8D49038AC139763D170656EB3760CD8 /* PBXContainerItemProxy */;
 		};
 		399035C03C3C2AA92B103FF894927AC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftService;
-			target = DDE5488E624ECF57BB7A8C2DE0E622ED /* SwiftService */;
+			target = B205713046EBE06B42884F0078F45952 /* SwiftService */;
 			targetProxy = 7441772D95ACA870829A1E61DA038AB5 /* PBXContainerItemProxy */;
 		};
 		9EFF33DCDAF5854C2035ACF1F6B0E0B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LayoutKit;
-			target = 6A50D495C0F9C04DEA2743E06B1BF26C /* LayoutKit */;
+			target = 8E60382F5F645C531DA24A1E85350F74 /* LayoutKit */;
 			targetProxy = 120A87144F4025E396A6A2F3A33C47C6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -701,9 +634,46 @@
 			};
 			name = Release;
 		};
+		32A712FCD6347B071DB7572C7211D955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AC53FA225F2019F1D702CD2D09D5F77 /* SwiftService.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftService/SwiftService-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftService/SwiftService-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftService/SwiftService.modulemap";
+				PRODUCT_MODULE_NAME = SwiftService;
+				PRODUCT_NAME = SwiftService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		47569F76E9DD348690DA412835C41E8D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8517724CE16CED5F17B2093DDCD8FAC6 /* Pods-Elo Rate.debug.xcconfig */;
+			baseConfigurationReference = 1872741006B9B84316665BB5C3AB1E8F /* Pods-Elo Rate.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -741,7 +711,7 @@
 		};
 		5AE824ABAA576C9D02EA9E6F687141AB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 327403C1A85D84313E7F62FFE9D2A6CC /* Pods-Elo RateTests.debug.xcconfig */;
+			baseConfigurationReference = 39BE08254FB97FA69B13E1BFF6633503 /* Pods-Elo RateTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -843,7 +813,7 @@
 		};
 		5C838FEC61E8FC76444434C039E798F7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46186111C44D545A8BA3ACD683406E51 /* LayoutKit.xcconfig */;
+			baseConfigurationReference = C7F26D18F51DD7A490C66A212EBDF633 /* LayoutKit.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -880,7 +850,7 @@
 		};
 		5E154603F96FDDBB558FCFEB5058597C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C8CC2314F760AC3660515446B6F50CC /* Pods-Elo RateTests.release.xcconfig */;
+			baseConfigurationReference = 101E56DB4445C47A3B85240E8B7CCF5B /* Pods-Elo RateTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -917,46 +887,9 @@
 			};
 			name = Release;
 		};
-		BC55496F63A0DD1EBC78E4B2249D7B6D /* Release */ = {
+		B02A930DDEB022B6A25428F16F32D539 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BD1003976EC9E27E3714D711E161436 /* SwiftService.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftService/SwiftService-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftService/SwiftService-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftService/SwiftService.modulemap";
-				PRODUCT_MODULE_NAME = SwiftService;
-				PRODUCT_NAME = SwiftService;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DAE2D3A42B656ECD51F9F5802332E784 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BD1003976EC9E27E3714D711E161436 /* SwiftService.xcconfig */;
+			baseConfigurationReference = 4AC53FA225F2019F1D702CD2D09D5F77 /* SwiftService.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -992,7 +925,7 @@
 		};
 		EC88C188EDDD7D3F38047DE009B60F0D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61AEAFF6A415CC02429FD911D6C13199 /* Pods-Elo Rate.release.xcconfig */;
+			baseConfigurationReference = 9507BF5C9EB123BA68F9EF97EC92D8E6 /* Pods-Elo Rate.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1031,7 +964,7 @@
 		};
 		F0009A6FCC215350BFC64997DF310F81 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46186111C44D545A8BA3ACD683406E51 /* LayoutKit.xcconfig */;
+			baseConfigurationReference = C7F26D18F51DD7A490C66A212EBDF633 /* LayoutKit.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1104,11 +1037,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F14750F2CD538824CC6EAAE70989A197 /* Build configuration list for PBXNativeTarget "SwiftService" */ = {
+		8F90A37AB076B04D5BEEFDF222063E55 /* Build configuration list for PBXNativeTarget "SwiftService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DAE2D3A42B656ECD51F9F5802332E784 /* Debug */,
-				BC55496F63A0DD1EBC78E4B2249D7B6D /* Release */,
+				B02A930DDEB022B6A25428F16F32D539 /* Debug */,
+				32A712FCD6347B071DB7572C7211D955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
