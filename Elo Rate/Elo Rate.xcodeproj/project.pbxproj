@@ -23,6 +23,7 @@
 		DC0241CF228B068F0029B365 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241CE228B068F0029B365 /* LoginCoordinator.swift */; };
 		DC0241D1228B06F30029B365 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D0228B06F30029B365 /* LoginViewController.swift */; };
 		DC0241D3228B074B0029B365 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D2228B074B0029B365 /* LoginViewModel.swift */; };
+		DC0241D7228C273F0029B365 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D6228C273F0029B365 /* BaseTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		DC0241CE228B068F0029B365 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		DC0241D0228B06F30029B365 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DC0241D2228B074B0029B365 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DC0241D6228C273F0029B365 /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
 		E2064E104B1F63D698230934 /* Pods-Elo RateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo RateTests.release.xcconfig"; path = "Target Support Files/Pods-Elo RateTests/Pods-Elo RateTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 		C9F115802123325300F29650 /* Elo Rate */ = {
 			isa = PBXGroup;
 			children = (
+				DC0241D8228C33150029B365 /* Enums */,
 				DC0241C8228B05F60029B365 /* Extensions */,
 				DC0241C7228B05E90029B365 /* UI */,
 				DC0241C2228B05930029B365 /* Protocols */,
@@ -149,7 +152,8 @@
 		DC0241BF228B05640029B365 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				DC0241C0228B05830029B365 /* BaseViewController.swift */,
+				DC0241D5228C27270029B365 /* TextFields */,
+				DC0241D4228C27190029B365 /* ViewControllers */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -190,6 +194,29 @@
 				D80CE61C228B69520018D1AA /* LoginView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		DC0241D4228C27190029B365 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC0241C0228B05830029B365 /* BaseViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DC0241D5228C27270029B365 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				DC0241D6228C273F0029B365 /* BaseTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		DC0241D8228C33150029B365 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +392,7 @@
 				DC0241CF228B068F0029B365 /* LoginCoordinator.swift in Sources */,
 				C9F115822123325300F29650 /* AppDelegate.swift in Sources */,
 				DC0241D1228B06F30029B365 /* LoginViewController.swift in Sources */,
+				DC0241D7228C273F0029B365 /* BaseTextField.swift in Sources */,
 				DC0241CA228B060F0029B365 /* UINavigationController+Extension.swift in Sources */,
 				DC0241C4228B05AF0029B365 /* Identifiable.swift in Sources */,
 				DC0241C1228B05830029B365 /* BaseViewController.swift in Sources */,

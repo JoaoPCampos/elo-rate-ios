@@ -20,10 +20,11 @@ final class LoginView: UIView {
         static let horizontalMargin: LayoutKitMargin = .offset(10)
         static let margin: CGFloat = 24
         static let cornerRadius: CGFloat = 4
+        static let insets = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
     }
     
-    let usernameTextField = UITextField()
-    let passwordTextField = UITextField()
+    let usernameTextField = BaseTextField(padding: Constants.insets)
+    let passwordTextField = BaseTextField(padding: Constants.insets)
     let loginButton = UIButton()
     
     convenience init() {

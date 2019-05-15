@@ -12,6 +12,8 @@ final class LoginViewController: BaseViewController {
 
     var viewModel: LoginViewModel?
 
+    private let loginView = LoginView()
+
     override func viewDidLoad() {
 
         super.viewDidLoad()
@@ -24,17 +26,13 @@ final class LoginViewController: BaseViewController {
 private extension LoginViewController {
 
     func defineSubViews() {
-
-        let loginView = LoginView()
         
-        self.view.addSubview(loginView)
-        
-        loginView.center(in: self.view)
-        loginView.edge(onlyTo: [.leading, .trailing], to: self.view)
+        self.view.addSubview(self.loginView)
     }
 
     func defineConstraints() {
 
-        // TODO
+        self.loginView.center(in: self.view)
+        self.loginView.edge(onlyTo: [.leading, .trailing], to: self.view)
     }
 }
