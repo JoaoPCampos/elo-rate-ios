@@ -24,8 +24,9 @@ final class LoginView: UIView {
         static let fontM = Branding.Font.stencil(.bpmono, .M).font
     }
     
-    let usernameTextField = BaseTextField(padding: Constants.insets).unmask()
-    let passwordTextField = BaseTextField(padding: Constants.insets).unmask()
+    let usernameTextField = BaseTextField.unmask()
+    let passwordTextField = BaseTextField.unmask()
+    
     let loginButton = UIButton(type: .roundedRect).unmask()
     
     convenience init() {
@@ -57,6 +58,8 @@ private extension LoginView {
         
         self.usernameTextField.delegate = self
         self.passwordTextField.delegate = self
+        
+        self.passwordTextField.isSecure = true
         
         self.loginButton.addTarget(self, action: #selector(didPressLoginButton), for: .touchUpInside)
         
@@ -115,5 +118,22 @@ extension LoginView: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
         
         // TODO - update if valid field
+        
+        guard let baseField = textField as? BaseTextField else { return }
+        
+        if baseField.text == "1" {
+            
+            baseField.customState = .valid
+        }
+        
+        if baseField.text == "2" {
+            
+            baseField.customState = .error
+        }
+        
+        if baseField.text == "3" {
+            
+            baseField.customState = .none
+        }
     }
 }
