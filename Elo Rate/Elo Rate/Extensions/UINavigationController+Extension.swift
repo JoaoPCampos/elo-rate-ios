@@ -12,9 +12,9 @@ extension UINavigationController {
 
     func black() -> UINavigationController {
 
-        self.navigationBar.barTintColor = .black
+        self.navigationBar.barTintColor = .nero
         self.navigationBar.barStyle = .black
-        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().tintColor = .brilliance
 
         return self
     }

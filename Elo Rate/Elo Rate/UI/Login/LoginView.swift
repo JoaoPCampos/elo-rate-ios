@@ -16,7 +16,7 @@ final class LoginView: UIView {
         static let usernamePlaceholder: String = "Username"
         static let passwordPlaceholder: String = "Password"
         static let loginButtonText: String = "Login"
-        static let textColor: UIColor = .black
+        static let textColor: UIColor = .nero
         static let horizontalMargin: LayoutKitMargin = .offset(Branding.Spacing.S.float)
         static let margin: CGFloat = Branding.Spacing.M.float
         static let cornerRadius: CGFloat = Branding.Spacing.XXS.float
@@ -84,7 +84,7 @@ private extension LoginView {
         
         [self.usernameTextField, self.passwordTextField, self.loginButton].forEach {
 
-            $0.backgroundColor = .white
+            $0.backgroundColor = .brilliance
             $0.layer.cornerRadius = Constants.cornerRadius
             $0.layer.shouldRasterize = true
             $0.layer.rasterizationScale = UIScreen.main.scale

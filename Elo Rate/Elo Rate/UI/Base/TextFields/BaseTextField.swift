@@ -24,7 +24,7 @@ class BaseTextField: UITextField {
                                           left: Branding.Spacing.S.float,
                                           bottom: Branding.Spacing.S.float,
                                           right: Branding.Spacing.L.float)
-        static let textColor: UIColor = .black
+        static let textColor: UIColor = .nero
         static let cornerRadius: CGFloat = Branding.Spacing.XXS.float
         static let fontM = Branding.Font.stencil(.bpmono, .M).font
         static let iconSize: CGFloat = 5
@@ -78,17 +78,17 @@ class BaseTextField: UITextField {
             case .valid:
                 
                 self.layer.borderColor = UIColor.green.cgColor
-                self.textColor = .black
+                self.textColor = .nero
             
             case .error:
                
-                self.layer.borderColor = UIColor.red.cgColor
-                self.textColor = .black
+                self.layer.borderColor = UIColor.brakeLights.cgColor
+                self.textColor = .brakeLights
             
             case .none:
                 
-                self.layer.borderColor = UIColor.black.cgColor
-                self.textColor = .black
+                self.layer.borderColor = UIColor.nero.cgColor
+                self.textColor = .nero
             }
         }
     }
@@ -103,12 +103,11 @@ private extension BaseTextField {
     func configureView() {
         
         self.textColor = Constants.textColor
-        
         self.tintColor = Constants.textColor
         
         self.font = Constants.fontM
         
-        self.backgroundColor = .white
+        self.backgroundColor = .brilliance
         self.layer.cornerRadius = Constants.cornerRadius
         self.borderStyle = .none
         self.layer.borderWidth = 1.0

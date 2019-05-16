@@ -28,6 +28,7 @@
 		DC886C4B228C5D5C0070701B /* bpmono.stencil-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC886C47228C5D5B0070701B /* bpmono.stencil-bold.ttf */; };
 		DC886C4C228C5D5C0070701B /* bpmono.bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC886C48228C5D5B0070701B /* bpmono.bold.ttf */; };
 		DC886C4D228C5D5C0070701B /* bpmono.italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC886C49228C5D5B0070701B /* bpmono.italic.ttf */; };
+		DC886C53228D52660070701B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC886C52228D52660070701B /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		DC886C47228C5D5B0070701B /* bpmono.stencil-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bpmono.stencil-bold.ttf"; sourceTree = "<group>"; };
 		DC886C48228C5D5B0070701B /* bpmono.bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bpmono.bold.ttf; sourceTree = "<group>"; };
 		DC886C49228C5D5B0070701B /* bpmono.italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bpmono.italic.ttf; sourceTree = "<group>"; };
+		DC886C52228D52660070701B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		E2064E104B1F63D698230934 /* Pods-Elo RateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo RateTests.release.xcconfig"; path = "Target Support Files/Pods-Elo RateTests/Pods-Elo RateTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,6 +191,7 @@
 			children = (
 				DC0241C9228B060F0029B365 /* UINavigationController+Extension.swift */,
 				D80CE61E228B6C990018D1AA /* UIView+Extension.swift */,
+				DC886C52228D52660070701B /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				DC0241CA228B060F0029B365 /* UINavigationController+Extension.swift in Sources */,
 				DC0241C4228B05AF0029B365 /* Identifiable.swift in Sources */,
 				DC0241C1228B05830029B365 /* BaseViewController.swift in Sources */,
+				DC886C53228D52660070701B /* UIColor+Extension.swift in Sources */,
 				D80CE61D228B69520018D1AA /* LoginView.swift in Sources */,
 				DC0241D3228B074B0029B365 /* LoginViewModel.swift in Sources */,
 			);
