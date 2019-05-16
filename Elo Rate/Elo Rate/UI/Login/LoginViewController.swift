@@ -12,7 +12,7 @@ final class LoginViewController: BaseViewController {
 
     var viewModel: LoginViewModel?
 
-    private let loginView = LoginView()
+    private let loginView = LoginView().unmask()
 
     override func viewDidLoad() {
 
@@ -20,6 +20,22 @@ final class LoginViewController: BaseViewController {
 
         self.defineSubViews()
         self.defineConstraints()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+
+        super.viewWillAppear(animated)
+
+        self.loginView.layoutIfNeeded()
+
+        self.loginView.shiftCenter(by: self.view.bounds.width, animated: false, toHide: true)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+
+        super.viewDidAppear(animated)
+
+        self.loginView.shiftCenter(by: self.view.bounds.width, animated: true, toHide: false)
     }
 }
 
