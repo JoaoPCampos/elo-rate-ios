@@ -14,5 +14,7 @@ extension UIColor {
     /// value: #F20033
     static let brakeLights = UIColor(named: "brake-lights")!
     /// value: #FDFDFD
-    static let brilliance = UIColor(named: "brilliance")
+    static let brilliance = UIColor(named: "brilliance")!
+    /// value: #444444
+    static let goshawkGrey = UIColor(named: "goshawk-grey")!
 }

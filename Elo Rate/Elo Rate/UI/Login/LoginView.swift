@@ -24,17 +24,19 @@ final class LoginView: UIView {
         static let fontM = Branding.Font.stencil(.bpmono, .M).font
     }
     
-    let usernameTextField = BaseTextField.unmask()
-    let passwordTextField = BaseTextField.unmask()
+    private(set) lazy var usernameTextField: BaseTextField = {
+
+        return BaseTextField(baseTextFieldDelegate: self).unmask()
+    }()
+
+    private(set) lazy var passwordTextField: BaseTextField = {
+
+        return BaseTextField(baseTextFieldDelegate: self).unmask()
+    }()
     
     let loginButton = UIButton(type: .roundedRect).unmask()
     
-    convenience init() {
-        
-        self.init(frame: .zero)
-    }
-    
-    override init(frame: CGRect) {
+    override init(frame: CGRect = .zero) {
         
         super.init(frame: frame)
         
@@ -92,6 +94,10 @@ private extension LoginView {
         
         self.loginButton.setTitle(Constants.loginButtonText, for: .normal)
         self.loginButton.setTitleColor(Constants.textColor, for: .normal)
+        self.loginButton.setTitleColor(.brilliance, for: .normal)
+        self.loginButton.setTitleColor(.goshawkGrey, for: .disabled)
+        self.loginButton.backgroundColor = .nero
+        self.loginButton.isEnabled = false
     }
     
     func defineConstraints() {
@@ -114,26 +120,36 @@ private extension LoginView {
 }
 
 extension LoginView: UITextFieldDelegate {
+
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+
+        return true
+    }
     
     func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
         
         // TODO - update if valid field
         
-        guard let baseField = textField as? BaseTextField else { return }
-        
-        if baseField.text == "1" {
-            
-            baseField.customState = .valid
-        }
-        
-        if baseField.text == "2" {
-            
-            baseField.customState = .error
-        }
-        
-        if baseField.text == "3" {
-            
-            baseField.customState = .none
+        guard let text = textField.text else { return }
+    }
+}
+
+// MARK: - BaseTextFieldDelegate
+
+extension LoginView: BaseTextFieldDelegate {
+
+    func didUpdate(_ field: BaseTextField, with text: String) {
+
+        let usernameState = self.usernameTextField.customState
+        let passwordState = self.passwordTextField.customState
+
+        if usernameState == .valid && passwordState == .valid {
+
+            self.loginButton.isEnabled = true
+
+        } else {
+
+            self.loginButton.isEnabled = false
         }
     }
 }

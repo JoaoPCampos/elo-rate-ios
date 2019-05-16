@@ -9,13 +9,18 @@
 import UIKit
 import LayoutKit
 
+protocol BaseTextFieldDelegate: class {
+
+    func didUpdate(_ field: BaseTextField, with text: String)
+}
+
 class BaseTextField: UITextField {
     
     enum CustomState {
         
         case valid
         case error
-        case none
+        case pristine
     }
     
     private enum Constants {
@@ -57,40 +62,40 @@ class BaseTextField: UITextField {
         
         return button
     }()
-    
+
+    private(set) var customState: CustomState {
+
+        didSet {
+
+            switch self.customState {
+
+            case .valid:
+
+                self.layer.borderColor = UIColor.nero.cgColor
+
+            case .error:
+
+                self.layer.borderColor = UIColor.brakeLights.cgColor
+
+            case .pristine:
+
+                self.layer.borderColor = UIColor.nero.cgColor
+            }
+        }
+    }
+
+    weak var baseTextFieldDelegate: BaseTextFieldDelegate?
+
     private(set) var hasError: Bool = false
 
-    override init(frame: CGRect) {
+    init(frame: CGRect = .zero, baseTextFieldDelegate: BaseTextFieldDelegate) {
 
-        self.customState = .none
+        self.baseTextFieldDelegate = baseTextFieldDelegate
+        self.customState = .pristine
         
         super.init(frame: frame)
         
         self.configureView()
-    }
-    
-    var customState: CustomState {
-        
-        didSet {
-            
-            switch self.customState {
-            
-            case .valid:
-                
-                self.layer.borderColor = UIColor.green.cgColor
-                self.textColor = .nero
-            
-            case .error:
-               
-                self.layer.borderColor = UIColor.brakeLights.cgColor
-                self.textColor = .brakeLights
-            
-            case .none:
-                
-                self.layer.borderColor = UIColor.nero.cgColor
-                self.textColor = .nero
-            }
-        }
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -101,7 +106,7 @@ class BaseTextField: UITextField {
 private extension BaseTextField {
     
     func configureView() {
-        
+
         self.textColor = Constants.textColor
         self.tintColor = Constants.textColor
         
@@ -112,9 +117,10 @@ private extension BaseTextField {
         self.borderStyle = .none
         self.layer.borderWidth = 1.0
         self.layer.cornerRadius = 2.0
-        self.layer.masksToBounds = true
-//        self.layer.shouldRasterize = true
-//        self.layer.rasterizationScale = UIScreen.main.scale
+        self.layer.shouldRasterize = true
+        self.layer.rasterizationScale = UIScreen.main.scale
+
+        self.addTarget(self, action: #selector(updateCustomState), for: .editingChanged)
     }
     
     @objc
@@ -123,11 +129,17 @@ private extension BaseTextField {
         self.eyeButton.isSelected.toggle()
         self.isSecureTextEntry.toggle()
     }
-    
+
     @objc
-    func clearText() {
-        
-        self.text = ""
+    func updateCustomState() {
+
+        guard let text = self.text else { return }
+
+        let hasError = text.count < 3
+
+        self.customState = hasError ? .error : .valid
+
+        self.baseTextFieldDelegate?.didUpdate(self, with: text)
     }
 }
 
