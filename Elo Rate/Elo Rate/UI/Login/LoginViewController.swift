@@ -12,7 +12,7 @@ final class LoginViewController: BaseViewController {
 
     var viewModel: LoginViewModel?
 
-    private let loginView = LoginView().unmask()
+    private lazy var loginView = { return LoginView(delegate: self).unmask() }()
 
     override func viewDidLoad() {
 
@@ -39,6 +39,7 @@ final class LoginViewController: BaseViewController {
     }
 }
 
+// MARK: - Private
 private extension LoginViewController {
 
     func defineSubViews() {
@@ -50,5 +51,23 @@ private extension LoginViewController {
 
         self.loginView.center(in: self.view)
         self.loginView.edge(onlyTo: [.leading, .trailing], to: self.view)
+    }
+}
+
+// MARK: - LoginViewDelegate
+extension LoginViewController: LoginViewDelegate {
+
+    func didUpdate(_ field: BaseTextField) {
+
+        guard let viewModel = self.viewModel else { return }
+
+        viewModel.didUpdate(field)
+
+        self.loginView.loginButton.isEnabled = viewModel.shouldEnableLoginButton()
+    }
+
+    func loginButtonPressed() {
+
+        self.viewModel?.login()
     }
 }

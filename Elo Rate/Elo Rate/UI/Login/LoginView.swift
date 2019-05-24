@@ -9,49 +9,76 @@
 import UIKit
 import LayoutKit
 
+@objc
+protocol LoginViewDelegate: BaseTextFieldDelegate {
+
+    func loginButtonPressed()
+}
+
 final class LoginView: UIView {
     
     private enum Constants {
 
         enum animation {
 
+            /// 0.5
             static let duration: TimeInterval = 0.5
+            /// 0.3
             static let spring: CGFloat = 0.3
+            /// 0.1
             static let speed: CGFloat = 0.1
         }
 
-        static let usernamePlaceholder: String = "Username"
-        static let passwordPlaceholder: String = "Password"
-        static let loginButtonText: String = "Login"
-        static let textColor: UIColor = .nero
+        enum button {
+
+            /// Login
+            static let text: String = "Login"
+            /// .brilliance
+            static let color: UIColor = .brilliance
+            /// .goshawkGrey
+            static let disabledColor: UIColor = .goshawkGrey
+            /// .nero
+            static let backgroundColor: UIColor = .nero
+            /// .bpmono .M
+            static let font = Branding.Font.stencil(.bpmono, .M).font
+        }
+
+        /// .offset(S) - 12
         static let horizontalMargin: LayoutKitMargin = .offset(Branding.Spacing.S.float)
+        /// .M - 24
         static let margin: CGFloat = Branding.Spacing.M.float
+        /// .XXS - 4
         static let cornerRadius: CGFloat = Branding.Spacing.XXS.float
+        /// .all(S) - 12
         static let insets = LayoutKitEdge.all(Branding.Spacing.S.float)
-        static let fontM = Branding.Font.stencil(.bpmono, .M).font
     }
     
-    private(set) lazy var usernameTextField: BaseTextField = {
+    private lazy var usernameTextField: BaseTextField = {
 
-        return BaseTextField(baseTextFieldDelegate: self).unmask()
+        return BaseTextField(delegate: self.delegate, type: .username).unmask()
     }()
 
-    private(set) lazy var passwordTextField: BaseTextField = {
+    private lazy var passwordTextField: BaseTextField = {
 
-        return BaseTextField(baseTextFieldDelegate: self).unmask()
+        return BaseTextField(delegate: self.delegate, type: .password).unmask()
     }()
-    
+
+    private weak var delegate: LoginViewDelegate?
+
     let loginButton = UIButton(type: .roundedRect).unmask()
-    
-    override init(frame: CGRect = .zero) {
-        
+
+    init(frame: CGRect = .zero, delegate: LoginViewDelegate) {
+
+        self.delegate = delegate
+
         super.init(frame: frame)
         
         self.configureView()
         self.configureSubViews()
         self.defineConstraints()
     }
-    
+
+    @available(*, unavailable)
     required init?(coder aDecoder: NSCoder) {
         
         fatalError("init(coder:) has not been implemented")
@@ -85,45 +112,26 @@ private extension LoginView {
     
     func configureView() {
         
-        self.usernameTextField.delegate = self
-        self.passwordTextField.delegate = self
-        
-        self.passwordTextField.isSecure = true
-        
-        self.loginButton.addTarget(self, action: #selector(didPressLoginButton), for: .touchUpInside)
+        self.loginButton.addTarget(self.delegate, action: #selector(self.delegate?.loginButtonPressed), for: .touchUpInside)
         
         self.add(self.usernameTextField, self.passwordTextField, self.loginButton)
     }
     
     func configureSubViews() {
-        
-        self.usernameTextField.placeholder = Constants.usernamePlaceholder
-        self.passwordTextField.placeholder = Constants.passwordPlaceholder
-        
-        self.usernameTextField.textColor = Constants.textColor
-        self.passwordTextField.textColor = Constants.textColor
 
-        self.usernameTextField.tintColor = Constants.textColor
-        self.passwordTextField.tintColor = Constants.textColor
+        self.loginButton.layer.cornerRadius = Constants.cornerRadius
+        self.loginButton.layer.shouldRasterize = true
+        self.loginButton.layer.rasterizationScale = UIScreen.main.scale
 
-        self.usernameTextField.font = Constants.fontM
-        self.passwordTextField.font = Constants.fontM
+        self.loginButton.titleLabel?.font = Constants.button.font
 
-        self.loginButton.titleLabel?.font = Constants.fontM
-        
-        [self.usernameTextField, self.passwordTextField, self.loginButton].forEach {
+        self.loginButton.setTitle(Constants.button.text, for: .normal)
 
-            $0.backgroundColor = .brilliance
-            $0.layer.cornerRadius = Constants.cornerRadius
-            $0.layer.shouldRasterize = true
-            $0.layer.rasterizationScale = UIScreen.main.scale
-        }
-        
-        self.loginButton.setTitle(Constants.loginButtonText, for: .normal)
-        self.loginButton.setTitleColor(Constants.textColor, for: .normal)
-        self.loginButton.setTitleColor(.brilliance, for: .normal)
-        self.loginButton.setTitleColor(.goshawkGrey, for: .disabled)
-        self.loginButton.backgroundColor = .nero
+        self.loginButton.setTitleColor(Constants.button.color, for: .normal)
+        self.loginButton.setTitleColor(Constants.button.disabledColor, for: .disabled)
+
+        self.loginButton.backgroundColor = Constants.button.backgroundColor
+
         self.loginButton.isEnabled = false
     }
     
@@ -137,13 +145,6 @@ private extension LoginView {
         self.loginButton.topAnchor.bind(to: self.passwordTextField.bottomAnchor).addSpace(Constants.horizontalMargin)
         self.loginButton.edge(onlyTo: [.leading, .trailing, .bottom], to: self, insets: [.all(Constants.margin)])
     }
-    
-    @objc
-    func didPressLoginButton() {
-        
-        // TODO
-        print("call login service")
-    }
 
     func animate(_ block: @escaping () -> Void, delay: TimeInterval) {
 
@@ -154,40 +155,5 @@ private extension LoginView {
                        options: .curveEaseInOut,
                        animations: block,
                        completion: nil)
-    }
-}
-
-extension LoginView: UITextFieldDelegate {
-
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-
-        return true
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
-        
-        // TODO - update if valid field
-        
-        guard let text = textField.text else { return }
-    }
-}
-
-// MARK: - BaseTextFieldDelegate
-
-extension LoginView: BaseTextFieldDelegate {
-
-    func didUpdate(_ field: BaseTextField, with text: String) {
-
-        let usernameState = self.usernameTextField.customState
-        let passwordState = self.passwordTextField.customState
-
-        if usernameState == .valid && passwordState == .valid {
-
-            self.loginButton.isEnabled = true
-
-        } else {
-
-            self.loginButton.isEnabled = false
-        }
     }
 }

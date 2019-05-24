@@ -9,12 +9,88 @@
 import UIKit
 import LayoutKit
 
+@objc
 protocol BaseTextFieldDelegate: class {
 
-    func didUpdate(_ field: BaseTextField, with text: String)
+    func didUpdate(_ field: BaseTextField)
 }
 
 class BaseTextField: UITextField {
+
+    private enum Constants {
+
+        static let backgroundColor: UIColor = .brilliance
+
+        enum placeholder {
+
+            static let username: String = "Username"
+            static let password: String = "Password"
+        }
+
+        enum text {
+
+            /// .nero
+            static let color: UIColor = .nero
+            /// M - 14
+            static let font = Branding.Font.stencil(.bpmono, .M).font
+            static let insets = LayoutKitEdge(top: Branding.Spacing.S.float,
+                                              left: Branding.Spacing.S.float,
+                                              bottom: Branding.Spacing.S.float,
+                                              right: Branding.Spacing.L.float)
+        }
+
+        enum layer {
+
+            /// XXS - 4
+            static let cornerRadius: CGFloat = Branding.Spacing.XXS.float
+            /// 1
+            static let borderWidth: CGFloat = 1
+        }
+
+        enum icon {
+            /// XXS - 4
+            static let size: CGFloat = Branding.Spacing.XXS.float
+        }
+    }
+
+    enum FieldType {
+
+        case username
+        case password
+
+        var isSecure: Bool {
+
+            return self == .password
+        }
+
+        var placeholder: String {
+
+            switch self {
+
+            case .username:
+
+                return Constants.placeholder.username
+
+            case .password:
+
+                return Constants.placeholder.password
+            }
+        }
+
+        var regex: NSRegularExpression {
+
+            switch self {
+
+            case .username:
+
+                return NSRegularExpression("^([a-z]{1})([a-z0-9]{1})[a-z0-9]+")
+
+            case .password:
+
+                return NSRegularExpression("^([a-z0-9]{2})[a-z0-9]+")
+            }
+        }
+    }
     
     enum CustomState {
         
@@ -22,46 +98,6 @@ class BaseTextField: UITextField {
         case error
         case pristine
     }
-    
-    private enum Constants {
-        
-        static let textInsets = LayoutKitEdge(top: Branding.Spacing.S.float,
-                                          left: Branding.Spacing.S.float,
-                                          bottom: Branding.Spacing.S.float,
-                                          right: Branding.Spacing.L.float)
-        static let textColor: UIColor = .nero
-        static let cornerRadius: CGFloat = Branding.Spacing.XXS.float
-        static let fontM = Branding.Font.stencil(.bpmono, .M).font
-        static let iconSize: CGFloat = 5
-    }
-    
-    var isSecure: Bool = false {
-        
-        didSet {
-            
-            self.isSecureTextEntry = self.isSecure
-            
-            if self.rightView != self.eyeButton {
-                
-                self.rightView = self.eyeButton
-                self.rightViewMode = .always
-            }
-        }
-    }
-    
-    private lazy var eyeButton: UIButton = {
-        
-        let button = UIButton(type: UIButtonType.custom).unmask()
-        
-        button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysOriginal), for: UIControlState.normal)
-        button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysOriginal), for: UIControlState.selected)
-        
-        button.addTarget(self, action: #selector(secureTextVisibility), for: UIControlEvents.touchUpInside)
-        
-        button.size(to: .height(Constants.iconSize), .width(Constants.iconSize))
-        
-        return button
-    }()
 
     private(set) var customState: CustomState {
 
@@ -84,14 +120,47 @@ class BaseTextField: UITextField {
         }
     }
 
-    weak var baseTextFieldDelegate: BaseTextFieldDelegate?
+    private var isSecure: Bool = false {
+
+        didSet {
+
+            self.isSecureTextEntry = self.isSecure
+
+            if self.rightView != self.eyeButton {
+
+                self.rightView = self.eyeButton
+                self.rightViewMode = .always
+            }
+        }
+    }
+
+    private lazy var eyeButton: UIButton = {
+
+        let button = UIButton(type: UIButtonType.custom).unmask()
+
+        button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysOriginal), for: UIControlState.normal)
+        button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysOriginal), for: UIControlState.selected)
+
+        button.addTarget(self, action: #selector(secureTextVisibility), for: UIControlEvents.touchUpInside)
+
+        button.size(to: .height(Constants.icon.size), .width(Constants.icon.size))
+
+        return button
+    }()
+
+    let type: FieldType
 
     private(set) var hasError: Bool = false
 
-    init(frame: CGRect = .zero, baseTextFieldDelegate: BaseTextFieldDelegate) {
+    private weak var baseTextFieldDelegate: BaseTextFieldDelegate?
 
-        self.baseTextFieldDelegate = baseTextFieldDelegate
+    init(frame: CGRect = .zero, delegate: BaseTextFieldDelegate?, type: FieldType) {
+
+        self.type = type
+
         self.customState = .pristine
+
+        self.baseTextFieldDelegate = delegate
         
         super.init(frame: frame)
         
@@ -101,45 +170,48 @@ class BaseTextField: UITextField {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+    func setState(_ state: CustomState) {
+
+        self.customState = state
+    }
 }
 
 private extension BaseTextField {
     
     func configureView() {
 
-        self.textColor = Constants.textColor
-        self.tintColor = Constants.textColor
+        self.isSecureTextEntry = self.type.isSecure
+
+        self.textColor = Constants.text.color
+        self.tintColor = Constants.text.color
         
-        self.font = Constants.fontM
+        self.font = Constants.text.font
         
-        self.backgroundColor = .brilliance
-        self.layer.cornerRadius = Constants.cornerRadius
+        self.backgroundColor = Constants.backgroundColor
+        self.layer.cornerRadius = Constants.layer.cornerRadius
         self.borderStyle = .none
-        self.layer.borderWidth = 1.0
-        self.layer.cornerRadius = 2.0
+        self.layer.borderWidth = Constants.layer.borderWidth
         self.layer.shouldRasterize = true
         self.layer.rasterizationScale = UIScreen.main.scale
 
-        self.addTarget(self, action: #selector(updateCustomState), for: .editingChanged)
+        self.placeholder = self.type.placeholder
+
+        self.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
     }
     
     @objc
     func secureTextVisibility() {
         
         self.eyeButton.isSelected.toggle()
+
         self.isSecureTextEntry.toggle()
     }
 
     @objc
-    func updateCustomState() {
+    func textDidChange() {
 
-        guard let text = self.text else { return }
-
-        let hasError = text.count < 3
-
-        self.customState = hasError ? .error : .valid
-
-        self.baseTextFieldDelegate?.didUpdate(self, with: text)
+        self.baseTextFieldDelegate?.didUpdate(self)
     }
 }
 
@@ -147,22 +219,22 @@ internal extension BaseTextField {
 
     override func textRect(forBounds bounds: CGRect) -> CGRect {
 
-        return UIEdgeInsetsInsetRect(bounds, Constants.textInsets)
+        return UIEdgeInsetsInsetRect(bounds, Constants.text.insets)
     }
 
     override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
 
-        return UIEdgeInsetsInsetRect(bounds, Constants.textInsets)
+        return UIEdgeInsetsInsetRect(bounds, Constants.text.insets)
     }
 
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
 
-        return UIEdgeInsetsInsetRect(bounds, Constants.textInsets)
+        return UIEdgeInsetsInsetRect(bounds, Constants.text.insets)
     }
     
     override func rightViewRect(forBounds bounds: CGRect) -> CGRect {
         
-        let rect = UIEdgeInsetsInsetRect(bounds, Constants.textInsets)
+        let rect = UIEdgeInsetsInsetRect(bounds, Constants.text.insets)
         
         let imageBounds = UIEdgeInsetsMake(0, rect.maxX, 0, Branding.Spacing.XS.float)
         
