@@ -69,5 +69,7 @@ extension LoginViewController: LoginViewDelegate {
     func loginButtonPressed() {
 
         self.viewModel?.login()
+        
+        self.loginView.shake()
     }
 }
