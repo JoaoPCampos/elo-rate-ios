@@ -70,6 +70,6 @@ extension LoginViewController: LoginViewDelegate {
 
         self.viewModel?.login()
         
-        self.loginView.shake()
+        self.loginView.popIn()
     }
 }

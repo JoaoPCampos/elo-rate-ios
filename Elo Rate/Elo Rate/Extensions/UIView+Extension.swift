@@ -27,15 +27,26 @@ extension UIView {
                                   duration: TimeInterval = 0.5,
                                   delay: TimeInterval = 0,
                                   completion: ((Bool) -> Void)? = nil) -> UIView {
-        isHidden = false
-        alpha = 0
-        transform = CGAffineTransform(scaleX: fromScale, y: fromScale)
-        UIView.animate(
-            withDuration: duration, delay: delay, usingSpringWithDamping: 0.55, initialSpringVelocity: 3,
-            options: .curveEaseOut, animations: {
-                self.transform = .identity
-                self.alpha = 1
-        }, completion: completion)
+
+        self.alpha = 0
+        self.isHidden = false
+
+        self.transform = CGAffineTransform(scaleX: fromScale, y: fromScale)
+
+        let animations = {
+
+            self.transform = .identity
+            self.alpha = 1
+        }
+
+        UIView.animate(withDuration: duration,
+                       delay: delay,
+                       usingSpringWithDamping: 0.55,
+                       initialSpringVelocity: 3,
+                       options: .curveEaseOut,
+                       animations: animations,
+                       completion: completion)
+
         return self
     }
     
@@ -43,30 +54,44 @@ extension UIView {
                                    duration: TimeInterval = 0.3,
                                    delay: TimeInterval = 0,
                                    completion: ((Bool) -> Void)? = nil) -> UIView {
+
         let endTransform = CGAffineTransform(scaleX: toScale, y: toScale)
         let prepareTransform = CGAffineTransform(scaleX: 1.1, y: 1.1)
-        UIView.animateKeyframes(
-            withDuration: duration, delay: delay, options: .calculationModeCubic, animations: {
-                UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.2) {
-                    self.transform = prepareTransform
-                }
-                UIView.addKeyframe(withRelativeStartTime: 0.2, relativeDuration: 0.3) {
-                    self.transform = prepareTransform
-                }
-                UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 0.5) {
-                    self.transform = endTransform
-                    self.alpha = 0
-                }
-        }, completion: completion)
+
+        let animations = {
+
+            UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.2) {
+
+                self.transform = prepareTransform
+            }
+
+            UIView.addKeyframe(withRelativeStartTime: 0.2, relativeDuration: 0.3) {
+
+                self.transform = prepareTransform
+            }
+
+            UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 0.5) {
+
+                self.alpha = 0
+                self.transform = endTransform
+            }
+        }
+
+        UIView.animateKeyframes(withDuration: duration,
+                                delay: delay,
+                                options: .calculationModeCubic,
+                                animations: animations,
+                                completion: completion)
+
         return self
     }
     
     @discardableResult
     func hop(toward edge: LayoutKitAttribute? = nil,
-                                amount: CGFloat = 0.4,
-                                duration: TimeInterval = 0.6,
-                                delay: TimeInterval = 0,
-                                completion: ((Bool) -> Void)? = nil) -> UIView {
+             amount: CGFloat = 0.4,
+             duration: TimeInterval = 0.6,
+             delay: TimeInterval = 0,
+             completion: ((Bool) -> Void)? = nil) -> UIView {
         
         var dx: CGFloat = 0, dy: CGFloat = 0, ds: CGFloat = 0
         
@@ -84,34 +109,36 @@ extension UIView {
             dx = 0
             dy = (edge == .top ? -1 : 1) * self.bounds.size.height * amount;
         }
+
+        let animations = {
+
+            UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.28) {
+
+                let t = CGAffineTransform(translationX: dx, y: dy)
+                self.transform = t.scaledBy(x: 1 + ds, y: 1 + ds)
+            }
+
+            UIView.addKeyframe(withRelativeStartTime: 0.28, relativeDuration: 0.28) {
+
+                self.transform = .identity
+            }
+
+            UIView.addKeyframe(withRelativeStartTime: 0.56, relativeDuration: 0.28) {
+
+                let t = CGAffineTransform(translationX: dx * 0.5, y: dy * 0.5)
+                self.transform = t.scaledBy(x: 1 + ds * 0.5, y: 1 + ds * 0.5)
+            }
+
+            UIView.addKeyframe(withRelativeStartTime: 0.84, relativeDuration: 0.16) {
+
+                self.transform = .identity
+            }
+        }
         
         UIView.animateKeyframes(withDuration: duration,
                                 delay: delay,
                                 options: .calculationModeLinear,
-                                animations: {
-                
-                                    UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.28) {
-                    
-                                        let t = CGAffineTransform(translationX: dx, y: dy)
-                                        self.transform = t.scaledBy(x: 1 + ds, y: 1 + ds)
-                                    }
-                
-                                    UIView.addKeyframe(withRelativeStartTime: 0.28, relativeDuration: 0.28) {
-                                        
-                                        self.transform = .identity
-                                    }
-                                    
-                                    UIView.addKeyframe(withRelativeStartTime: 0.56, relativeDuration: 0.28) {
-                                        
-                                        let t = CGAffineTransform(translationX: dx * 0.5, y: dy * 0.5)
-                                        self.transform = t.scaledBy(x: 1 + ds * 0.5, y: 1 + ds * 0.5)
-                                    }
-                                    
-                                    UIView.addKeyframe(withRelativeStartTime: 0.84, relativeDuration: 0.16) {
-                                        
-                                        self.transform = .identity
-                                    }
-        },
+                                animations: animations,
                                 completion: completion)
         
         return self
@@ -138,37 +165,40 @@ extension UIView {
             dx = 0
             dy = (edge == .top ? -1 : 1) * self.bounds.size.height * amount;
         }
+
+        let animations = {
+
+            var start = 0.0
+
+            for i in 0..<(steps - 1) {
+
+                UIView.addKeyframe(withRelativeStartTime: start, relativeDuration: timeStep) {
+
+                    self.transform = CGAffineTransform(translationX: dx, y: dy)
+                }
+
+                if (edge == .none && i % 2 == 0) {
+
+                    swap(&dx, &dy)  // Change direction
+                    dy *= -1
+                }
+
+                dx *= -0.85
+                dy *= -0.85
+
+                start += timeStep
+            }
+
+            UIView.addKeyframe(withRelativeStartTime: start, relativeDuration: timeStep) {
+
+                self.transform = .identity
+            }
+        }
         
         UIView.animateKeyframes(withDuration: duration,
                                 delay: delay,
                                 options: .calculationModeCubic,
-                                animations: {
-                                    
-                                    var start = 0.0
-                                    
-                                    for i in 0..<(steps - 1) {
-                                        
-                                        UIView.addKeyframe(withRelativeStartTime: start, relativeDuration: timeStep) {
-                                            
-                                            self.transform = CGAffineTransform(translationX: dx, y: dy)
-                                        }
-                                        
-                                        if (edge == .none && i % 2 == 0) {
-                                            
-                                            swap(&dx, &dy)  // Change direction
-                                            dy *= -1
-                                        }
-                                        
-                                        dx *= -0.85
-                                        dy *= -0.85
-                                        start += timeStep
-                                    }
-                                    
-                                    UIView.addKeyframe(withRelativeStartTime: start, relativeDuration: timeStep) {
-                                        
-                                        self.transform = .identity
-                                    }
-        },
+                                animations: animations,
                                 completion: completion)
         
         return self
