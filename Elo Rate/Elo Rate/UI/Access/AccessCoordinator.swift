@@ -1,5 +1,5 @@
 //
-//  LoginCoordinator.swift
+//  AccessCoordinator.swift
 //  Elo Rate
 //
 //  Created by João Campos on 14/05/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class LoginCoordinator: Coordinator {
+final class AccessCoordinator: Coordinator {
 
     // MARK:- Properties
     private var window: UIWindow
@@ -26,8 +26,8 @@ final class LoginCoordinator: Coordinator {
 
     func start() {
 
-        let viewController = LoginViewController()
-        let viewModel = LoginViewModel()
+        let viewController = AccessViewController()
+        let viewModel = AccessViewModel()
 
         viewController.viewModel = viewModel
 

@@ -1,5 +1,5 @@
 //
-//  LoginViewModel.swift
+//  AccessViewModel.swift
 //  Elo Rate
 //
 //  Created by João Campos on 14/05/2019.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class LoginViewModel {
+final class AccessViewModel {
 
     enum LoginField {
 
@@ -41,7 +41,7 @@ final class LoginViewModel {
 }
 
 // MARK: - Private
-private extension LoginViewModel {
+private extension AccessViewModel {
 
     func validate(_ field: BaseTextField) {
 
@@ -72,7 +72,7 @@ private extension LoginViewModel {
 }
 
 // MARK: - Service
-extension LoginViewModel {
+extension AccessViewModel {
 
     func didUpdate(_ field: BaseTextField) {
 

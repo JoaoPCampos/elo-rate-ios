@@ -20,9 +20,9 @@
 		DC0241C6228B05D60029B365 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241C5228B05D60029B365 /* Coordinator.swift */; };
 		DC0241CA228B060F0029B365 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241C9228B060F0029B365 /* UINavigationController+Extension.swift */; };
 		DC0241CC228B06480029B365 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241CB228B06480029B365 /* AppCoordinator.swift */; };
-		DC0241CF228B068F0029B365 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241CE228B068F0029B365 /* LoginCoordinator.swift */; };
-		DC0241D1228B06F30029B365 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D0228B06F30029B365 /* LoginViewController.swift */; };
-		DC0241D3228B074B0029B365 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D2228B074B0029B365 /* LoginViewModel.swift */; };
+		DC0241CF228B068F0029B365 /* AccessCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241CE228B068F0029B365 /* AccessCoordinator.swift */; };
+		DC0241D1228B06F30029B365 /* AccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D0228B06F30029B365 /* AccessViewController.swift */; };
+		DC0241D3228B074B0029B365 /* AccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D2228B074B0029B365 /* AccessViewModel.swift */; };
 		DC0241D7228C273F0029B365 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D6228C273F0029B365 /* BaseTextField.swift */; };
 		DC1932EF2298385A008609AB /* NSRegularExpression+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1932EE2298385A008609AB /* NSRegularExpression+Extension.swift */; };
 		DC886C4A228C5D5C0070701B /* bpmono.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC886C46228C5D5B0070701B /* bpmono.regular.ttf */; };
@@ -63,9 +63,9 @@
 		DC0241C5228B05D60029B365 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		DC0241C9228B060F0029B365 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
 		DC0241CB228B06480029B365 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		DC0241CE228B068F0029B365 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
-		DC0241D0228B06F30029B365 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		DC0241D2228B074B0029B365 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DC0241CE228B068F0029B365 /* AccessCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCoordinator.swift; sourceTree = "<group>"; };
+		DC0241D0228B06F30029B365 /* AccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessViewController.swift; sourceTree = "<group>"; };
+		DC0241D2228B074B0029B365 /* AccessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessViewModel.swift; sourceTree = "<group>"; };
 		DC0241D6228C273F0029B365 /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
 		DC1932EE2298385A008609AB /* NSRegularExpression+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+Extension.swift"; sourceTree = "<group>"; };
 		DC886C46228C5D5B0070701B /* bpmono.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bpmono.regular.ttf; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 		DC0241C7228B05E90029B365 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				DC0241CD228B06800029B365 /* Login */,
+				DC0241CD228B06800029B365 /* Access */,
 				DC0241BF228B05640029B365 /* Base */,
 			);
 			path = UI;
@@ -199,15 +199,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		DC0241CD228B06800029B365 /* Login */ = {
+		DC0241CD228B06800029B365 /* Access */ = {
 			isa = PBXGroup;
 			children = (
-				DC0241CE228B068F0029B365 /* LoginCoordinator.swift */,
-				DC0241D0228B06F30029B365 /* LoginViewController.swift */,
-				DC0241D2228B074B0029B365 /* LoginViewModel.swift */,
+				DC0241CE228B068F0029B365 /* AccessCoordinator.swift */,
+				DC0241D0228B06F30029B365 /* AccessViewController.swift */,
+				DC0241D2228B074B0029B365 /* AccessViewModel.swift */,
 				D80CE61C228B69520018D1AA /* LoginView.swift */,
 			);
-			path = Login;
+			path = Access;
 			sourceTree = "<group>";
 		};
 		DC0241D4228C27190029B365 /* ViewControllers */ = {
@@ -411,9 +411,9 @@
 				D80CE61F228B6C990018D1AA /* UIView+Extension.swift in Sources */,
 				DC0241CC228B06480029B365 /* AppCoordinator.swift in Sources */,
 				DC0241C6228B05D60029B365 /* Coordinator.swift in Sources */,
-				DC0241CF228B068F0029B365 /* LoginCoordinator.swift in Sources */,
+				DC0241CF228B068F0029B365 /* AccessCoordinator.swift in Sources */,
 				C9F115822123325300F29650 /* AppDelegate.swift in Sources */,
-				DC0241D1228B06F30029B365 /* LoginViewController.swift in Sources */,
+				DC0241D1228B06F30029B365 /* AccessViewController.swift in Sources */,
 				DC0241D7228C273F0029B365 /* BaseTextField.swift in Sources */,
 				DC0241CA228B060F0029B365 /* UINavigationController+Extension.swift in Sources */,
 				DC1932EF2298385A008609AB /* NSRegularExpression+Extension.swift in Sources */,
@@ -421,7 +421,7 @@
 				DC0241C1228B05830029B365 /* BaseViewController.swift in Sources */,
 				DC886C53228D52660070701B /* UIColor+Extension.swift in Sources */,
 				D80CE61D228B69520018D1AA /* LoginView.swift in Sources */,
-				DC0241D3228B074B0029B365 /* LoginViewModel.swift in Sources */,
+				DC0241D3228B074B0029B365 /* AccessViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

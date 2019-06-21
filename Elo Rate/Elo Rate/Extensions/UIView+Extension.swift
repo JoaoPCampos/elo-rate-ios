@@ -22,11 +22,17 @@ extension UIView {
 
 // MARK: - Animations
 extension UIView {
+
+    func hide() {
+
+        self.isHidden = true
+    }
     
-    @discardableResult func popIn(fromScale: CGFloat = 0.5,
-                                  duration: TimeInterval = 0.5,
-                                  delay: TimeInterval = 0,
-                                  completion: ((Bool) -> Void)? = nil) -> UIView {
+    @discardableResult
+    func popIn(fromScale: CGFloat = 0.5,
+               duration: TimeInterval = 0.5,
+               delay: TimeInterval = 0,
+               completion: ((Bool) -> Void)? = nil) -> UIView {
 
         self.alpha = 0
         self.isHidden = false
@@ -50,10 +56,11 @@ extension UIView {
         return self
     }
     
-    @discardableResult func popOut(toScale: CGFloat = 0.5,
-                                   duration: TimeInterval = 0.3,
-                                   delay: TimeInterval = 0,
-                                   completion: ((Bool) -> Void)? = nil) -> UIView {
+    @discardableResult
+    func popOut(toScale: CGFloat = 0.5,
+                duration: TimeInterval = 0.3,
+                delay: TimeInterval = 0,
+                completion: ((Bool) -> Void)? = nil) -> UIView {
 
         let endTransform = CGAffineTransform(scaleX: toScale, y: toScale)
         let prepareTransform = CGAffineTransform(scaleX: 1.1, y: 1.1)
