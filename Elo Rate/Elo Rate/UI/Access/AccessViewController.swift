@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  AccessViewController.swift
 //  Elo Rate
 //
 //  Created by João Campos on 14/05/2019.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-final class LoginViewController: BaseViewController {
+final class AccessViewController: BaseViewController {
 
-    var viewModel: LoginViewModel?
+    var viewModel: AccessViewModel?
 
     private lazy var loginView = { return LoginView(delegate: self).unmask() }()
 
@@ -26,21 +26,19 @@ final class LoginViewController: BaseViewController {
 
         super.viewWillAppear(animated)
 
-        self.loginView.layoutIfNeeded()
-
-        self.loginView.shiftCenter(by: self.view.bounds.width, animated: false, toHide: true)
+        self.loginView.hide()
     }
 
     override func viewDidAppear(_ animated: Bool) {
 
         super.viewDidAppear(animated)
 
-        self.loginView.shiftCenter(by: self.view.bounds.width, animated: true, toHide: false)
+        self.loginView.popIn(delay: 0.5)
     }
 }
 
 // MARK: - Private
-private extension LoginViewController {
+private extension AccessViewController {
 
     func defineSubViews() {
         
@@ -55,7 +53,7 @@ private extension LoginViewController {
 }
 
 // MARK: - LoginViewDelegate
-extension LoginViewController: LoginViewDelegate {
+extension AccessViewController: LoginViewDelegate {
 
     func didUpdate(_ field: BaseTextField) {
 
@@ -70,6 +68,6 @@ extension LoginViewController: LoginViewDelegate {
 
         self.viewModel?.login()
         
-        self.loginView.shake()
+        self.loginView.popIn()
     }
 }

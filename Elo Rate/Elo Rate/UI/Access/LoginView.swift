@@ -19,16 +19,6 @@ final class LoginView: UIView {
     
     private enum Constants {
 
-        enum animation {
-
-            /// 0.5
-            static let duration: TimeInterval = 0.5
-            /// 0.3
-            static let spring: CGFloat = 0.3
-            /// 0.1
-            static let speed: CGFloat = 0.1
-        }
-
         enum button {
 
             /// Login
@@ -83,28 +73,6 @@ final class LoginView: UIView {
         
         fatalError("init(coder:) has not been implemented")
     }
-
-    func shiftCenter(by value: CGFloat, animated: Bool, toHide: Bool) {
-
-        let valueDirection = toHide ? -value : value
-
-        let usernameBlock: () -> Void = { self.usernameTextField.center.x += valueDirection }
-        let passwordBlock: () -> Void = { self.passwordTextField.center.x += valueDirection }
-        let loginButtonBlock: () -> Void = { self.loginButton.center.x += valueDirection }
-
-        if animated {
-
-            self.animate(usernameBlock, delay: Constants.animation.duration/3)
-            self.animate(passwordBlock, delay: Constants.animation.duration/2)
-            self.animate(loginButtonBlock, delay: Constants.animation.duration)
-
-        } else {
-
-            usernameBlock()
-            passwordBlock()
-            loginButtonBlock()
-        }
-    }
 }
 
 // MARK: - Private
@@ -144,16 +112,5 @@ private extension LoginView {
         
         self.loginButton.topAnchor.bind(to: self.passwordTextField.bottomAnchor).addSpace(Constants.horizontalMargin)
         self.loginButton.edge(onlyTo: [.leading, .trailing, .bottom], to: self, insets: [.all(Constants.margin)])
-    }
-
-    func animate(_ block: @escaping () -> Void, delay: TimeInterval) {
-
-        UIView.animate(withDuration: Constants.animation.duration,
-                       delay: delay,
-                       usingSpringWithDamping: Constants.animation.spring,
-                       initialSpringVelocity: Constants.animation.speed,
-                       options: .curveEaseInOut,
-                       animations: block,
-                       completion: nil)
     }
 }

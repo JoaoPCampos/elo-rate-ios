@@ -23,10 +23,10 @@ final class AppCoordinator: Coordinator {
 
     func start() {
 
-        let loginCoordinator = LoginCoordinator(coordinators: [], window: window)
+        let accessCoordinator = AccessCoordinator(coordinators: [], window: window)
 
-        loginCoordinator.start()
+        accessCoordinator.start()
 
-        didStartExecution(onCoordinator: loginCoordinator)
+        self.didStartExecution(onCoordinator: accessCoordinator)
     }
 }

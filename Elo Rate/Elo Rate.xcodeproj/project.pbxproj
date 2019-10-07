@@ -20,9 +20,9 @@
 		DC0241C6228B05D60029B365 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241C5228B05D60029B365 /* Coordinator.swift */; };
 		DC0241CA228B060F0029B365 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241C9228B060F0029B365 /* UINavigationController+Extension.swift */; };
 		DC0241CC228B06480029B365 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241CB228B06480029B365 /* AppCoordinator.swift */; };
-		DC0241CF228B068F0029B365 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241CE228B068F0029B365 /* LoginCoordinator.swift */; };
-		DC0241D1228B06F30029B365 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D0228B06F30029B365 /* LoginViewController.swift */; };
-		DC0241D3228B074B0029B365 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D2228B074B0029B365 /* LoginViewModel.swift */; };
+		DC0241CF228B068F0029B365 /* AccessCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241CE228B068F0029B365 /* AccessCoordinator.swift */; };
+		DC0241D1228B06F30029B365 /* AccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D0228B06F30029B365 /* AccessViewController.swift */; };
+		DC0241D3228B074B0029B365 /* AccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D2228B074B0029B365 /* AccessViewModel.swift */; };
 		DC0241D7228C273F0029B365 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241D6228C273F0029B365 /* BaseTextField.swift */; };
 		DC1932EF2298385A008609AB /* NSRegularExpression+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1932EE2298385A008609AB /* NSRegularExpression+Extension.swift */; };
 		DC886C4A228C5D5C0070701B /* bpmono.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC886C46228C5D5B0070701B /* bpmono.regular.ttf */; };
@@ -65,9 +65,9 @@
 		DC0241C5228B05D60029B365 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		DC0241C9228B060F0029B365 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
 		DC0241CB228B06480029B365 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		DC0241CE228B068F0029B365 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
-		DC0241D0228B06F30029B365 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		DC0241D2228B074B0029B365 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DC0241CE228B068F0029B365 /* AccessCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCoordinator.swift; sourceTree = "<group>"; };
+		DC0241D0228B06F30029B365 /* AccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessViewController.swift; sourceTree = "<group>"; };
+		DC0241D2228B074B0029B365 /* AccessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessViewModel.swift; sourceTree = "<group>"; };
 		DC0241D6228C273F0029B365 /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
 		DC1932EE2298385A008609AB /* NSRegularExpression+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+Extension.swift"; sourceTree = "<group>"; };
 		DC886C46228C5D5B0070701B /* bpmono.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bpmono.regular.ttf; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 		DC0241C7228B05E90029B365 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				DC0241CD228B06800029B365 /* Login */,
+				DC0241CD228B06800029B365 /* Access */,
 				DC0241BF228B05640029B365 /* Base */,
 			);
 			path = UI;
@@ -203,15 +203,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		DC0241CD228B06800029B365 /* Login */ = {
+		DC0241CD228B06800029B365 /* Access */ = {
 			isa = PBXGroup;
 			children = (
-				DC0241CE228B068F0029B365 /* LoginCoordinator.swift */,
-				DC0241D0228B06F30029B365 /* LoginViewController.swift */,
-				DC0241D2228B074B0029B365 /* LoginViewModel.swift */,
+				DC0241CE228B068F0029B365 /* AccessCoordinator.swift */,
+				DC0241D0228B06F30029B365 /* AccessViewController.swift */,
+				DC0241D2228B074B0029B365 /* AccessViewModel.swift */,
 				D80CE61C228B69520018D1AA /* LoginView.swift */,
 			);
-			path = Login;
+			path = Access;
 			sourceTree = "<group>";
 		};
 		DC0241D4228C27190029B365 /* ViewControllers */ = {
@@ -415,9 +415,9 @@
 				D80CE61F228B6C990018D1AA /* UIView+Extension.swift in Sources */,
 				DC0241CC228B06480029B365 /* AppCoordinator.swift in Sources */,
 				DC0241C6228B05D60029B365 /* Coordinator.swift in Sources */,
-				DC0241CF228B068F0029B365 /* LoginCoordinator.swift in Sources */,
+				DC0241CF228B068F0029B365 /* AccessCoordinator.swift in Sources */,
 				C9F115822123325300F29650 /* AppDelegate.swift in Sources */,
-				DC0241D1228B06F30029B365 /* LoginViewController.swift in Sources */,
+				DC0241D1228B06F30029B365 /* AccessViewController.swift in Sources */,
 				DC0241D7228C273F0029B365 /* BaseTextField.swift in Sources */,
 				DC0241CA228B060F0029B365 /* UINavigationController+Extension.swift in Sources */,
 				DC1932EF2298385A008609AB /* NSRegularExpression+Extension.swift in Sources */,
@@ -425,7 +425,7 @@
 				DC0241C1228B05830029B365 /* BaseViewController.swift in Sources */,
 				DC886C53228D52660070701B /* UIColor+Extension.swift in Sources */,
 				D80CE61D228B69520018D1AA /* LoginView.swift in Sources */,
-				DC0241D3228B074B0029B365 /* LoginViewModel.swift in Sources */,
+				DC0241D3228B074B0029B365 /* AccessViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,108 +655,6 @@
 			};
 			name = Release;
 		};
-		D81B62ED234BE5BA0015C8B3 /* XCTest */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"XCTEST=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = XCTest;
-		};
-		D81B62EE234BE5BA0015C8B3 /* XCTest */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BA7DB9B417A1AE57B57D009 /* Pods-Elo Rate.xctest.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "Elo Rate/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.elo.rate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = XCTest;
-		};
-		D81B62EF234BE5BA0015C8B3 /* XCTest */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26F9F2D9B1050DC06C1B2766 /* Pods-Elo RateTests.xctest.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Elo RateTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "joCs.Elo-RateTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Elo Rate.app/Elo Rate";
-			};
-			name = XCTest;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -764,7 +662,6 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9F115992123325400F29650 /* Debug */,
-				D81B62ED234BE5BA0015C8B3 /* XCTest */,
 				C9F1159A2123325400F29650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -774,7 +671,6 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9F1159C2123325400F29650 /* Debug */,
-				D81B62EE234BE5BA0015C8B3 /* XCTest */,
 				C9F1159D2123325400F29650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -784,7 +680,6 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9F1159F2123325400F29650 /* Debug */,
-				D81B62EF234BE5BA0015C8B3 /* XCTest */,
 				C9F115A02123325400F29650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
