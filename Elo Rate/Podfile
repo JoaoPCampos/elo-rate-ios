@@ -1,6 +1,8 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '10.0'
 
+project 'Elo Rate.xcodeproj', 'XCTest' => :debug
+
 source 'git@github.com:JoaoPCampos/frameworks-ios.git'
 
 target 'Elo Rate' do
