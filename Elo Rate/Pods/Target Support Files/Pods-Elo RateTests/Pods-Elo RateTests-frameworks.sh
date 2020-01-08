@@ -164,10 +164,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/LayoutKit/LayoutKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftService/SwiftService.framework"
 fi
-if [[ "$CONFIGURATION" == "XCTest" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/LayoutKit/LayoutKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SwiftService/SwiftService.framework"
-fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/LayoutKit/LayoutKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftService/SwiftService.framework"

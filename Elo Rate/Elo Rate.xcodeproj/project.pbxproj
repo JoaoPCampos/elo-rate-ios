@@ -43,7 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26F9F2D9B1050DC06C1B2766 /* Pods-Elo RateTests.xctest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo RateTests.xctest.xcconfig"; path = "Target Support Files/Pods-Elo RateTests/Pods-Elo RateTests.xctest.xcconfig"; sourceTree = "<group>"; };
 		5AF2D266AF705BDA97A39B13 /* Pods-Elo RateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo RateTests.debug.xcconfig"; path = "Target Support Files/Pods-Elo RateTests/Pods-Elo RateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7BA7DB9B417A1AE57B57D009 /* Pods-Elo Rate.xctest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo Rate.xctest.xcconfig"; path = "Target Support Files/Pods-Elo Rate/Pods-Elo Rate.xctest.xcconfig"; sourceTree = "<group>"; };
 		815BA00031C08D793B2DFD16 /* Pods-Elo Rate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo Rate.debug.xcconfig"; path = "Target Support Files/Pods-Elo Rate/Pods-Elo Rate.debug.xcconfig"; sourceTree = "<group>"; };
 		9BD3B99CD6185735295FD038 /* Pods_Elo_Rate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elo_Rate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06372E1418D7664BBC99E84 /* Pods_Elo_RateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elo_RateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +114,8 @@
 				A9DD936460F8D4245BE1B351 /* Pods-Elo Rate.release.xcconfig */,
 				5AF2D266AF705BDA97A39B13 /* Pods-Elo RateTests.debug.xcconfig */,
 				E2064E104B1F63D698230934 /* Pods-Elo RateTests.release.xcconfig */,
+				7BA7DB9B417A1AE57B57D009 /* Pods-Elo Rate.xctest.xcconfig */,
+				26F9F2D9B1050DC06C1B2766 /* Pods-Elo RateTests.xctest.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";

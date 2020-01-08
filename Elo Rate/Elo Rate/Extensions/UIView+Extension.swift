@@ -6,7 +6,6 @@
 //  Copyright © 2019 João Campos. All rights reserved.
 //
 
-import UIKit
 import LayoutKit
 
 extension UIView {
@@ -222,19 +221,15 @@ private extension UIView {
             switch edge {
             
             case .top:
-                
                 return CGPoint(x: 0, y: -frame.maxY)
             
             case .bottom:
-                
                 return CGPoint(x: 0, y: parentSize.height - frame.minY)
             
             case .leading:
-                
                 return CGPoint(x: -frame.maxX, y: 0)
             
             case .trailing:
-                
                 return CGPoint(x: parentSize.width - frame.minX, y: 0)
             }
         }

@@ -6,8 +6,6 @@
 //  Copyright © 2019 João Campos. All rights reserved.
 //
 
-import Foundation
-
 final class AccessViewModel {
 
     enum LoginField {
@@ -83,8 +81,5 @@ extension AccessViewModel {
         return usernameRegex.matches(self.username) && passwordRegex.matches(self.password)
     }
 
-    func login() {
-
-        ServiceManager.init(service: ServiceProtocol)
-    }
+    func login() {}
 }
