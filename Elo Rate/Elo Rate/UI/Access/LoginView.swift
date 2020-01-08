@@ -6,7 +6,6 @@
 //  Copyright © 2019 João Campos. All rights reserved.
 //
 
-import UIKit
 import LayoutKit
 
 @objc
@@ -55,7 +54,7 @@ final class LoginView: UIView {
 
     private weak var delegate: LoginViewDelegate?
 
-    let loginButton = UIButton(type: .roundedRect).unmask()
+    private let loginButton = UIButton(type: .roundedRect).unmask()
 
     init(frame: CGRect = .zero, delegate: LoginViewDelegate) {
 
@@ -72,6 +71,11 @@ final class LoginView: UIView {
     required init?(coder aDecoder: NSCoder) {
         
         fatalError("init(coder:) has not been implemented")
+    }
+
+    func shouldEnableLoginButton(_ shouldEnable: Bool) {
+
+        self.loginButton.isEnabled = shouldEnable
     }
 }
 
@@ -90,16 +94,11 @@ private extension LoginView {
         self.loginButton.layer.cornerRadius = Constants.cornerRadius
         self.loginButton.layer.shouldRasterize = true
         self.loginButton.layer.rasterizationScale = UIScreen.main.scale
-
         self.loginButton.titleLabel?.font = Constants.button.font
-
         self.loginButton.setTitle(Constants.button.text, for: .normal)
-
         self.loginButton.setTitleColor(Constants.button.color, for: .normal)
         self.loginButton.setTitleColor(Constants.button.disabledColor, for: .disabled)
-
         self.loginButton.backgroundColor = Constants.button.backgroundColor
-
         self.loginButton.isEnabled = false
     }
     

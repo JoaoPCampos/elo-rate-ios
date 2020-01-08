@@ -21,6 +21,5 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-Elo Rate/.DS_Store
-Elo Rate/Elo Rate/.DS_Store
-Elo Rate/Elo Rate/UI/Base/.DS_Store
+.DS_Store
+*/.DS_Store

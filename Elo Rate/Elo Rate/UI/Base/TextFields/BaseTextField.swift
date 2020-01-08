@@ -106,15 +106,12 @@ class BaseTextField: UITextField {
             switch self.customState {
 
             case .valid:
-
                 self.layer.borderColor = UIColor.nero.cgColor
 
             case .error:
-
                 self.layer.borderColor = UIColor.brakeLights.cgColor
 
             case .pristine:
-
                 self.layer.borderColor = UIColor.nero.cgColor
             }
         }
@@ -157,9 +154,7 @@ class BaseTextField: UITextField {
     init(frame: CGRect = .zero, delegate: BaseTextFieldDelegate?, type: FieldType) {
 
         self.type = type
-
         self.customState = .pristine
-
         self.baseTextFieldDelegate = delegate
         
         super.init(frame: frame)
@@ -181,21 +176,24 @@ private extension BaseTextField {
     
     func configureView() {
 
-        self.isSecureTextEntry = self.type.isSecure
+        self.font = Constants.text.font
 
         self.textColor = Constants.text.color
+
         self.tintColor = Constants.text.color
-        
-        self.font = Constants.text.font
-        
+
         self.backgroundColor = Constants.backgroundColor
-        self.layer.cornerRadius = Constants.layer.cornerRadius
+
         self.borderStyle = .none
+
+        self.layer.cornerRadius = Constants.layer.cornerRadius
         self.layer.borderWidth = Constants.layer.borderWidth
         self.layer.shouldRasterize = true
         self.layer.rasterizationScale = UIScreen.main.scale
 
         self.placeholder = self.type.placeholder
+
+        self.isSecureTextEntry = self.type.isSecure
 
         self.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
     }

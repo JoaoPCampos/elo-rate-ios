@@ -36,7 +36,6 @@ extension UIView {
 
         self.alpha = 0
         self.isHidden = false
-
         self.transform = CGAffineTransform(scaleX: fromScale, y: fromScale)
 
         let animations = {

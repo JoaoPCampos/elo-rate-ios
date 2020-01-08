@@ -32,6 +32,7 @@ final class AccessCoordinator: Coordinator {
         viewController.viewModel = viewModel
 
         self.navigationController.pushViewController(viewController, animated: true)
+
         self.window.rootViewController = self.navigationController
         self.window.makeKeyAndVisible()
     }

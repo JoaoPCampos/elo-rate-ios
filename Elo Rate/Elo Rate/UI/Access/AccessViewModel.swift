@@ -30,11 +30,9 @@ final class AccessViewModel {
         switch field {
 
         case .username(let username):
-
             self.username = username
 
         case .password(let password):
-
             self.password = password
         }
     }
@@ -54,11 +52,9 @@ private extension AccessViewModel {
         switch field.type {
 
         case .username:
-
             self.username = text
 
         case .password:
-
             self.password = text
         }
     }
@@ -81,14 +77,14 @@ extension AccessViewModel {
 
     func shouldEnableLoginButton() -> Bool {
 
-        let usernameFieldType: BaseTextField.FieldType = .username
-        let passwordFieldType: BaseTextField.FieldType = .password
+        let usernameRegex = BaseTextField.FieldType.username.regex
+        let passwordRegex = BaseTextField.FieldType.password.regex
 
-        return usernameFieldType.regex.matches(self.username) && passwordFieldType.regex.matches(self.password)
+        return usernameRegex.matches(self.username) && passwordRegex.matches(self.password)
     }
 
     func login() {
 
-        // TODO
+        ServiceManager.init(service: ServiceProtocol)
     }
 }

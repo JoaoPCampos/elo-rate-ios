@@ -32,22 +32,25 @@ extension Coordinator {
 
     func didStartExecution(onCoordinator: Coordinator) {
 
-        coordinators.append(onCoordinator)
+        self.coordinators.append(onCoordinator)
 
         onCoordinator.releaseCoordinator = { [weak self] coordinator in
 
             guard let `self` = self else {
+
                 print("\n" + coordinator.description + " NOT deallocated\n")
+
                 return
             }
 
             self.didFinishExecution(onCoordinator: coordinator)
+
             print("\n" + coordinator.description + " deallocated\n")
         }
     }
 
     func didFinishExecution(onCoordinator: Coordinator) {
 
-        coordinators = coordinators.filter { $0 !== onCoordinator }
+        self.coordinators = self.coordinators.filter { $0 !== onCoordinator }
     }
 }

@@ -6,8 +6,6 @@
 //  Copyright © 2019 João Campos. All rights reserved.
 //
 
-import UIKit
-
 final class AccessViewController: BaseViewController {
 
     var viewModel: AccessViewModel?
@@ -61,7 +59,7 @@ extension AccessViewController: LoginViewDelegate {
 
         viewModel.didUpdate(field)
 
-        self.loginView.loginButton.isEnabled = viewModel.shouldEnableLoginButton()
+        self.loginView.shouldEnableLoginButton(viewModel.shouldEnableLoginButton())
     }
 
     func loginButtonPressed() {
