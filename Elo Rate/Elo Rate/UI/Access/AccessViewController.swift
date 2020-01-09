@@ -56,16 +56,10 @@ extension AccessViewController: LoginViewDelegate {
     func didUpdate(_ field: BaseTextField) {
 
         guard let viewModel = self.viewModel else { return }
-
-        viewModel.didUpdate(field)
-
-        self.loginView.shouldEnableLoginButton(viewModel.shouldEnableLoginButton())
     }
 
     func loginButtonPressed() {
 
         self.viewModel?.login()
-        
-        self.loginView.popIn()
     }
 }

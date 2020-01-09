@@ -9,7 +9,7 @@
 import LayoutKit
 
 @objc
-protocol LoginViewDelegate: BaseTextFieldDelegate {
+protocol LoginViewDelegate {
 
     func loginButtonPressed()
 }
@@ -42,14 +42,14 @@ final class LoginView: UIView {
         static let insets = LayoutKitEdge.all(Branding.Spacing.S.float)
     }
     
-    private lazy var usernameTextField: BaseTextField = {
+    private lazy var usernameTextField: AccessTextField = {
 
-        return BaseTextField(delegate: self.delegate, type: .username).unmask()
+        return AccessTextField(.username, delegate: self).unmask()
     }()
 
-    private lazy var passwordTextField: BaseTextField = {
+    private lazy var passwordTextField: AccessTextField = {
 
-        return BaseTextField(delegate: self.delegate, type: .password).unmask()
+        return AccessTextField(.password, delegate: self).unmask()
     }()
 
     private weak var delegate: LoginViewDelegate?
@@ -71,11 +71,6 @@ final class LoginView: UIView {
     required init?(coder aDecoder: NSCoder) {
         
         fatalError("init(coder:) has not been implemented")
-    }
-
-    func shouldEnableLoginButton(_ shouldEnable: Bool) {
-
-        self.loginButton.isEnabled = shouldEnable
     }
 }
 
@@ -111,5 +106,14 @@ private extension LoginView {
         
         self.loginButton.topAnchor.bind(to: self.passwordTextField.bottomAnchor).addSpace(Constants.horizontalMargin)
         self.loginButton.edge(onlyTo: [.leading, .trailing, .bottom], to: self, insets: [.all(Constants.margin)])
+    }
+}
+
+extension LoginView: UITextFieldDelegate {
+
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+
+        print(string)
+        return true
     }
 }

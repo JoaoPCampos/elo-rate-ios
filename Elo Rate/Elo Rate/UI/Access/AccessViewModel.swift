@@ -36,50 +36,8 @@ final class AccessViewModel {
     }
 }
 
-// MARK: - Private
-private extension AccessViewModel {
-
-    func validate(_ field: BaseTextField) {
-
-        guard let text = field.text else { return }
-
-        let state = self.regex(validate: field)
-
-        field.setState(state)
-
-        switch field.type {
-
-        case .username:
-            self.username = text
-
-        case .password:
-            self.password = text
-        }
-    }
-
-    func regex(validate field: BaseTextField) -> BaseTextField.CustomState {
-
-        let match = field.type.regex.matches(field.text)
-
-        return match ? .valid : .error
-    }
-}
-
 // MARK: - Service
 extension AccessViewModel {
-
-    func didUpdate(_ field: BaseTextField) {
-
-        self.validate(field)
-    }
-
-    func shouldEnableLoginButton() -> Bool {
-
-        let usernameRegex = BaseTextField.FieldType.username.regex
-        let passwordRegex = BaseTextField.FieldType.password.regex
-
-        return usernameRegex.matches(self.username) && passwordRegex.matches(self.password)
-    }
 
     func login() {}
 }
