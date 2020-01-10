@@ -14,6 +14,7 @@ final class AccessTextField: UITextField {
     private enum Constants {
 
         static let backgroundColor: UIColor = .brilliance
+        static let height = Branding.Spacing.M.float + Branding.Spacing.S.float + Branding.Spacing.XS.float
 
         enum placeholder {
 
@@ -34,14 +35,16 @@ final class AccessTextField: UITextField {
 
         enum layer {
             /// XXS - 4
-            static let cornerRadius: CGFloat = Branding.Spacing.XXS.float
+            static let cornerRadius = Branding.Spacing.XXS.float
             /// 1
-            static let borderWidth: CGFloat = 1
+            static let borderWidth: CGFloat = 1.0
         }
 
         enum icon {
             /// XXS - 4
             static let size: CGFloat = Branding.Spacing.XXS.float
+            /// XS - 6
+            static let rightMargin: CGFloat = Branding.Spacing.XS.float
         }
     }
 
@@ -49,10 +52,12 @@ final class AccessTextField: UITextField {
 
         let button = UIButton(type: UIButtonType.custom).unmask()
 
-        button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysOriginal), for: UIControlState.normal)
-        button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysOriginal), for: UIControlState.selected)
+        button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysTemplate), for: UIControlState.normal)
+        button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysTemplate), for: UIControlState.selected)
 
         button.addTarget(self, action: #selector(self.secureTextVisibility), for: UIControlEvents.touchUpInside)
+
+        button.tintColor = .silver
 
         button.size(to: .height(Constants.icon.size), .width(Constants.icon.size))
 
@@ -78,6 +83,18 @@ final class AccessTextField: UITextField {
     required init?(coder: NSCoder) {
 
         fatalError("init(coder:) has not been implemented")
+    }
+
+    func willUpdate(with text: String) {
+
+        let evaluationText: String
+
+        if let currentText = self.text {
+
+            evaluationText = text.isEmpty ? String(currentText.dropLast()) : currentText + text
+
+            self.layer.borderColor = self.configuration.color(for: evaluationText)
+        }
     }
 }
 
@@ -109,12 +126,16 @@ private extension AccessTextField {
             self.rightView = self.eyeButton
             self.rightViewMode = .always
         }
+
+        self.size(to: .height(Constants.height))
     }
 
     @objc
     func secureTextVisibility() {
 
         self.eyeButton.isSelected.toggle()
+
+        self.eyeButton.tintColor = self.eyeButton.isSelected ? .nero : .silver
 
         self.isSecureTextEntry.toggle()
     }
@@ -161,9 +182,10 @@ extension AccessTextField {
             }
         }
 
-        var errorColor: CGColor { return UIColor.brakeLights.cgColor }
+        func color(for content: String) -> CGColor {
 
-        var validColor: CGColor { return UIColor.nero.cgColor }
+            return self.regex.matches(content) ? UIColor.nero.cgColor : UIColor.brakeLights.cgColor
+        }
     }
 }
 
@@ -189,7 +211,7 @@ internal extension AccessTextField {
 
         let rect = UIEdgeInsetsInsetRect(bounds, Constants.text.insets)
 
-        let imageBounds = UIEdgeInsetsMake(0, rect.maxX, 0, Branding.Spacing.XS.float)
+        let imageBounds = UIEdgeInsetsMake(0, rect.maxX, 0, Constants.icon.rightMargin)
 
         return UIEdgeInsetsInsetRect(bounds, imageBounds)
     }

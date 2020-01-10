@@ -113,7 +113,11 @@ extension LoginView: UITextFieldDelegate {
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 
-        print(string)
+        if let accessTextField = textField as? AccessTextField {
+
+            accessTextField.willUpdate(with: string)
+        }
+
         return true
     }
 }

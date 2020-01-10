@@ -17,4 +17,6 @@ extension UIColor {
     static let brilliance = UIColor(named: "brilliance")!
     /// value: #444444
     static let goshawkGrey = UIColor(named: "goshawk-grey")!
+    /// value: #BBBBBB
+    static let silver = UIColor(named: "silver")!
 }
