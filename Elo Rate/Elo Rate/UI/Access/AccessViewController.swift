@@ -8,9 +8,10 @@
 
 final class AccessViewController: BaseViewController {
 
-    var viewModel: AccessViewModel?
-
-    private lazy var loginView = { return LoginView(delegate: self).unmask() }()
+    private lazy var accessLoginView = {
+        
+        return AccessLoginView(delegate: self).unmask()
+    }()
 
     override func viewDidLoad() {
 
@@ -24,14 +25,14 @@ final class AccessViewController: BaseViewController {
 
         super.viewWillAppear(animated)
 
-        self.loginView.hide()
+        self.accessLoginView.hide()
     }
 
     override func viewDidAppear(_ animated: Bool) {
 
         super.viewDidAppear(animated)
 
-        self.loginView.popIn(delay: 0.5)
+        self.accessLoginView.popIn(delay: 0.5)
     }
 }
 
@@ -40,26 +41,22 @@ private extension AccessViewController {
 
     func defineSubViews() {
         
-        self.view.addSubview(self.loginView)
+        self.view.addSubview(self.accessLoginView)
     }
 
     func defineConstraints() {
 
-        self.loginView.center(in: self.view)
-        self.loginView.edge(onlyTo: [.leading, .trailing], to: self.view)
+        self.accessLoginView.center(in: self.view)
+        self.accessLoginView.edge(onlyTo: [.leading, .trailing],
+                                  to: self.view)
     }
 }
 
 // MARK: - LoginViewDelegate
-extension AccessViewController: LoginViewDelegate {
-
-    func didUpdate(_ field: BaseTextField) {
-
-        guard let viewModel = self.viewModel else { return }
-    }
+extension AccessViewController: AccessLoginViewDelegate {
 
     func loginButtonPressed() {
-
-        self.viewModel?.login()
+        
+        /// TODO
     }
 }

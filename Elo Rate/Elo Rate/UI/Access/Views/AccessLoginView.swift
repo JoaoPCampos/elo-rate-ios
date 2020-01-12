@@ -1,5 +1,5 @@
 //
-//  LoginView.swift
+//  AccessLoginView.swift
 //  Elo Rate
 //
 //  Created by João Campos on 14/05/2019.
@@ -9,12 +9,12 @@
 import LayoutKit
 
 @objc
-protocol LoginViewDelegate {
+protocol AccessLoginViewDelegate {
 
     func loginButtonPressed()
 }
 
-final class LoginView: UIView {
+final class AccessLoginView: UIView {
     
     private enum Constants {
 
@@ -52,11 +52,11 @@ final class LoginView: UIView {
         return AccessTextField(.password, delegate: self).unmask()
     }()
 
-    private weak var delegate: LoginViewDelegate?
+    private weak var delegate: AccessLoginViewDelegate?
 
     private let loginButton = UIButton(type: .roundedRect).unmask()
 
-    init(frame: CGRect = .zero, delegate: LoginViewDelegate) {
+    init(frame: CGRect = .zero, delegate: AccessLoginViewDelegate) {
 
         self.delegate = delegate
 
@@ -75,11 +75,13 @@ final class LoginView: UIView {
 }
 
 // MARK: - Private
-private extension LoginView {
+private extension AccessLoginView {
     
     func configureView() {
         
-        self.loginButton.addTarget(self.delegate, action: #selector(self.delegate?.loginButtonPressed), for: .touchUpInside)
+        self.loginButton.addTarget(self.delegate,
+                                   action: #selector(self.delegate?.loginButtonPressed),
+                                   for: .touchUpInside)
         
         self.add(self.usernameTextField, self.passwordTextField, self.loginButton)
     }
@@ -109,15 +111,10 @@ private extension LoginView {
     }
 }
 
-extension LoginView: UITextFieldDelegate {
-
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-
-        if let accessTextField = textField as? AccessTextField {
-
-            accessTextField.willUpdate(with: string)
-        }
-
-        return true
+extension AccessLoginView: AccessTextFieldDelegate {
+    
+    func textChanged() {
+        
+        self.loginButton.isEnabled = self.usernameTextField.isValid() && self.passwordTextField.isValid()
     }
 }

@@ -79,11 +79,8 @@
 		274702CAE4E5D239C1FBE757307CF09A /* Pods-Elo RateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Elo RateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2909ACAA6C320A20B2F51CA5D734A6A8 /* LayoutKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LayoutKit-prefix.pch"; sourceTree = "<group>"; };
 		2915BB0ABAEFBEA3F9E6FABE1E39FEAF /* LayoutKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LayoutKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B5BF5DCE5D2719696211299FE322764 /* Pods-Elo RateTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Elo RateTests-Info.plist"; sourceTree = "<group>"; };
-		2C52441F4F06AA06CCB63D84708EE751 /* Pods-Elo Rate-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Elo Rate-acknowledgements.plist"; sourceTree = "<group>"; };
 		32D5A59EE9666224F03CF3C733CAC42C /* ServiceError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceError.swift; path = SwiftService/Source/Classes/ServiceError.swift; sourceTree = "<group>"; };
 		34E6F504305A6829D344920A6E1C7DC7 /* NSLayoutAnchorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSLayoutAnchorExtension.swift; path = LayoutKit/Source/Extensions/NSLayoutAnchorExtension.swift; sourceTree = "<group>"; };
-		39BE08254FB97FA69B13E1BFF6633503 /* Pods-Elo RateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Elo RateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3A7FCF3CE0CC595C2CF9A06484E49204 /* Pods_Elo_Rate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elo_Rate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B48355146510287A60559F50F571D58 /* UIEdgeInsetsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIEdgeInsetsExtension.swift; path = LayoutKit/Source/Extensions/UIEdgeInsetsExtension.swift; sourceTree = "<group>"; };
 		3B9FE9DA902DAB122017E1138B11378A /* Pods-Elo RateTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Elo RateTests-dummy.m"; sourceTree = "<group>"; };
@@ -109,8 +106,6 @@
 		867DC2DE378B03C1A200A455639839EE /* LayoutKitProtocol+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LayoutKitProtocol+Extension.swift"; path = "LayoutKit/Source/LayoutKitProtocol+Extensions/LayoutKitProtocol+Extension.swift"; sourceTree = "<group>"; };
 		8D2BA5C6A6EC2A6760698707DC713B32 /* SwiftService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftService-umbrella.h"; sourceTree = "<group>"; };
 		91539CA5A62BD4676224021C366532BF /* Pods_Elo_RateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elo_RateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		94CC439A9FE59BC4FE49F6B01B2C9391 /* Pods-Elo Rate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Elo Rate.modulemap"; sourceTree = "<group>"; };
-		9507BF5C9EB123BA68F9EF97EC92D8E6 /* Pods-Elo Rate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Elo Rate.release.xcconfig"; sourceTree = "<group>"; };
 		9712670C4E3CB5C2A77BA06FFCD8F6E6 /* LayoutKitProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutKitProtocol.swift; path = LayoutKit/Source/Protocols/LayoutKitProtocol.swift; sourceTree = "<group>"; };
 		975329A85171F76C7ADC2A4B78B39EDE /* Branding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Branding.swift; path = LayoutKit/Source/Branding/Branding.swift; sourceTree = "<group>"; };
 		9BF6A2CEB3F7F773F92327028A7F1231 /* LayoutKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LayoutKit-umbrella.h"; sourceTree = "<group>"; };
@@ -266,14 +261,11 @@
 		B7DACC1FD1F4C5C33BC278BFBB79D063 /* Pods-Elo Rate */ = {
 			isa = PBXGroup;
 			children = (
-				BDE896CC1768F3E6097D58809F2AF684 /* Pods-Elo Rate.modulemap */,
-				8D4FB09050C29FF7A104CC818C8D3B6C /* Pods-Elo Rate-acknowledgements.markdown */,
 				E2455FA7CA34E7E62949D77B45A7E35B /* Pods-Elo Rate-acknowledgements.plist */,
 				79E9CA70CD897EE3F434E1F3175A7358 /* Pods-Elo Rate-dummy.m */,
 				55AA9028BBF59E60FA14344A56E2C0B2 /* Pods-Elo Rate-frameworks.sh */,
 				22D761D2D4CCDD79CE596B99CEF23409 /* Pods-Elo Rate-Info.plist */,
 				48EF76B45B6266B74CA88E412DD67545 /* Pods-Elo Rate-umbrella.h */,
-				37A7FCF354DF4DC113356889B4857844 /* Pods-Elo Rate.debug.xcconfig */,
 				7147EE7CD7879A1BC37EDB6AA5FB58A0 /* Pods-Elo Rate.release.xcconfig */,
 				5BE5BC3FE4B4EBD9D15B7E02891D4332 /* Pods-Elo Rate.xctest.xcconfig */,
 			);
@@ -447,7 +439,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1120;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -657,6 +649,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -721,6 +714,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -894,6 +888,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -956,7 +951,6 @@
 		};
 		843832B65A5702DC67009D875625CCAB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37A7FCF354DF4DC113356889B4857844 /* Pods-Elo Rate.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;

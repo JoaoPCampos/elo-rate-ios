@@ -9,11 +9,19 @@
 import UIKit
 import LayoutKit
 
-final class AccessTextField: UITextField {
+protocol AccessTextFieldDelegate: class {
+    
+    func textChanged()
+}
+
+class AccessTextField: UITextField {
+    
+    typealias TextChangedClosure = () -> Void
 
     private enum Constants {
-
+        /// .brilliance
         static let backgroundColor: UIColor = .brilliance
+        /// M + S + XS = 42
         static let height = Branding.Spacing.M.float + Branding.Spacing.S.float + Branding.Spacing.XS.float
 
         enum placeholder {
@@ -27,6 +35,7 @@ final class AccessTextField: UITextField {
             static let color: UIColor = .nero
             /// M - 14
             static let font = Branding.Font.stencil(.bpmono, .M).font
+            /// top: S, left: S, bottom: S, right: L
             static let insets = LayoutKitEdge(top: Branding.Spacing.S.float,
                                               left: Branding.Spacing.S.float,
                                               bottom: Branding.Spacing.S.float,
@@ -55,7 +64,7 @@ final class AccessTextField: UITextField {
         button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysTemplate), for: UIControlState.normal)
         button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysTemplate), for: UIControlState.selected)
 
-        button.addTarget(self, action: #selector(self.secureTextVisibility), for: UIControlEvents.touchUpInside)
+        button.addTarget(self, action: #selector(self.secureTextVisibility), for: .touchUpInside)
 
         button.tintColor = .silver
 
@@ -65,16 +74,16 @@ final class AccessTextField: UITextField {
     }()
 
     private let configuration: AccessTextField.Configuration
+    
+    private weak var accessTextFieldDelegate: AccessTextFieldDelegate?
 
-    init(frame: CGRect = .zero,
-         _ configuration: AccessTextField.Configuration,
-         delegate: UITextFieldDelegate) {
+    init(_ configuration: AccessTextField.Configuration, delegate: AccessTextFieldDelegate) {
 
         self.configuration = configuration
+        
+        self.accessTextFieldDelegate = delegate
 
-        super.init(frame: frame)
-
-        self.delegate = delegate
+        super.init(frame: .zero)
 
         self.configureView()
     }
@@ -84,17 +93,12 @@ final class AccessTextField: UITextField {
 
         fatalError("init(coder:) has not been implemented")
     }
-
-    func willUpdate(with text: String) {
-
-        let evaluationText: String
-
-        if let currentText = self.text {
-
-            evaluationText = text.isEmpty ? String(currentText.dropLast()) : currentText + text
-
-            self.layer.borderColor = self.configuration.color(for: evaluationText)
-        }
+    
+    func isValid() -> Bool {
+        
+        guard let text = self.text else { return false }
+        
+        return self.configuration.isValid(text)
     }
 }
 
@@ -128,6 +132,8 @@ private extension AccessTextField {
         }
 
         self.size(to: .height(Constants.height))
+        
+        self.addTarget(self, action: #selector(self.updateBorder), for: .editingChanged)
     }
 
     @objc
@@ -138,6 +144,16 @@ private extension AccessTextField {
         self.eyeButton.tintColor = self.eyeButton.isSelected ? .nero : .silver
 
         self.isSecureTextEntry.toggle()
+    }
+    
+    @objc
+    func updateBorder() {
+
+        self.accessTextFieldDelegate?.textChanged()
+        
+        guard let text = self.text else { return }
+
+        self.layer.borderColor = self.configuration.color(for: text)
     }
 }
 
@@ -152,6 +168,11 @@ extension AccessTextField {
         var isSecure: Bool {
 
             return self == .password
+        }
+        
+        func isValid(_ text: String) -> Bool {
+            
+            return self.regex.matches(text)
         }
 
         var placeholder: String {
@@ -182,9 +203,9 @@ extension AccessTextField {
             }
         }
 
-        func color(for content: String) -> CGColor {
+        func color(for text: String) -> CGColor {
 
-            return self.regex.matches(content) ? UIColor.nero.cgColor : UIColor.brakeLights.cgColor
+            return self.isValid(text) ? UIColor.nero.cgColor : UIColor.brakeLights.cgColor
         }
     }
 }
