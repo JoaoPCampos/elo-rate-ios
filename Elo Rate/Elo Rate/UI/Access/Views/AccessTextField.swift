@@ -59,10 +59,10 @@ class AccessTextField: UITextField {
 
     private lazy var eyeButton: UIButton = {
 
-        let button = UIButton(type: UIButtonType.custom).unmask()
+        let button = UIButton(type: UIButton.ButtonType.custom).unmask()
 
-        button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysTemplate), for: UIControlState.normal)
-        button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysTemplate), for: UIControlState.selected)
+        button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysTemplate), for: UIControl.State.normal)
+        button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysTemplate), for: UIControl.State.selected)
 
         button.addTarget(self, action: #selector(self.secureTextVisibility), for: .touchUpInside)
 
@@ -215,25 +215,28 @@ internal extension AccessTextField {
 
     override func textRect(forBounds bounds: CGRect) -> CGRect {
 
-        return UIEdgeInsetsInsetRect(bounds, Constants.text.insets)
+        return bounds.inset(by: Constants.text.insets)
     }
 
     override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
 
-        return UIEdgeInsetsInsetRect(bounds, Constants.text.insets)
+        return bounds.inset(by: Constants.text.insets)
     }
 
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
 
-        return UIEdgeInsetsInsetRect(bounds, Constants.text.insets)
+        return bounds.inset(by: Constants.text.insets)
     }
 
     override func rightViewRect(forBounds bounds: CGRect) -> CGRect {
 
-        let rect = UIEdgeInsetsInsetRect(bounds, Constants.text.insets)
+        let rect = bounds.inset(by: Constants.text.insets)
 
-        let imageBounds = UIEdgeInsetsMake(0, rect.maxX, 0, Constants.icon.rightMargin)
+        let imageBounds = UIEdgeInsets(top: 0,
+                                       left: rect.maxX,
+                                       bottom: 0,
+                                       right: Constants.icon.rightMargin)
 
-        return UIEdgeInsetsInsetRect(bounds, imageBounds)
+        return bounds.inset(by: imageBounds)
     }
 }
