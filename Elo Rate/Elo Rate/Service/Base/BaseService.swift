@@ -9,19 +9,59 @@
 import SwiftService
 import Foundation
 
-final class BaseService: ServiceProtocol {
+class BaseService: ServiceProtocol {
     
-    internal let basePath: String = "jocs-elo.herokuapp.com/ranking/api/v1.0/"
+    let basePath: String = "jocs-elo.herokuapp.com/ranking/api/"
     
     let endpoint: ServiceEndpoint
     let method: Request.Method
     let parameters: [URLQueryItem]?
     let headers: [Header]
     
-    init(_ endpoint: ServiceEndpoint,
-         method: Request.Method,
-         parameters: [URLQueryItem]? = nil,
-         headers: Header...) {
+    static func get(_ endpoint: ServiceEndpoint,
+                    parameters: [URLQueryItem]? = nil,
+                    headers: Header...) -> BaseService {
+        
+        return BaseService(endpoint: endpoint,
+                           method: .get,
+                           parameters: parameters,
+                           headers: headers)
+    }
+    
+    static func post(_ endpoint: ServiceEndpoint,
+                     parameters: [URLQueryItem]? = nil,
+                     headers: Header...) -> BaseService {
+        
+        return BaseService(endpoint: endpoint,
+                           method: .post,
+                           parameters: parameters,
+                           headers: headers)
+    }
+    
+    static func put(_ endpoint: ServiceEndpoint,
+                    parameters: [URLQueryItem]? = nil,
+                    headers: Header...) -> BaseService {
+        
+        return BaseService(endpoint: endpoint,
+                           method: .put,
+                           parameters: parameters,
+                           headers: headers)
+    }
+    
+    static func delete(_ endpoint: ServiceEndpoint,
+                       parameters: [URLQueryItem]? = nil,
+                       headers: Header...) -> BaseService {
+        
+        return BaseService(endpoint: endpoint,
+                           method: .delete,
+                           parameters: parameters,
+                           headers: headers)
+    }
+    
+    private init(endpoint: ServiceEndpoint,
+                 method: Request.Method,
+                 parameters: [URLQueryItem]? = nil,
+                 headers: [Header]) {
         
         self.endpoint = endpoint
         self.method = method

@@ -8,46 +8,39 @@
 
 import SwiftService
 
-enum AccessService: BaseServiceProtocol {
+final class AccessService: BaseService {
     
-    case create(player: Player)
-    case login(username: String, password: String)
-    case recover(email: String)
-    case logout
-}
-
-extension AccessService {
-    
-    var baseService: BaseService {
+    static func create(username: String, email: String, password: String) -> BaseService {
         
-        switch self {
-            
-        case .create(let player):
-            
-            let body = try? JSONEncoder().encode(player)
-            let create = ServiceEndpoint(path: "player", body: body)
-            
-            return BaseService(create, method: .post)
-            
-        case .login(let username, let password):
-            
-            let login = ServiceEndpoint(path: "auth/login")
-            let basicAuthHeader = ServiceProtocol.Header(.authorization, username + ":" + password)
-            
-            return BaseService(login, method: .post, headers: basicAuthHeader)
-            
-        case .recover(let email):
-            
-            let recover = ServiceEndpoint(path: "auth/recover")
-            let query = URLQueryItem(name: "email", value: email)
-            
-            return BaseService(recover, method: .post, parameters: [query])
-            
-        case .logout:
-            
-            let logout = ServiceEndpoint(path: "auth/logout")
-            
-            return BaseService(logout, method: .delete)
-        }
+        let body = ["username": username, "email": email, "password": password].data
+        
+        let createPlayer = ServiceEndpoint(path: "player", body: body)
+        
+        return .post(createPlayer)
+    }
+    
+    static func login(username: String, password: String) -> BaseService {
+        
+        let login = ServiceEndpoint(path: "auth/login")
+        let basicAuth = (username + ":" + password).basicAuth
+        
+        let basicAuthHeader = ServiceProtocol.Header(.authorization, basicAuth)
+        
+        return .post(login, headers: basicAuthHeader)
+    }
+    
+    static func recover(email: String) -> BaseService {
+        
+        let recoverPassword = ServiceEndpoint(path: "auth/recover")
+        let query = URLQueryItem(name: "email", value: email)
+        
+        return .post(recoverPassword, parameters: [query])
+    }
+    
+    static var logout: BaseService {
+        
+        let logout = ServiceEndpoint(path: "auth/logout")
+        
+        return .delete(logout)
     }
 }

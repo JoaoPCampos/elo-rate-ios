@@ -16,7 +16,7 @@
 		D80CE61F228B6C990018D1AA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE61E228B6C990018D1AA /* UIView+Extension.swift */; };
 		D81B186F23CD1B37007A66B9 /* Elo_RateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81B186E23CD1B37007A66B9 /* Elo_RateTests.swift */; };
 		D83D13E123D36AE00033F0BC /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D13E023D36AE00033F0BC /* BaseService.swift */; };
-		D8DFB1A423D38E49009EEF0A /* BaseServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DFB1A323D38E49009EEF0A /* BaseServiceProtocol.swift */; };
+		D8A4914C23D6396A00971B88 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4914B23D6396A00971B88 /* Dictionary+Extension.swift */; };
 		D8DFB1A623D38E7B009EEF0A /* AccessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DFB1A523D38E7B009EEF0A /* AccessService.swift */; };
 		D8DFB1A823D4BA21009EEF0A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DFB1A723D4BA21009EEF0A /* String+Extension.swift */; };
 		D8DFB1AA23D4C195009EEF0A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DFB1A923D4C195009EEF0A /* Player.swift */; };
@@ -52,7 +52,6 @@
 		5AF2D266AF705BDA97A39B13 /* Pods-Elo RateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo RateTests.debug.xcconfig"; path = "Target Support Files/Pods-Elo RateTests/Pods-Elo RateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7BA7DB9B417A1AE57B57D009 /* Pods-Elo Rate.xctest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo Rate.xctest.xcconfig"; path = "Target Support Files/Pods-Elo Rate/Pods-Elo Rate.xctest.xcconfig"; sourceTree = "<group>"; };
 		815BA00031C08D793B2DFD16 /* Pods-Elo Rate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo Rate.debug.xcconfig"; path = "Target Support Files/Pods-Elo Rate/Pods-Elo Rate.debug.xcconfig"; sourceTree = "<group>"; };
-		8FE970C1ABFA9B878702D5C9 /* Pods_Elo_RateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elo_RateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BD3B99CD6185735295FD038 /* Pods_Elo_Rate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elo_Rate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DD936460F8D4245BE1B351 /* Pods-Elo Rate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo Rate.release.xcconfig"; path = "Target Support Files/Pods-Elo Rate/Pods-Elo Rate.release.xcconfig"; sourceTree = "<group>"; };
 		C9F1157E2123325300F29650 /* Elo Rate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elo Rate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +65,7 @@
 		D81B186823CD1AA4007A66B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D81B186E23CD1B37007A66B9 /* Elo_RateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Elo_RateTests.swift; sourceTree = "<group>"; };
 		D83D13E023D36AE00033F0BC /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
-		D8DFB1A323D38E49009EEF0A /* BaseServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceProtocol.swift; sourceTree = "<group>"; };
+		D8A4914B23D6396A00971B88 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		D8DFB1A523D38E7B009EEF0A /* AccessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessService.swift; sourceTree = "<group>"; };
 		D8DFB1A723D4BA21009EEF0A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		D8DFB1A923D4C195009EEF0A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -188,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				D83D13E023D36AE00033F0BC /* BaseService.swift */,
-				D8DFB1A323D38E49009EEF0A /* BaseServiceProtocol.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -236,6 +234,7 @@
 				DC886C52228D52660070701B /* UIColor+Extension.swift */,
 				DC1932EE2298385A008609AB /* NSRegularExpression+Extension.swift */,
 				D8DFB1A723D4BA21009EEF0A /* String+Extension.swift */,
+				D8A4914B23D6396A00971B88 /* Dictionary+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -243,8 +242,8 @@
 		DC0241CD228B06800029B365 /* Access */ = {
 			isa = PBXGroup;
 			children = (
-				DC0241CE228B068F0029B365 /* AccessCoordinator.swift */,
 				DC8786FA23C78B320063320E /* Views */,
+				DC0241CE228B068F0029B365 /* AccessCoordinator.swift */,
 				DC0241D0228B06F30029B365 /* AccessViewController.swift */,
 			);
 			path = Access;
@@ -405,28 +404,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B25602A1504248CA409CB9FA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Elo RateTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C4D459C6637774E9E20C9672 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -473,10 +450,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8A4914C23D6396A00971B88 /* Dictionary+Extension.swift in Sources */,
 				D83D13E123D36AE00033F0BC /* BaseService.swift in Sources */,
 				D8DFB1A623D38E7B009EEF0A /* AccessService.swift in Sources */,
 				D80CE61F228B6C990018D1AA /* UIView+Extension.swift in Sources */,
-				D8DFB1A423D38E49009EEF0A /* BaseServiceProtocol.swift in Sources */,
 				DC0241CC228B06480029B365 /* AppCoordinator.swift in Sources */,
 				DC0241C6228B05D60029B365 /* Coordinator.swift in Sources */,
 				DC0241CF228B068F0029B365 /* AccessCoordinator.swift in Sources */,
