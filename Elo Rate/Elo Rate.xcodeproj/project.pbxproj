@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		681FA5606EFE1F1634F4F918 /* Pods_Elo_Rate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD3B99CD6185735295FD038 /* Pods_Elo_Rate.framework */; };
+		78E86D387ABB38C7EF4AE781 /* Pods_Elo_RateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE970C1ABFA9B878702D5C9 /* Pods_Elo_RateTests.framework */; };
 		C9F115822123325300F29650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F115812123325300F29650 /* AppDelegate.swift */; };
 		C9F115892123325400F29650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F115882123325400F29650 /* Assets.xcassets */; };
 		C9F1158C2123325400F29650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F1158A2123325400F29650 /* LaunchScreen.storyboard */; };
 		D80CE61D228B69520018D1AA /* AccessLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE61C228B69520018D1AA /* AccessLoginView.swift */; };
 		D80CE61F228B6C990018D1AA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE61E228B6C990018D1AA /* UIView+Extension.swift */; };
 		D81B186F23CD1B37007A66B9 /* Elo_RateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81B186E23CD1B37007A66B9 /* Elo_RateTests.swift */; };
+		D83D13E123D36AE00033F0BC /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D13E023D36AE00033F0BC /* BaseService.swift */; };
+		D8DFB1A423D38E49009EEF0A /* BaseServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DFB1A323D38E49009EEF0A /* BaseServiceProtocol.swift */; };
+		D8DFB1A623D38E7B009EEF0A /* AccessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DFB1A523D38E7B009EEF0A /* AccessService.swift */; };
+		D8DFB1A823D4BA21009EEF0A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DFB1A723D4BA21009EEF0A /* String+Extension.swift */; };
+		D8DFB1AA23D4C195009EEF0A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DFB1A923D4C195009EEF0A /* Player.swift */; };
 		DC0241C1228B05830029B365 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241C0228B05830029B365 /* BaseViewController.swift */; };
 		DC0241C4228B05AF0029B365 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241C3228B05AF0029B365 /* Identifiable.swift */; };
 		DC0241C6228B05D60029B365 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0241C5228B05D60029B365 /* Coordinator.swift */; };
@@ -45,6 +51,7 @@
 		5AF2D266AF705BDA97A39B13 /* Pods-Elo RateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo RateTests.debug.xcconfig"; path = "Target Support Files/Pods-Elo RateTests/Pods-Elo RateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7BA7DB9B417A1AE57B57D009 /* Pods-Elo Rate.xctest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo Rate.xctest.xcconfig"; path = "Target Support Files/Pods-Elo Rate/Pods-Elo Rate.xctest.xcconfig"; sourceTree = "<group>"; };
 		815BA00031C08D793B2DFD16 /* Pods-Elo Rate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo Rate.debug.xcconfig"; path = "Target Support Files/Pods-Elo Rate/Pods-Elo Rate.debug.xcconfig"; sourceTree = "<group>"; };
+		8FE970C1ABFA9B878702D5C9 /* Pods_Elo_RateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elo_RateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BD3B99CD6185735295FD038 /* Pods_Elo_Rate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elo_Rate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DD936460F8D4245BE1B351 /* Pods-Elo Rate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo Rate.release.xcconfig"; path = "Target Support Files/Pods-Elo Rate/Pods-Elo Rate.release.xcconfig"; sourceTree = "<group>"; };
 		C9F1157E2123325300F29650 /* Elo Rate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elo Rate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +64,11 @@
 		D81B186423CD1AA4007A66B9 /* Elo RateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Elo RateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81B186823CD1AA4007A66B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D81B186E23CD1B37007A66B9 /* Elo_RateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Elo_RateTests.swift; sourceTree = "<group>"; };
+		D83D13E023D36AE00033F0BC /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		D8DFB1A323D38E49009EEF0A /* BaseServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceProtocol.swift; sourceTree = "<group>"; };
+		D8DFB1A523D38E7B009EEF0A /* AccessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessService.swift; sourceTree = "<group>"; };
+		D8DFB1A723D4BA21009EEF0A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		D8DFB1A923D4C195009EEF0A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		DC0241C0228B05830029B365 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DC0241C3228B05AF0029B365 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		DC0241C5228B05D60029B365 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -87,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E86D387ABB38C7EF4AE781 /* Pods_Elo_RateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				9BD3B99CD6185735295FD038 /* Pods_Elo_Rate.framework */,
+				8FE970C1ABFA9B878702D5C9 /* Pods_Elo_RateTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,15 +151,16 @@
 		C9F115802123325300F29650 /* Elo Rate */ = {
 			isa = PBXGroup;
 			children = (
-				DC886C45228C5D430070701B /* Resources */,
 				DC0241C8228B05F60029B365 /* Extensions */,
-				DC0241C7228B05E90029B365 /* UI */,
 				DC0241C2228B05930029B365 /* Protocols */,
+				DC886C45228C5D430070701B /* Resources */,
+				D83D13DF23D368820033F0BC /* Service */,
+				DC0241C7228B05E90029B365 /* UI */,
+				DC0241CB228B06480029B365 /* AppCoordinator.swift */,
 				C9F115812123325300F29650 /* AppDelegate.swift */,
-				C9F115882123325400F29650 /* Assets.xcassets */,
 				C9F1158A2123325400F29650 /* LaunchScreen.storyboard */,
 				C9F1158D2123325400F29650 /* Info.plist */,
-				DC0241CB228B06480029B365 /* AppCoordinator.swift */,
+				C9F115882123325400F29650 /* Assets.xcassets */,
 			);
 			path = "Elo Rate";
 			sourceTree = "<group>";
@@ -157,6 +172,33 @@
 				D81B186823CD1AA4007A66B9 /* Info.plist */,
 			);
 			path = "Elo RateTests";
+			sourceTree = "<group>";
+		};
+		D83D13DF23D368820033F0BC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D83D13E323D370C20033F0BC /* Access */,
+				D83D13E223D370B20033F0BC /* Base */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D83D13E223D370B20033F0BC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D83D13E023D36AE00033F0BC /* BaseService.swift */,
+				D8DFB1A323D38E49009EEF0A /* BaseServiceProtocol.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D83D13E323D370C20033F0BC /* Access */ = {
+			isa = PBXGroup;
+			children = (
+				D8DFB1A523D38E7B009EEF0A /* AccessService.swift */,
+				D8DFB1A923D4C195009EEF0A /* Player.swift */,
+			);
+			path = Access;
 			sourceTree = "<group>";
 		};
 		DC0241BF228B05640029B365 /* Base */ = {
@@ -192,6 +234,7 @@
 				D80CE61E228B6C990018D1AA /* UIView+Extension.swift */,
 				DC886C52228D52660070701B /* UIColor+Extension.swift */,
 				DC1932EE2298385A008609AB /* NSRegularExpression+Extension.swift */,
+				D8DFB1A723D4BA21009EEF0A /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -260,6 +303,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D81B186D23CD1AA4007A66B9 /* Build configuration list for PBXNativeTarget "Elo RateTests" */;
 			buildPhases = (
+				B25602A1504248CA409CB9FA /* [CP] Check Pods Manifest.lock */,
 				D81B186023CD1AA4007A66B9 /* Sources */,
 				D81B186123CD1AA4007A66B9 /* Frameworks */,
 				D81B186223CD1AA4007A66B9 /* Resources */,
@@ -360,6 +404,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B25602A1504248CA409CB9FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Elo RateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C4D459C6637774E9E20C9672 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,11 +450,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83D13E123D36AE00033F0BC /* BaseService.swift in Sources */,
+				D8DFB1A623D38E7B009EEF0A /* AccessService.swift in Sources */,
 				D80CE61F228B6C990018D1AA /* UIView+Extension.swift in Sources */,
+				D8DFB1A423D38E49009EEF0A /* BaseServiceProtocol.swift in Sources */,
 				DC0241CC228B06480029B365 /* AppCoordinator.swift in Sources */,
 				DC0241C6228B05D60029B365 /* Coordinator.swift in Sources */,
 				DC0241CF228B068F0029B365 /* AccessCoordinator.swift in Sources */,
 				DC8786FC23C78B590063320E /* AccessTextField.swift in Sources */,
+				D8DFB1A823D4BA21009EEF0A /* String+Extension.swift in Sources */,
 				C9F115822123325300F29650 /* AppDelegate.swift in Sources */,
 				DC0241D1228B06F30029B365 /* AccessViewController.swift in Sources */,
 				DC0241CA228B060F0029B365 /* UINavigationController+Extension.swift in Sources */,
@@ -396,6 +466,7 @@
 				DC0241C4228B05AF0029B365 /* Identifiable.swift in Sources */,
 				DC0241C1228B05830029B365 /* BaseViewController.swift in Sources */,
 				DC886C53228D52660070701B /* UIColor+Extension.swift in Sources */,
+				D8DFB1AA23D4C195009EEF0A /* Player.swift in Sources */,
 				D80CE61D228B69520018D1AA /* AccessLoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +659,7 @@
 		};
 		D81B186B23CD1AA4007A66B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AF2D266AF705BDA97A39B13 /* Pods-Elo RateTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -616,6 +688,7 @@
 		};
 		D81B186C23CD1AA4007A66B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2064E104B1F63D698230934 /* Pods-Elo RateTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;

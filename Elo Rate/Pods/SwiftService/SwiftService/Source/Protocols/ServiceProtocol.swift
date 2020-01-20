@@ -9,8 +9,19 @@ import Foundation
 
 public protocol ServiceProtocol {
     
-    var path: String { get }
+    typealias Header = (key: Request.Header, value: String)
+    
+    var endpoint: ServiceEndpoint { get }
+    var basePath: String { get }
     var method: Request.Method { get }
     var parameters: [URLQueryItem]? { get }
-    var headers: [(key: Request.Header, value: String)] { get }
+    var headers: [Header] { get }
+}
+
+extension ServiceProtocol {
+    
+    var path: String {
+        
+        return self.endpoint.scheme.description + self.basePath + self.endpoint.path
+    }
 }

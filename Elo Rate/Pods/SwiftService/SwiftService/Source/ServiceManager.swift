@@ -26,12 +26,7 @@ public extension ServiceManager {
         
         guard var urlComponents = URLComponents(string: self.service.path) else { return }
         
-        urlComponents.queryItems = []
-        
-        if let parameters = self.service.parameters {
-            
-            urlComponents.queryItems = parameters
-        }
+        urlComponents.queryItems = self.service.parameters
         
         guard let url = urlComponents.url else { return }
         
@@ -43,6 +38,7 @@ public extension ServiceManager {
         }
         
         request.httpMethod = self.service.method.rawValue.uppercased()
+        request.httpBody = self.service.endpoint.body
         
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             

@@ -34,5 +34,7 @@ public enum Request {
         
         case http
         case https
+        
+        var description: String { return self.rawValue + "://" }
     }
 }

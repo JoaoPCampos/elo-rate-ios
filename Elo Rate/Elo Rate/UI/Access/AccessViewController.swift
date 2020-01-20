@@ -6,6 +6,8 @@
 //  Copyright © 2019 João Campos. All rights reserved.
 //
 
+import SwiftService
+
 final class AccessViewController: BaseViewController {
 
     private lazy var accessLoginView = {
@@ -57,6 +59,17 @@ extension AccessViewController: AccessLoginViewDelegate {
 
     func loginButtonPressed() {
         
-        /// TODO
+        let player = Player(username: "jocs", email: "jonybfc@gmail.com", password: "123")
+        
+        let access = AccessService.create(player: player)
+        
+        ServiceManager<Player>(service: access.baseService).request(success: { player in
+            
+            print(player)
+        
+        }) { error in
+            
+            print(error)
+        }
     }
 }

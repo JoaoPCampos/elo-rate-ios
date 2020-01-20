@@ -1,5 +1,5 @@
 //
-//  ServiceEndPoint.swift
+//  ServiceEndpoint.swift
 //  SwiftService
 //
 //  Created by João Campos on 26/04/2019.
@@ -8,21 +8,21 @@
 
 import Foundation
 
-public final class ServiceEndPoint {
+public final class ServiceEndpoint {
     
     public let scheme: Request.Scheme
-    public let baseUrl: String
     public let path: String
+    public let body: Data?
     public let key: String?
     
-    public init(scheme: Request.Scheme,
-                baseUrl: String,
+    public init(scheme: Request.Scheme = .https,
                 path: String,
+                body: Data? = nil,
                 key: String? = nil) {
         
         self.scheme = scheme
-        self.baseUrl = baseUrl
         self.path = path
+        self.body = body
         self.key = key
     }
 }
