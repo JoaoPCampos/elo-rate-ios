@@ -1,6 +1,0 @@
-framework module Pods_Elo_Rate {
-  umbrella header "Pods-Elo Rate-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -11,7 +11,7 @@ target 'Elo Rate' do
 
   # Pods for Elo Rate
   pod 'LayoutKit', '~> 1.0.0'
-  pod 'SwiftService', '~> 1.0.3'
+  pod 'SwiftService', '~> 0.1.1'
 
   target 'Elo RateTests' do
     inherit! :search_paths
