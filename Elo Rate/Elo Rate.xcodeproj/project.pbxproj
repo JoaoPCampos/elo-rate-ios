@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		681FA5606EFE1F1634F4F918 /* Pods_Elo_Rate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD3B99CD6185735295FD038 /* Pods_Elo_Rate.framework */; };
-		78E86D387ABB38C7EF4AE781 /* Pods_Elo_RateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE970C1ABFA9B878702D5C9 /* Pods_Elo_RateTests.framework */; };
+		A8CBEE93356815C54F7B023E /* Pods_Elo_RateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5E223FE3161B71B64568BC /* Pods_Elo_RateTests.framework */; };
 		C9F115822123325300F29650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F115812123325300F29650 /* AppDelegate.swift */; };
 		C9F115892123325400F29650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F115882123325400F29650 /* Assets.xcassets */; };
 		C9F1158C2123325400F29650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F1158A2123325400F29650 /* LaunchScreen.storyboard */; };
@@ -47,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A5E223FE3161B71B64568BC /* Pods_Elo_RateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elo_RateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F9F2D9B1050DC06C1B2766 /* Pods-Elo RateTests.xctest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo RateTests.xctest.xcconfig"; path = "Target Support Files/Pods-Elo RateTests/Pods-Elo RateTests.xctest.xcconfig"; sourceTree = "<group>"; };
 		5AF2D266AF705BDA97A39B13 /* Pods-Elo RateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo RateTests.debug.xcconfig"; path = "Target Support Files/Pods-Elo RateTests/Pods-Elo RateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7BA7DB9B417A1AE57B57D009 /* Pods-Elo Rate.xctest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elo Rate.xctest.xcconfig"; path = "Target Support Files/Pods-Elo Rate/Pods-Elo Rate.xctest.xcconfig"; sourceTree = "<group>"; };
@@ -99,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78E86D387ABB38C7EF4AE781 /* Pods_Elo_RateTests.framework in Frameworks */,
+				A8CBEE93356815C54F7B023E /* Pods_Elo_RateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				9BD3B99CD6185735295FD038 /* Pods_Elo_Rate.framework */,
-				8FE970C1ABFA9B878702D5C9 /* Pods_Elo_RateTests.framework */,
+				0A5E223FE3161B71B64568BC /* Pods_Elo_RateTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -303,7 +304,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D81B186D23CD1AA4007A66B9 /* Build configuration list for PBXNativeTarget "Elo RateTests" */;
 			buildPhases = (
-				B25602A1504248CA409CB9FA /* [CP] Check Pods Manifest.lock */,
+				F5CE906DF69FD8FEF238329F /* [CP] Check Pods Manifest.lock */,
 				D81B186023CD1AA4007A66B9 /* Sources */,
 				D81B186123CD1AA4007A66B9 /* Frameworks */,
 				D81B186223CD1AA4007A66B9 /* Resources */,
@@ -441,6 +442,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Elo Rate/Pods-Elo Rate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5CE906DF69FD8FEF238329F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Elo RateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
