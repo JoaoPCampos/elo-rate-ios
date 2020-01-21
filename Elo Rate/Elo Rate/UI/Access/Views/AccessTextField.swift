@@ -26,6 +26,7 @@ class AccessTextField: UITextField {
 
         enum placeholder {
 
+            static let email: String = "Email"
             static let username: String = "Username"
             static let password: String = "Password"
         }
@@ -162,6 +163,7 @@ extension AccessTextField {
 
     enum Configuration {
 
+        case email
         case username
         case password
 
@@ -178,6 +180,10 @@ extension AccessTextField {
         var placeholder: String {
 
             switch self {
+                
+            case .email:
+                
+                return Constants.placeholder.email
 
             case .username:
 
@@ -192,6 +198,10 @@ extension AccessTextField {
         var regex: NSRegularExpression {
 
             switch self {
+                
+            case .email:
+                
+                return NSRegularExpression("[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}")
 
             case .username:
 

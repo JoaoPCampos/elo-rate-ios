@@ -21,7 +21,7 @@ final class AccessLoginView: UIView {
         enum button {
 
             /// Login
-            static let text: String = "Login"
+            static let login: String = "Login"
             /// .brilliance
             static let color: UIColor = .brilliance
             /// .goshawkGrey
@@ -92,7 +92,7 @@ private extension AccessLoginView {
         self.loginButton.layer.shouldRasterize = true
         self.loginButton.layer.rasterizationScale = UIScreen.main.scale
         self.loginButton.titleLabel?.font = Constants.button.font
-        self.loginButton.setTitle(Constants.button.text, for: .normal)
+        self.loginButton.setTitle(Constants.button.login, for: .normal)
         self.loginButton.setTitleColor(Constants.button.color, for: .normal)
         self.loginButton.setTitleColor(Constants.button.disabledColor, for: .disabled)
         self.loginButton.backgroundColor = Constants.button.backgroundColor

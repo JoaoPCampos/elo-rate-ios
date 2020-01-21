@@ -13,7 +13,7 @@ protocol Coordinator: class {
     //MARK:- PROPERTIES
     var description: String { get }
     var coordinators: [Coordinator] { get set }
-    var releaseCoordinator: ((Coordinator) -> Void)? { set get }
+    var releaseCoordinator: ((Coordinator) -> Void)? { get set }
 
 
     //MARK:- FUNCTIONS

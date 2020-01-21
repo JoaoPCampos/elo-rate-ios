@@ -15,6 +15,7 @@
 		D80CE61D228B69520018D1AA /* AccessLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE61C228B69520018D1AA /* AccessLoginView.swift */; };
 		D80CE61F228B6C990018D1AA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE61E228B6C990018D1AA /* UIView+Extension.swift */; };
 		D81B186F23CD1B37007A66B9 /* Elo_RateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81B186E23CD1B37007A66B9 /* Elo_RateTests.swift */; };
+		D826F16323D7AC4B00B324E9 /* AccessRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D826F16223D7AC4B00B324E9 /* AccessRegisterView.swift */; };
 		D83D13E123D36AE00033F0BC /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D13E023D36AE00033F0BC /* BaseService.swift */; };
 		D8A4914C23D6396A00971B88 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4914B23D6396A00971B88 /* Dictionary+Extension.swift */; };
 		D8DFB1A623D38E7B009EEF0A /* AccessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DFB1A523D38E7B009EEF0A /* AccessService.swift */; };
@@ -64,6 +65,7 @@
 		D81B186423CD1AA4007A66B9 /* Elo RateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Elo RateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81B186823CD1AA4007A66B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D81B186E23CD1B37007A66B9 /* Elo_RateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Elo_RateTests.swift; sourceTree = "<group>"; };
+		D826F16223D7AC4B00B324E9 /* AccessRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessRegisterView.swift; sourceTree = "<group>"; };
 		D83D13E023D36AE00033F0BC /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		D8A4914B23D6396A00971B88 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		D8DFB1A523D38E7B009EEF0A /* AccessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessService.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 			children = (
 				D80CE61C228B69520018D1AA /* AccessLoginView.swift */,
 				DC8786FB23C78B590063320E /* AccessTextField.swift */,
+				D826F16223D7AC4B00B324E9 /* AccessRegisterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				D8A4914C23D6396A00971B88 /* Dictionary+Extension.swift in Sources */,
 				D83D13E123D36AE00033F0BC /* BaseService.swift in Sources */,
 				D8DFB1A623D38E7B009EEF0A /* AccessService.swift in Sources */,
+				D826F16323D7AC4B00B324E9 /* AccessRegisterView.swift in Sources */,
 				D80CE61F228B6C990018D1AA /* UIView+Extension.swift in Sources */,
 				DC0241CC228B06480029B365 /* AppCoordinator.swift in Sources */,
 				DC0241C6228B05D60029B365 /* Coordinator.swift in Sources */,
