@@ -10,7 +10,7 @@ import UIKit
 
 extension Dictionary where Key == String, Value == String {
     
-    var data: Data? {
+    var asData: Data? {
         
         return try? JSONEncoder().encode(self)
     }

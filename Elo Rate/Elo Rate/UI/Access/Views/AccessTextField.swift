@@ -60,10 +60,10 @@ class AccessTextField: UITextField {
 
     private lazy var eyeButton: UIButton = {
 
-        let button = UIButton(type: UIButton.ButtonType.custom).unmask()
+        let button = UIButton(type: .custom).unmask()
 
-        button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysTemplate), for: UIControl.State.normal)
-        button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysTemplate), for: UIControl.State.selected)
+        button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysTemplate), for: .normal)
+        button.setImage(#imageLiteral(resourceName: "eye_icon").withRenderingMode(.alwaysTemplate), for: .selected)
 
         button.addTarget(self, action: #selector(self.secureTextVisibility), for: .touchUpInside)
 
@@ -73,10 +73,10 @@ class AccessTextField: UITextField {
 
         return button
     }()
-
-    private let configuration: AccessTextField.Configuration
     
     private weak var accessTextFieldDelegate: AccessTextFieldDelegate?
+
+    private let configuration: AccessTextField.Configuration
 
     init(_ configuration: AccessTextField.Configuration, delegate: AccessTextFieldDelegate) {
 
@@ -90,10 +90,7 @@ class AccessTextField: UITextField {
     }
 
     @available(*, unavailable)
-    required init?(coder: NSCoder) {
-
-        fatalError("init(coder:) has not been implemented")
-    }
+    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     
     func isValid() -> Bool {
         

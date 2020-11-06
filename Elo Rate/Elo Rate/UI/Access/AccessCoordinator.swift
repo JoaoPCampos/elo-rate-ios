@@ -26,8 +26,7 @@ final class AccessCoordinator: Coordinator {
 
     func start() {
 
-        self.navigationController.pushViewController(AccessViewController(),
-                                                     animated: true)
+        self.navigationController.pushViewController(AccessViewController(), animated: true)
 
         self.window.rootViewController = self.navigationController
         self.window.makeKeyAndVisible()

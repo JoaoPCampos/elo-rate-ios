@@ -48,8 +48,7 @@ private extension AccessViewController {
 
     func defineConstraints() {
 
-        self.accessLoginView.edge(onlyTo: [.leading, .trailing],
-                                  to: self.view)
+        self.accessLoginView.edge(onlyTo: [.leading, .trailing], to: self.view)
         
         self.accessLoginView.center(in: self.view)
     }
@@ -58,23 +57,17 @@ private extension AccessViewController {
 // MARK: - LoginViewDelegate
 extension AccessViewController: AccessLoginViewDelegate {
 
-    func loginButtonPressed() {
+    func loginButtonPressed(username: String, password: String) {
         
-        //TODO all of this!
-        struct Token: Codable {
-            
-            let token: String
-        }
-        
-        let login = AccessService.login(username: "jocs", password: "123")
-        
-        ServiceManager<Token>(service: login, log: true).request(success: { token in
-            
-            print("\n\nYAY!\n\n")
-        
-        }) { error in
-            
-            print("\nerror\n")
-        }
+        AccessService.login(username: username,
+                            password: password,
+                            success: { token in
+                                
+                                print(token) },
+                            
+                            failure: { error in
+                                
+                                print(error)
+        })
     }
 }
